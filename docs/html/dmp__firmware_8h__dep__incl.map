@@ -1,0 +1,10 @@
+<map id="mbot_firmware/rc/include/rc/mpu/dmp_firmware.h" name="mbot_firmware/rc/include/rc/mpu/dmp_firmware.h">
+<area shape="rect" id="node1" title=" " alt="" coords="402,5,590,47"/>
+<area shape="rect" id="node2" href="$mpu_8h.html" title=" " alt="" coords="402,95,590,136"/>
+<area shape="rect" id="node3" href="$mpu_8c.html" title=" " alt="" coords="5,184,165,225"/>
+<area shape="rect" id="node4" href="$mbot_8h.html" title=" " alt="" coords="189,191,384,218"/>
+<area shape="rect" id="node6" href="$mbot__calibrate__accel_8c.html" title=" " alt="" coords="408,184,584,225"/>
+<area shape="rect" id="node7" href="$mbot__calibrate__gyro_8c.html" title=" " alt="" coords="608,184,779,225"/>
+<area shape="rect" id="node8" href="$mbot__dmp__test_8c.html" title=" " alt="" coords="803,184,960,225"/>
+<area shape="rect" id="node5" href="$mbot_8c.html" title=" " alt="" coords="190,273,383,300"/>
+</map>

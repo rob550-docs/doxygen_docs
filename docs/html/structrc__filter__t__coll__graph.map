@@ -1,0 +1,5 @@
+<map id="rc_filter_t" name="rc_filter_t">
+<area shape="rect" id="node1" title="Struct containing configuration and state of a SISO filter." alt="" coords="73,109,156,136"/>
+<area shape="rect" id="node2" href="$structrc__ringbuf__t.html" title="Struct containing state of a ringbuffer and pointer to dynamically allocated memory." alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node3" href="$structrc__vector__t.html" title="Struct containing the state of a vector and a pointer to dynamically allocated memory to hold its con..." alt="" coords="129,5,223,32"/>
+</map>

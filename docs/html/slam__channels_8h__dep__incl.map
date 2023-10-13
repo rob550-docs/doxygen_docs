@@ -1,0 +1,8 @@
+<map id="mbot_autonomy/include/slam/slam_channels.h" name="mbot_autonomy/include/slam/slam_channels.h">
+<area shape="rect" id="node1" title=" " alt="" coords="472,5,652,47"/>
+<area shape="rect" id="node2" href="$motion__controller_8cpp.html" title=" " alt="" coords="5,95,196,136"/>
+<area shape="rect" id="node3" href="$exploration_8cpp.html" title=" " alt="" coords="220,95,432,136"/>
+<area shape="rect" id="node4" href="$motion__planner__server_8cpp.html" title=" " alt="" coords="456,95,668,136"/>
+<area shape="rect" id="node5" href="$slam_8cpp.html" title=" " alt="" coords="692,95,880,136"/>
+<area shape="rect" id="node6" href="$slam__main_8cpp.html" title=" " alt="" coords="904,95,1092,136"/>
+</map>

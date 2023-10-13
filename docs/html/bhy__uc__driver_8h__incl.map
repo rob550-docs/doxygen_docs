@@ -1,0 +1,10 @@
+<map id="mbot_firmware/mbot/include/mbot/imu/bhy_uc_driver.h" name="mbot_firmware/mbot/include/mbot/imu/bhy_uc_driver.h">
+<area shape="rect" id="node1" title="headfile of driver on MCU for bhy" alt="" coords="187,5,355,61"/>
+<area shape="rect" id="node2" href="$bhy__support_8h.html" title="driver on MCU for bhy" alt="" coords="131,109,245,136"/>
+<area shape="rect" id="node6" href="$bhy__uc__driver__types_8h.html" title="header file of bhy_uc_driver.c" alt="" coords="303,109,471,136"/>
+<area shape="rect" id="node3" href="$bhy_8h.html" title="BHY Sensor Driver Support Header File." alt="" coords="5,184,61,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="86,184,173,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="197,184,299,211"/>
+<area shape="rect" id="node7" href="$bhy__uc__driver__constants_8h.html" title="header file of bhy_uc_driver.c" alt="" coords="323,184,517,211"/>
+<area shape="rect" id="node8" href="$bhy__uc__driver__config_8h.html" title="header file of bhy_uc_driver.c" alt="" coords="335,259,505,285"/>
+</map>

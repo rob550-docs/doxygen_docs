@@ -1,0 +1,14 @@
+<map id="mbot_firmware/mbot/include/mbot/imu/bhy_uc_driver_constants.h" name="mbot_firmware/mbot/include/mbot/imu/bhy_uc_driver_constants.h">
+<area shape="rect" id="node1" title="header file of bhy_uc_driver.c" alt="" coords="619,5,790,61"/>
+<area shape="rect" id="node2" href="$bhy__uc__driver__types_8h.html" title="header file of bhy_uc_driver.c" alt="" coords="621,109,789,165"/>
+<area shape="rect" id="node4" href="$imu_8h.html" title=" " alt="" coords="410,317,591,359"/>
+<area shape="rect" id="node12" href="$mbot__bhy__test_8c.html" title=" " alt="" coords="818,317,975,359"/>
+<area shape="rect" id="node3" href="$bhy__uc__driver_8h.html" title="headfile of driver on MCU for bhy" alt="" coords="621,213,789,269"/>
+<area shape="rect" id="node11" href="$bhy__uc__driver_8c.html" title="driver on MCU for bhy" alt="" coords="615,317,794,359"/>
+<area shape="rect" id="node5" href="$imu_8c.html" title=" " alt="" coords="5,407,164,448"/>
+<area shape="rect" id="node6" href="$mbot_8h.html" title=" " alt="" coords="189,414,383,441"/>
+<area shape="rect" id="node8" href="$mbot__calibrate__classic_8c.html" title=" " alt="" coords="407,407,594,448"/>
+<area shape="rect" id="node9" href="$mbot__calibrate__omni_8c.html" title=" " alt="" coords="619,407,793,448"/>
+<area shape="rect" id="node10" href="$mbot__imu__test_8c.html" title=" " alt="" coords="818,407,975,448"/>
+<area shape="rect" id="node7" href="$mbot_8c.html" title=" " alt="" coords="189,496,383,523"/>
+</map>

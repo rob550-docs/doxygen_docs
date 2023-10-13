@@ -1,0 +1,6 @@
+<map id="mbot_firmware/rc/include/rc/math/other.h" name="mbot_firmware/rc/include/rc/math/other.h">
+<area shape="rect" id="node1" title=" " alt="" coords="175,5,363,47"/>
+<area shape="rect" id="node2" href="$matrix_8c.html" title="This is a collection of functions for generating and implementing discrete SISO filters for arbitrary..." alt="" coords="5,95,165,136"/>
+<area shape="rect" id="node3" href="$other_8c.html" title="general low&#45;level math functions that don&#39;t fit elsewhere" alt="" coords="189,95,349,136"/>
+<area shape="rect" id="node4" href="$vector_8c.html" title=" " alt="" coords="373,95,533,136"/>
+</map>

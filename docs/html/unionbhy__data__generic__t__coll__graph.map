@@ -1,0 +1,17 @@
+<map id="bhy_data_generic_t" name="bhy_data_generic_t">
+<area shape="rect" id="node1" title=" " alt="" coords="385,344,535,371"/>
+<area shape="rect" id="node2" href="$structbhy__data__meta__event__t.html" title=" " alt="" coords="14,15,193,41"/>
+<area shape="rect" id="node3" href="$structbhy__data__sensor__event__t.html" title=" " alt="" coords="9,65,197,92"/>
+<area shape="rect" id="node4" href="$structbhy__data__quaternion__t.html" title=" " alt="" coords="18,116,189,143"/>
+<area shape="rect" id="node5" href="$structbhy__data__scalar__s16__t.html" title=" " alt="" coords="18,167,189,193"/>
+<area shape="rect" id="node6" href="$structbhy__data__scalar__u8__t.html" title=" " alt="" coords="22,217,185,244"/>
+<area shape="rect" id="node7" href="$structbhy__data__debug__t.html" title=" " alt="" coords="33,268,174,295"/>
+<area shape="rect" id="node8" href="$structbhy__data__scalar__u24__t.html" title=" " alt="" coords="18,319,189,345"/>
+<area shape="rect" id="node9" href="$structbhy__data__pdr__t.html" title=" " alt="" coords="42,369,165,396"/>
+<area shape="rect" id="node10" href="$structbhy__data__scalar__u16__t.html" title=" " alt="" coords="18,420,189,447"/>
+<area shape="rect" id="node11" href="$structbhy__data__vector__t.html" title=" " alt="" coords="32,471,175,497"/>
+<area shape="rect" id="node12" href="$structbhy__data__padding__t.html" title=" " alt="" coords="27,521,180,548"/>
+<area shape="rect" id="node13" href="$structbhy__data__custom__t.html" title=" " alt="" coords="29,572,178,599"/>
+<area shape="rect" id="node14" href="$structbhy__data__bsx__t.html" title=" " alt="" coords="41,623,165,649"/>
+<area shape="rect" id="node15" href="$structbhy__data__uncalib__vector__t.html" title=" " alt="" coords="5,673,201,700"/>
+</map>

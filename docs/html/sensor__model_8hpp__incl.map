@@ -1,0 +1,19 @@
+<map id="mbot_autonomy/include/slam/sensor_model.hpp" name="mbot_autonomy/include/slam/sensor_model.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="579,5,761,47"/>
+<area shape="rect" id="node2" href="$point_8hpp.html" title=" " alt="" coords="400,266,585,293"/>
+<area shape="rect" id="node5" title=" " alt="" coords="285,95,468,136"/>
+<area shape="rect" id="node6" href="$moving__laser__scan_8hpp.html" title=" " alt="" coords="189,184,399,211"/>
+<area shape="rect" id="node10" href="$occupancy__grid_8hpp.html" title=" " alt="" coords="631,184,818,211"/>
+<area shape="rect" id="node14" href="$grid__utils_8hpp.html" title=" " alt="" coords="544,102,687,129"/>
+<area shape="rect" id="node15" title=" " alt="" coords="762,102,805,129"/>
+<area shape="rect" id="node16" title=" " alt="" coords="829,102,903,129"/>
+<area shape="rect" id="node17" title=" " alt="" coords="927,102,999,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="413,348,476,375"/>
+<area shape="rect" id="node4" title=" " alt="" coords="501,348,581,375"/>
+<area shape="rect" id="node7" title=" " alt="" coords="609,266,672,293"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,259,188,300"/>
+<area shape="rect" id="node9" title=" " alt="" coords="213,259,375,300"/>
+<area shape="rect" id="node11" title=" " alt="" coords="697,266,782,293"/>
+<area shape="rect" id="node12" title=" " alt="" coords="806,266,873,293"/>
+<area shape="rect" id="node13" title=" " alt="" coords="897,259,1099,300"/>
+</map>

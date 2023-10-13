@@ -1,0 +1,9 @@
+<map id="mbot_firmware/mbot/include/mbot/imu/imu.h" name="mbot_firmware/mbot/include/mbot/imu/imu.h">
+<area shape="rect" id="node1" title=" " alt="" coords="410,5,591,47"/>
+<area shape="rect" id="node2" href="$imu_8c.html" title=" " alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node3" href="$mbot_8h.html" title=" " alt="" coords="189,102,383,129"/>
+<area shape="rect" id="node5" href="$mbot__calibrate__classic_8c.html" title=" " alt="" coords="407,95,594,136"/>
+<area shape="rect" id="node6" href="$mbot__calibrate__omni_8c.html" title=" " alt="" coords="619,95,793,136"/>
+<area shape="rect" id="node7" href="$mbot__imu__test_8c.html" title=" " alt="" coords="818,95,975,136"/>
+<area shape="rect" id="node4" href="$mbot_8c.html" title=" " alt="" coords="189,184,383,211"/>
+</map>
