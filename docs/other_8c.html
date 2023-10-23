@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/rc/src/math/other.c File Reference</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/rc/src/math/other.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -80,18 +83,18 @@ $(function() {
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="other_8h_source.html">rc/math/other.h</a>&gt;</code><br />
+<code>#include &lt;rc/math/other.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for other.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="other_8c__incl.png" border="0" usemap="#ambot__firmware_2rc_2src_2math_2other_8c" alt=""/></div>
-<map name="ambot__firmware_2rc_2src_2math_2other_8c" id="ambot__firmware_2rc_2src_2math_2other_8c">
-<area shape="rect" title="general low&#45;level math functions that don&#39;t fit elsewhere" alt="" coords="144,5,304,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,72,121"/>
-<area shape="rect" title=" " alt="" coords="97,95,165,121"/>
-<area shape="rect" title=" " alt="" coords="189,95,259,121"/>
-<area shape="rect" title=" " alt="" coords="283,95,354,121"/>
-<area shape="rect" href="other_8h.html" title=" " alt="" coords="378,95,499,121"/>
+<div class="center"><img src="other_8c__incl.png" border="0" usemap="#a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2other_8c" alt=""/></div>
+<map name="a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2other_8c" id="a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2other_8c">
+<area shape="rect" title="general low&#45;level math functions that don&#39;t fit elsewhere" alt="" coords="127,5,321,61"/>
+<area shape="rect" title=" " alt="" coords="5,109,72,136"/>
+<area shape="rect" title=" " alt="" coords="97,109,165,136"/>
+<area shape="rect" title=" " alt="" coords="189,109,259,136"/>
+<area shape="rect" title=" " alt="" coords="283,109,354,136"/>
+<area shape="rect" href="other_8h_source.html" title=" " alt="" coords="378,109,499,136"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -104,7 +107,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ac6c45889010c1bd68631771b64f18101"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="other_8c.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(x)&#160;&#160;&#160;__builtin_expect (!!(x), 0)</td></tr>
+<tr class="memitem:ac6c45889010c1bd68631771b64f18101"><td class="memItemLeft" align="right" valign="top"><a id="ac6c45889010c1bd68631771b64f18101"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>unlikely</b>(x)&#160;&#160;&#160;__builtin_expect (!!(x), 0)</td></tr>
 <tr class="separator:ac6c45889010c1bd68631771b64f18101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -115,10 +119,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga734b2c1319085da9f4eecbc586e5c8be"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Other__Math.html#ga734b2c1319085da9f4eecbc586e5c8be">rc_get_random_double</a> (void)</td></tr>
 <tr class="memdesc:ga734b2c1319085da9f4eecbc586e5c8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random double-precision floating point number between -1 and 1.  <a href="group__Other__Math.html#ga734b2c1319085da9f4eecbc586e5c8be">More...</a><br /></td></tr>
 <tr class="separator:ga734b2c1319085da9f4eecbc586e5c8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2977f271b49fb61945c338cb37d56731"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Other__Math.html#ga2977f271b49fb61945c338cb37d56731">rc_saturate_float</a> (float *val, float <a class="el" href="group__IMU__MPU.html#gac6afabdc09a49a433ee19d8a9486056d">min</a>, float max)</td></tr>
+<tr class="memitem:ga2977f271b49fb61945c338cb37d56731"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Other__Math.html#ga2977f271b49fb61945c338cb37d56731">rc_saturate_float</a> (float *val, float min, float max)</td></tr>
 <tr class="memdesc:ga2977f271b49fb61945c338cb37d56731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies val to be bounded between between min and max.  <a href="group__Other__Math.html#ga2977f271b49fb61945c338cb37d56731">More...</a><br /></td></tr>
 <tr class="separator:ga2977f271b49fb61945c338cb37d56731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0db783667dde7eb053dd7ac01bf6f9d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Other__Math.html#ga0db783667dde7eb053dd7ac01bf6f9d9">rc_saturate_double</a> (double *val, double <a class="el" href="group__IMU__MPU.html#gac6afabdc09a49a433ee19d8a9486056d">min</a>, double max)</td></tr>
+<tr class="memitem:ga0db783667dde7eb053dd7ac01bf6f9d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Other__Math.html#ga0db783667dde7eb053dd7ac01bf6f9d9">rc_saturate_double</a> (double *val, double min, double max)</td></tr>
 <tr class="memdesc:ga0db783667dde7eb053dd7ac01bf6f9d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies val to be bounded between between min and max.  <a href="group__Other__Math.html#ga0db783667dde7eb053dd7ac01bf6f9d9">More...</a><br /></td></tr>
 <tr class="separator:ga0db783667dde7eb053dd7ac01bf6f9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -126,26 +130,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>general low-level math functions that don't fit elsewhere </p>
 <dl class="section author"><dt>Author</dt><dd>James Strawson </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2016 </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ac6c45889010c1bd68631771b64f18101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6c45889010c1bd68631771b64f18101">&#9670;&nbsp;</a></span>unlikely</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define unlikely</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;__builtin_expect (!!(x), 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

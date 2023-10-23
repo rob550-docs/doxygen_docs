@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['cb_5ffn_4733',['cb_fn',['../structtopic__registry__val.html#a3737b6b7a3f205dece3f028af6b523d8',1,'topic_registry_val']]],
-  ['cell_4734',['cell',['../structNode.html#adeb5c6e97308046549e9bc909851c0dc',1,'Node::cell()'],['../structDistanceNode.html#afb6b6f36d7e6b4d9f1c8510969225edb',1,'DistanceNode::cell()']]],
-  ['cells_4735',['cells',['../structfrontier__t.html#a9a7fa2f51f67c0faf410d94fe1a2f8a3',1,'frontier_t']]],
-  ['cmd_5ffltr_4736',['cmd_fltr',['../mbot__current__control__test_8c.html#a30a4a5b100e1e9a7d8cfe731b4f0bdb5',1,'mbot_current_control_test.c']]],
-  ['coeffs_4737',['coeffs',['../mbot_8h.html#ac7c55670d0131e513e10d82f86bc4ebf',1,'mbot.h']]],
-  ['cols_4738',['cols',['../structrc__matrix__t.html#ade33d2888c78a3e4d88a1868b74e3b91',1,'rc_matrix_t']]],
-  ['command_4739',['command',['../namespacembot__test__drive__omni.html#a35d60592dd69064a7e4ce012594b923a',1,'mbot_test_drive_omni.command()'],['../namespacembot__test__drive.html#afb6a18d54c4c761766f20d9f69b9e5f2',1,'mbot_test_drive.command()']]],
-  ['compass_5fheading_4740',['compass_heading',['../group__IMU__MPU.html#gaaf1412ae24340161447a3c58d1597021',1,'rc_mpu_data_t']]],
-  ['compass_5fheading_5fraw_4741',['compass_heading_raw',['../group__IMU__MPU.html#ga88998d28f6ba624ff05bea4a771def50',1,'rc_mpu_data_t']]],
-  ['compass_5ftime_5fconstant_4742',['compass_time_constant',['../group__IMU__MPU.html#gae3605578ed3f00138324fd4a08e0aaef',1,'rc_mpu_config_t']]],
-  ['completion_5fstatus_4743',['completion_status',['../structsoft__pass__through__write__t.html#acd264bb1d22b56c3949014d6ca848d53',1,'soft_pass_through_write_t::completion_status()'],['../structsoft__pass__through__read__t.html#a3e5afd0e56df3655598adbb69a076e63',1,'soft_pass_through_read_t::completion_status()']]],
-  ['confidencelevel_4744',['confidencelevel',['../structbhy__data__pdr__t.html#a3e9f4a211bfdecfb89a1e8ac586351a6',1,'bhy_data_pdr_t']]],
-  ['ctrl_5fc_5fpressed_4745',['ctrl_c_pressed',['../motion__controller_8cpp.html#a67f70007bffa41404159792bf32bf927',1,'ctrl_c_pressed():&#160;motion_controller.cpp'],['../slam__main_8cpp.html#a67f70007bffa41404159792bf32bf927',1,'ctrl_c_pressed():&#160;slam_main.cpp']]],
-  ['current_5fctrlr_4746',['current_ctrlr',['../mbot__current__control__test_8c.html#ace66784d54407d7eadea77f326ad4f7b',1,'mbot_current_control_test.c']]],
-  ['current_5ffltr_4747',['current_fltr',['../mbot__current__control__test_8c.html#a273e0adb4cbb4fc77107ae00da1ab3ec',1,'mbot_current_control_test.c']]]
+  ['d_928',['d',['../structrc__ringbuf__t.html#a68e8a168bbc4ee5e6b5ab9071d574f73',1,'rc_ringbuf_t::d()'],['../structrc__vector__t.html#ab0da3a4a8dfcca86a969ff3e94e465d5',1,'rc_vector_t::d()'],['../structrc__matrix__t.html#a2ae401764568cf937ced8356c2524b4c',1,'rc_matrix_t::d()']]],
+  ['data_929',['data',['../structheart__rate__data__process__t.html#aad07ef576a95251444b6e8c971a794a2',1,'heart_rate_data_process_t']]],
+  ['data_5favailable_930',['data_available',['../structsensor__status__bank__t.html#a9b91a608cba13990d575f84b985fab5f',1,'sensor_status_bank_t']]],
+  ['data_5flost_931',['data_lost',['../structsensor__status__bank__t.html#a383e819205c8ac1ce9f108f79443f53e',1,'sensor_status_bank_t']]],
+  ['data_5fprocess_932',['data_process',['../structfifo__size__two__t.html#adf7976175be4cc0744d70d74e07b621b',1,'fifo_size_two_t']]],
+  ['delay_5fmsec_933',['delay_msec',['../structbhy__t.html#a336cbf2f531c973b2a473abb8622e3c1',1,'bhy_t']]],
+  ['den_934',['den',['../structrc__filter__t.html#aee09a10c5723cd3ac99b5062129edf26',1,'rc_filter_t']]],
+  ['device_5faddr_935',['device_addr',['../structbhy__t.html#aafcf13fc9e9d8f385bc08397175d4785',1,'bhy_t']]],
+  ['device_5fid_5ferror_936',['device_id_error',['../structsensor__status__bank__t.html#a62e50b5a8f8426676b4936b643f88846',1,'sensor_status_bank_t']]],
+  ['dmp_5fauto_5fcalibrate_5fgyro_937',['dmp_auto_calibrate_gyro',['../group__IMU__MPU.html#ga83339dc49cac33419a91898317755c70',1,'rc_mpu_config_t']]],
+  ['dmp_5ffetch_5faccel_5fgyro_938',['dmp_fetch_accel_gyro',['../group__IMU__MPU.html#ga5f8d3fea225bd21140fc67b63ebf9823',1,'rc_mpu_config_t']]],
+  ['dmp_5fquat_939',['dmp_quat',['../group__IMU__MPU.html#ga684aa83d3d857bf309a856a866d4931c',1,'rc_mpu_data_t']]],
+  ['dmp_5fsample_5frate_940',['dmp_sample_rate',['../group__IMU__MPU.html#ga7aebde028c477956d2be77fce7aace8d',1,'rc_mpu_config_t']]],
+  ['dmp_5ftaitbryan_941',['dmp_TaitBryan',['../group__IMU__MPU.html#ga3adfc7fa8eef89742b851c3f8ab1f65e',1,'rc_mpu_data_t']]],
+  ['dt_942',['dt',['../structrc__filter__t.html#a70a52f64c6123f5980e27a1fcc14faff',1,'rc_filter_t']]]
 ];

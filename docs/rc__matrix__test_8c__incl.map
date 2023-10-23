@@ -1,9 +1,0 @@
-<map id="mbot_firmware/tests/rc_matrix_test.c" name="mbot_firmware/tests/rc_matrix_test.c">
-<area shape="rect" id="node1" title=" " alt="" coords="259,5,416,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,72,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="96,95,197,121"/>
-<area shape="rect" id="node4" href="$matrix_8h.html" title=" " alt="" coords="221,95,352,121"/>
-<area shape="rect" id="node5" href="$vector_8h.html" title=" " alt="" coords="273,169,401,196"/>
-<area shape="rect" id="node6" title=" " alt="" coords="427,95,498,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="522,95,590,121"/>
-</map>

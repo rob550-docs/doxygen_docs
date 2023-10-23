@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -82,13 +85,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga57868cd0e7c34de812f7c394ef4c1429"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Ring__Buffer.html#ga57868cd0e7c34de812f7c394ef4c1429">RC_RINGBUF_INITIALIZER</a></td></tr>
+<tr class="memitem:ga57868cd0e7c34de812f7c394ef4c1429"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RC_RINGBUF_INITIALIZER</b></td></tr>
 <tr class="separator:ga57868cd0e7c34de812f7c394ef4c1429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaf61cd5a7161a167d96a7cc71b5c57ba4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrc__ringbuf__t.html">rc_ringbuf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Ring__Buffer.html#gaf61cd5a7161a167d96a7cc71b5c57ba4">rc_ringbuf_t</a></td></tr>
-<tr class="memdesc:gaf61cd5a7161a167d96a7cc71b5c57ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct containing state of a ringbuffer and pointer to dynamically allocated memory.  <a href="group__Ring__Buffer.html#gaf61cd5a7161a167d96a7cc71b5c57ba4">More...</a><br /></td></tr>
+<tr class="memitem:gaf61cd5a7161a167d96a7cc71b5c57ba4"><td class="memItemLeft" align="right" valign="top"><a id="gaf61cd5a7161a167d96a7cc71b5c57ba4"></a>
+typedef struct <a class="el" href="structrc__ringbuf__t.html">rc_ringbuf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Ring__Buffer.html#gaf61cd5a7161a167d96a7cc71b5c57ba4">rc_ringbuf_t</a></td></tr>
+<tr class="memdesc:gaf61cd5a7161a167d96a7cc71b5c57ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct containing state of a ringbuffer and pointer to dynamically allocated memory. <br /></td></tr>
 <tr class="separator:gaf61cd5a7161a167d96a7cc71b5c57ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -117,7 +121,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>ring buffer implementation for double-precision floats </p>
-<p>&lt;<a class="el" href="ring__buffer_8h.html">rc/math/ring_buffer.h</a>&gt;</p>
+<p>&lt;<a class="el" href="ring__buffer_8h_source.html">rc/math/ring_buffer.h</a>&gt;</p>
 <p>Ring buffers are FIFO (first in first out) buffers of fixed length which efficiently boot out the oldest value when full. They are particularly well suited for storing the last n values in a discrete time filter.</p>
 <p>The user creates their own instance of a buffer and passes a pointer to the these ring_buf functions to perform normal operations.</p>
 <dl class="section author"><dt>Author</dt><dd>James Strawson </dd></dl>
@@ -140,23 +144,6 @@ Functions</h2></td></tr>
 <div class="line">    .index = 0,\</div>
 <div class="line">    .initialized = 0}</div>
 </div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="gaf61cd5a7161a167d96a7cc71b5c57ba4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf61cd5a7161a167d96a7cc71b5c57ba4">&#9670;&nbsp;</a></span>rc_ringbuf_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structrc__ringbuf__t.html">rc_ringbuf_t</a> <a class="el" href="structrc__ringbuf__t.html">rc_ringbuf_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Struct containing state of a ringbuffer and pointer to dynamically allocated memory. </p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/mbot/include/mbot/utils/utils.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/mbot/include/mbot/utils/utils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,22 +72,17 @@ $(function() {
 <div class="title">utils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="utils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MBOT_UTILS_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MBOT_UTILS_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MBOT_UTILS_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mbot__params_8h.html">mbot/defs/mbot_params.h</a>&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;mbot/defs/mbot_params.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">int</span> <a class="code" href="utils_8h.html#ad2275369e7b5dfd843b1b35520c0df96">mbot_init_i2c</a>();</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">int</span> <a class="code" href="utils_8h.html#accce3112980bb7b8809c3a2aae6a1c66">_mbot_init_i2c</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pico_sda_pin, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pico_scl_pin);</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">int</span> <a class="code" href="utils_8h.html#af04796a3d2d6a9cf8bcbc350f908c43a">_check_i2c0_enabled</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">int</span> <a class="code" href="utils_8h.html#a8a49e54598ddd84bfba36910908a4351">validate_FRAM_data</a>(<a class="code" href="structmbot__params__t.html">mbot_params_t</a>* params);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">int</span> mbot_init_i2c();</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">int</span> _mbot_init_i2c(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pico_sda_pin, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pico_scl_pin);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">int</span> _check_i2c0_enabled();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">int</span> validate_FRAM_data(<a class="code" href="structmbot__params__t.html">mbot_params_t</a>* params);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="ambot__params_8h_html"><div class="ttname"><a href="mbot__params_8h.html">mbot_params.h</a></div></div>
-<div class="ttc" id="astructmbot__params__t_html"><div class="ttname"><a href="structmbot__params__t.html">mbot_params_t</a></div><div class="ttdef"><b>Definition:</b> mbot_params.h:44</div></div>
-<div class="ttc" id="autils_8h_html_a8a49e54598ddd84bfba36910908a4351"><div class="ttname"><a href="utils_8h.html#a8a49e54598ddd84bfba36910908a4351">validate_FRAM_data</a></div><div class="ttdeci">int validate_FRAM_data(mbot_params_t *params)</div><div class="ttdef"><b>Definition:</b> utils.c:33</div></div>
-<div class="ttc" id="autils_8h_html_accce3112980bb7b8809c3a2aae6a1c66"><div class="ttname"><a href="utils_8h.html#accce3112980bb7b8809c3a2aae6a1c66">_mbot_init_i2c</a></div><div class="ttdeci">int _mbot_init_i2c(unsigned int pico_sda_pin, unsigned int pico_scl_pin)</div><div class="ttdef"><b>Definition:</b> utils.c:14</div></div>
-<div class="ttc" id="autils_8h_html_ad2275369e7b5dfd843b1b35520c0df96"><div class="ttname"><a href="utils_8h.html#ad2275369e7b5dfd843b1b35520c0df96">mbot_init_i2c</a></div><div class="ttdeci">int mbot_init_i2c()</div><div class="ttdef"><b>Definition:</b> utils.c:10</div></div>
-<div class="ttc" id="autils_8h_html_af04796a3d2d6a9cf8bcbc350f908c43a"><div class="ttname"><a href="utils_8h.html#af04796a3d2d6a9cf8bcbc350f908c43a">_check_i2c0_enabled</a></div><div class="ttdeci">int _check_i2c0_enabled()</div><div class="ttdef"><b>Definition:</b> utils.c:27</div></div>
+<div class="ttc" id="astructmbot__params__t_html"><div class="ttname"><a href="structmbot__params__t.html">mbot_params_t</a></div><div class="ttdef"><b>Definition:</b> mbot_params.h:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

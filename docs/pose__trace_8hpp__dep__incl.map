@@ -1,8 +1,0 @@
-<map id="mbot_autonomy/include/utils/geometric/pose_trace.hpp" name="mbot_autonomy/include/utils/geometric/pose_trace.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="324,5,504,61"/>
-<area shape="rect" id="node2" href="$slam_8hpp.html" title=" " alt="" coords="115,109,295,151"/>
-<area shape="rect" id="node5" href="$motion__controller_8cpp.html" title=" " alt="" coords="319,109,509,151"/>
-<area shape="rect" id="node6" href="$pose__trace_8cpp.html" title=" " alt="" coords="534,109,729,151"/>
-<area shape="rect" id="node3" href="$slam_8cpp.html" title=" " alt="" coords="5,199,193,240"/>
-<area shape="rect" id="node4" href="$slam__main_8cpp.html" title=" " alt="" coords="217,199,405,240"/>
-</map>

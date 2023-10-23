@@ -1,29 +1,5 @@
 var searchData=
 [
-  ['u16_3517',['u16',['../bhy_8h.html#aa0b167025ed1eead1300bc4dbdfb230e',1,'bhy.h']]],
-  ['u32_3518',['u32',['../bhy_8h.html#a10e94b422ef0c20dcdec20d31a1f5049',1,'bhy.h']]],
-  ['u8_3519',['u8',['../bhy_8h.html#aed742c436da53c1080638ce6ef7d13de',1,'bhy.h']]],
-  ['uintpointer_3520',['uintpointer',['../unionuintpointer.html',1,'']]],
-  ['uncalib_5fbias_5ft_3521',['uncalib_bias_t',['../structuncalib__bias__t.html',1,'']]],
-  ['uncalib_5fx_3522',['uncalib_x',['../structuncalib__bias__t.html#aecd9f6652ce083279ebf69fc5b381fad',1,'uncalib_bias_t']]],
-  ['uncalib_5fy_3523',['uncalib_y',['../structuncalib__bias__t.html#ad7bc8318872a2246fade9ea895bda60a',1,'uncalib_bias_t']]],
-  ['uncalib_5fz_3524',['uncalib_z',['../structuncalib__bias__t.html#a77741a58a35cc129a6b64e31734e6468',1,'uncalib_bias_t']]],
-  ['uniqueslamptr_3525',['UniqueSlamPtr',['../slam__main_8cpp.html#ae443bfe9e24a70b1e08db39430596ef0',1,'slam_main.cpp']]],
-  ['unlikely_3526',['unlikely',['../algebra__common_8h.html#ac6c45889010c1bd68631771b64f18101',1,'unlikely():&#160;algebra_common.h'],['../other_8c.html#ac6c45889010c1bd68631771b64f18101',1,'unlikely():&#160;other.c'],['../group__IMU__MPU.html#gac6c45889010c1bd68631771b64f18101',1,'unlikely():&#160;mpu.h']]],
-  ['up_3527',['UP',['../pico__interrupt__test_8c.html#a1965eaca47dbf3f87acdafc2208f04eb',1,'pico_interrupt_test.c']]],
-  ['update_5fprop_5frot_3528',['UPDATE_PROP_ROT',['../dmp__firmware_8h.html#ac90829b4b9a77480e0582bb7551e182e',1,'dmp_firmware.h']]],
-  ['updateaction_3529',['updateAction',['../classActionModel.html#abf477d0847c0ce2e0085cf4fb5638ae5',1,'ActionModel']]],
-  ['updatecommand_3530',['updateCommand',['../classMotionController.html#a5187e06d3df4a4fca2b3b9f111ea2dfd',1,'MotionController']]],
-  ['updatefilter_3531',['updateFilter',['../classParticleFilter.html#aeaa858f9dbc2f07459614a556b2cb641',1,'ParticleFilter']]],
-  ['updatefilteractiononly_3532',['updateFilterActionOnly',['../classParticleFilter.html#a15ae3d4a8979c3acd6c4b52b06234e7b',1,'ParticleFilter']]],
-  ['updatemap_3533',['updateMap',['../classMapping.html#a16b34a6496d0da883d51698957e0bbc2',1,'Mapping']]],
-  ['usegui_3534',['useGui',['../astar__test_8cpp.html#a1c6cb2e53be7cd02785447821792f834',1,'astar_test.cpp']]],
-  ['user_5fctrl_3535',['USER_CTRL',['../mpu__defs_8h.html#abd9eebb35aad7616fe0414952e2d477d',1,'mpu_defs.h']]],
-  ['utils_2ec_3536',['utils.c',['../utils_8c.html',1,'']]],
-  ['utils_2eh_3537',['utils.h',['../utils_8h.html',1,'']]],
-  ['utime_5fget_5fseconds_3538',['utime_get_seconds',['../time__util_8h.html#ac70b7b7d782136d5de659c5e6c6ae46b',1,'time_util.h']]],
-  ['utime_5fget_5fuseconds_3539',['utime_get_useconds',['../time__util_8h.html#a03612175370ee1f360bf6db4432127af',1,'time_util.h']]],
-  ['utime_5fnow_3540',['utime_now',['../time__util_8h.html#aee01ddaf435b53b89bb0d2c19401503f',1,'utime_now():&#160;timestamp.c'],['../timestamp_8h.html#ad76277235cbb158210ace916ca7a788d',1,'utime_now(void):&#160;timestamp.c'],['../timestamp_8c.html#ad76277235cbb158210ace916ca7a788d',1,'utime_now(void):&#160;timestamp.c']]],
-  ['utime_5fto_5ftimespec_3541',['utime_to_timespec',['../time__util_8h.html#a4c1ebb2cfc5f67a88ead6745e902972d',1,'utime_to_timespec(int64_t v, struct timespec *ts):&#160;timestamp.c'],['../timestamp_8h.html#a4c1ebb2cfc5f67a88ead6745e902972d',1,'utime_to_timespec(int64_t v, struct timespec *ts):&#160;timestamp.c'],['../timestamp_8c.html#a4c1ebb2cfc5f67a88ead6745e902972d',1,'utime_to_timespec(int64_t v, struct timespec *ts):&#160;timestamp.c']]],
-  ['utime_5fto_5ftimeval_3542',['utime_to_timeval',['../time__util_8h.html#a090adb3cf50fffd50ffc8accc1d3acdf',1,'utime_to_timeval(int64_t v, struct timeval *tv):&#160;timestamp.c'],['../timestamp_8h.html#a090adb3cf50fffd50ffc8accc1d3acdf',1,'utime_to_timeval(int64_t v, struct timeval *tv):&#160;timestamp.c'],['../timestamp_8c.html#a090adb3cf50fffd50ffc8accc1d3acdf',1,'utime_to_timeval(int64_t v, struct timeval *tv):&#160;timestamp.c']]]
+  ['vector_572',['vector',['../structbsx__process__data__t.html#ad3542f5943bed689bcd2d8b48c074106',1,'bsx_process_data_t']]],
+  ['vector_573',['Vector',['../group__Vector.html',1,'']]]
 ];

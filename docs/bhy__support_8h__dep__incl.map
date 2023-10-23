@@ -1,14 +1,8 @@
-<map id="mbot_firmware/mbot/include/mbot/imu/bhy_support.h" name="mbot_firmware/mbot/include/mbot/imu/bhy_support.h">
-<area shape="rect" id="node1" title="driver on MCU for bhy" alt="" coords="681,5,849,61"/>
-<area shape="rect" id="node2" href="$bhy__uc__driver_8h.html" title="headfile of driver on MCU for bhy" alt="" coords="621,109,789,165"/>
-<area shape="rect" id="node3" href="$imu_8h.html" title=" " alt="" coords="410,213,591,255"/>
-<area shape="rect" id="node11" href="$mbot__bhy__test_8c.html" title=" " alt="" coords="818,213,975,255"/>
-<area shape="rect" id="node12" href="$bhy__support_8c.html" title="driver on MCU for bhy" alt="" coords="864,117,1033,158"/>
-<area shape="rect" id="node10" href="$bhy__uc__driver_8c.html" title="driver on MCU for bhy" alt="" coords="615,213,794,255"/>
-<area shape="rect" id="node4" href="$imu_8c.html" title=" " alt="" coords="5,303,164,344"/>
-<area shape="rect" id="node5" href="$mbot_8h.html" title=" " alt="" coords="189,310,383,337"/>
-<area shape="rect" id="node7" href="$mbot__calibrate__classic_8c.html" title=" " alt="" coords="407,303,594,344"/>
-<area shape="rect" id="node8" href="$mbot__calibrate__omni_8c.html" title=" " alt="" coords="619,303,793,344"/>
-<area shape="rect" id="node9" href="$mbot__imu__test_8c.html" title=" " alt="" coords="818,303,975,344"/>
-<area shape="rect" id="node6" href="$mbot_8c.html" title=" " alt="" coords="189,392,383,419"/>
+<map id="/home/xssun/Workspace/botlab_ws/mbot_firmware/mbot/include/mbot/imu/bhy_support.h" name="/home/xssun/Workspace/botlab_ws/mbot_firmware/mbot/include/mbot/imu/bhy_support.h">
+<area shape="rect" id="node1" title="driver on MCU for bhy" alt="" coords="153,5,359,76"/>
+<area shape="rect" id="node2" href="$bhy__uc__driver_8h.html" title="headfile of driver on MCU for bhy" alt="" coords="153,124,359,195"/>
+<area shape="rect" id="node3" href="$imu_8h_source.html" title=" " alt="" coords="5,243,224,299"/>
+<area shape="rect" id="node6" href="$bhy__support_8c.html" title="driver on MCU for bhy" alt="" coords="383,131,590,187"/>
+<area shape="rect" id="node5" href="$bhy__uc__driver_8c.html" title="driver on MCU for bhy" alt="" coords="249,243,466,299"/>
+<area shape="rect" id="node4" href="$mbot_8h_source.html" title=" " alt="" coords="17,347,212,403"/>
 </map>

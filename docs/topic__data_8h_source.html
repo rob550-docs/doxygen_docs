@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/comms/include/comms/topic_data.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/comms/include/comms/topic_data.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,13 +72,13 @@ $(function() {
 <div class="title">topic_data.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="topic__data_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;pico/stdlib.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;pico/mutex.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common_8h.html">comms/common.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="protocol_8h.html">comms/protocol.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;comms/common.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;comms/protocol.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;search.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;pico/binary_info.h&gt;</span></div>
@@ -83,45 +86,30 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef TOPIC_DATA_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define TOPIC_DATA_H</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="topic__data_8h.html#a713d8090bfcfb0029c34d796526f182b">   15</a></span>&#160;<span class="preprocessor">#define MAX_RADIX_DATA 16</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define MAX_RADIX_DATA 16</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structtopic__data__val.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtopic__data__val.html">topic_data_val</a>{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structtopic__data__val.html#a8bb965f40cce19b4f4bf2f5af1c1eac2">   18</a></span>&#160;    uint16_t <a class="code" href="structtopic__data__val.html#a8bb965f40cce19b4f4bf2f5af1c1eac2">topic_id</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structtopic__data__val.html#a5618bf5a5d94445507f3d75cd2fa42f1">   19</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="structtopic__data__val.html#a5618bf5a5d94445507f3d75cd2fa42f1">topic_data</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structtopic__data__val.html#ab459d2b2d00d70bd54a9a3a759254f7c">   20</a></span>&#160;    uint16_t <a class="code" href="structtopic__data__val.html#ab459d2b2d00d70bd54a9a3a759254f7c">topic_len</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structtopic__data__val.html#ab322ebcf537125a60265d6e54df96602">   21</a></span>&#160;    mutex_t <a class="code" href="structtopic__data__val.html#ab322ebcf537125a60265d6e54df96602">topic_mutex</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="topic__data_8h.html#ad1bfb11f9c93e1ac87553a90304c4d2e">   22</a></span>&#160;}<a class="code" href="topic__data_8h.html#ad1bfb11f9c93e1ac87553a90304c4d2e">topic_data_val_t</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    uint16_t topic_id;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span>* topic_data;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    uint16_t topic_len;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    mutex_t topic_mutex;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}<a class="code" href="structtopic__data__val.html">topic_data_val_t</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structtopic__data__entry.html">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtopic__data__entry.html">topic_data_entry</a>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structtopic__data__entry.html#a0500a60e49d14ed106cb8824d981218b">   25</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structtopic__data__entry.html">topic_data_entry</a>* <a class="code" href="structtopic__data__entry.html#a0500a60e49d14ed106cb8824d981218b">left</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structtopic__data__entry.html#ae03281e08aa9b2cf93d98bdfcd9923ef">   26</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structtopic__data__entry.html">topic_data_entry</a>* <a class="code" href="structtopic__data__entry.html#ae03281e08aa9b2cf93d98bdfcd9923ef">right</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structtopic__data__entry.html#a72d45852733304f35c8f832974f04f5c">   27</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structtopic__data__val.html">topic_data_val</a>* <a class="code" href="structtopic__data__entry.html#a72d45852733304f35c8f832974f04f5c">value</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="topic__data_8h.html#a34df1a80598e06ca24065dc711de67be">   28</a></span>&#160;}<a class="code" href="topic__data_8h.html#a34df1a80598e06ca24065dc711de67be">topic_data_entry_t</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtopic__data__entry.html">topic_data_entry</a>* left;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtopic__data__entry.html">topic_data_entry</a>* right;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtopic__data__val.html">topic_data_val</a>* value;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}<a class="code" href="structtopic__data__entry.html">topic_data_entry_t</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">extern</span> <a class="code" href="structtopic__data__entry.html">topic_data_entry_t</a>* <a class="code" href="topic__data_8h.html#a4a4d879105c01a57d0c2e46c4d57a131">topic_data_root_node</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">extern</span> <a class="code" href="structtopic__data__entry.html">topic_data_entry_t</a>* topic_data_root_node;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> <a class="code" href="topic__data_8h.html#a776acbf0e5dd5c6ac7a1458d7fc541a6">comms_init_topic_data</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="topic__data_8h.html#af1f1b29927473423dc02943dfbccfe0a">comms_get_topic_data</a>(uint16_t <a class="code" href="structtopic__data__val.html#a8bb965f40cce19b4f4bf2f5af1c1eac2">topic_id</a>, <span class="keywordtype">void</span>* msg_struct);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="topic__data_8h.html#a76006e24ffec92558e9945e1719a3a56">comms_set_topic_data</a>(uint16_t <a class="code" href="structtopic__data__val.html#a8bb965f40cce19b4f4bf2f5af1c1eac2">topic_id</a>, <span class="keywordtype">void</span>* msg_struct, uint16_t message_len);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> comms_init_topic_data(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> comms_get_topic_data(uint16_t topic_id, <span class="keywordtype">void</span>* msg_struct);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> comms_set_topic_data(uint16_t topic_id, <span class="keywordtype">void</span>* msg_struct, uint16_t message_len);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
-<div class="ttc" id="aprotocol_8h_html"><div class="ttname"><a href="protocol_8h.html">protocol.h</a></div></div>
 <div class="ttc" id="astructtopic__data__entry_html"><div class="ttname"><a href="structtopic__data__entry.html">topic_data_entry</a></div><div class="ttdef"><b>Definition:</b> topic_data.h:24</div></div>
-<div class="ttc" id="astructtopic__data__entry_html_a0500a60e49d14ed106cb8824d981218b"><div class="ttname"><a href="structtopic__data__entry.html#a0500a60e49d14ed106cb8824d981218b">topic_data_entry::left</a></div><div class="ttdeci">struct topic_data_entry * left</div><div class="ttdef"><b>Definition:</b> topic_data.h:25</div></div>
-<div class="ttc" id="astructtopic__data__entry_html_a72d45852733304f35c8f832974f04f5c"><div class="ttname"><a href="structtopic__data__entry.html#a72d45852733304f35c8f832974f04f5c">topic_data_entry::value</a></div><div class="ttdeci">struct topic_data_val * value</div><div class="ttdef"><b>Definition:</b> topic_data.h:27</div></div>
-<div class="ttc" id="astructtopic__data__entry_html_ae03281e08aa9b2cf93d98bdfcd9923ef"><div class="ttname"><a href="structtopic__data__entry.html#ae03281e08aa9b2cf93d98bdfcd9923ef">topic_data_entry::right</a></div><div class="ttdeci">struct topic_data_entry * right</div><div class="ttdef"><b>Definition:</b> topic_data.h:26</div></div>
 <div class="ttc" id="astructtopic__data__val_html"><div class="ttname"><a href="structtopic__data__val.html">topic_data_val</a></div><div class="ttdef"><b>Definition:</b> topic_data.h:17</div></div>
-<div class="ttc" id="astructtopic__data__val_html_a5618bf5a5d94445507f3d75cd2fa42f1"><div class="ttname"><a href="structtopic__data__val.html#a5618bf5a5d94445507f3d75cd2fa42f1">topic_data_val::topic_data</a></div><div class="ttdeci">void * topic_data</div><div class="ttdef"><b>Definition:</b> topic_data.h:19</div></div>
-<div class="ttc" id="astructtopic__data__val_html_a8bb965f40cce19b4f4bf2f5af1c1eac2"><div class="ttname"><a href="structtopic__data__val.html#a8bb965f40cce19b4f4bf2f5af1c1eac2">topic_data_val::topic_id</a></div><div class="ttdeci">uint16_t topic_id</div><div class="ttdef"><b>Definition:</b> topic_data.h:18</div></div>
-<div class="ttc" id="astructtopic__data__val_html_ab322ebcf537125a60265d6e54df96602"><div class="ttname"><a href="structtopic__data__val.html#ab322ebcf537125a60265d6e54df96602">topic_data_val::topic_mutex</a></div><div class="ttdeci">mutex_t topic_mutex</div><div class="ttdef"><b>Definition:</b> topic_data.h:21</div></div>
-<div class="ttc" id="astructtopic__data__val_html_ab459d2b2d00d70bd54a9a3a759254f7c"><div class="ttname"><a href="structtopic__data__val.html#ab459d2b2d00d70bd54a9a3a759254f7c">topic_data_val::topic_len</a></div><div class="ttdeci">uint16_t topic_len</div><div class="ttdef"><b>Definition:</b> topic_data.h:20</div></div>
-<div class="ttc" id="atopic__data_8h_html_a34df1a80598e06ca24065dc711de67be"><div class="ttname"><a href="topic__data_8h.html#a34df1a80598e06ca24065dc711de67be">topic_data_entry_t</a></div><div class="ttdeci">struct topic_data_entry topic_data_entry_t</div></div>
-<div class="ttc" id="atopic__data_8h_html_a4a4d879105c01a57d0c2e46c4d57a131"><div class="ttname"><a href="topic__data_8h.html#a4a4d879105c01a57d0c2e46c4d57a131">topic_data_root_node</a></div><div class="ttdeci">topic_data_entry_t * topic_data_root_node</div><div class="ttdef"><b>Definition:</b> topic_data.c:3</div></div>
-<div class="ttc" id="atopic__data_8h_html_a76006e24ffec92558e9945e1719a3a56"><div class="ttname"><a href="topic__data_8h.html#a76006e24ffec92558e9945e1719a3a56">comms_set_topic_data</a></div><div class="ttdeci">void comms_set_topic_data(uint16_t topic_id, void *msg_struct, uint16_t message_len)</div><div class="ttdef"><b>Definition:</b> topic_data.c:52</div></div>
-<div class="ttc" id="atopic__data_8h_html_a776acbf0e5dd5c6ac7a1458d7fc541a6"><div class="ttname"><a href="topic__data_8h.html#a776acbf0e5dd5c6ac7a1458d7fc541a6">comms_init_topic_data</a></div><div class="ttdeci">int comms_init_topic_data(void)</div><div class="ttdef"><b>Definition:</b> topic_data.c:5</div></div>
-<div class="ttc" id="atopic__data_8h_html_ad1bfb11f9c93e1ac87553a90304c4d2e"><div class="ttname"><a href="topic__data_8h.html#ad1bfb11f9c93e1ac87553a90304c4d2e">topic_data_val_t</a></div><div class="ttdeci">struct topic_data_val topic_data_val_t</div></div>
-<div class="ttc" id="atopic__data_8h_html_af1f1b29927473423dc02943dfbccfe0a"><div class="ttname"><a href="topic__data_8h.html#af1f1b29927473423dc02943dfbccfe0a">comms_get_topic_data</a></div><div class="ttdeci">int comms_get_topic_data(uint16_t topic_id, void *msg_struct)</div><div class="ttdef"><b>Definition:</b> topic_data.c:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

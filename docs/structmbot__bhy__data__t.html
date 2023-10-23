@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -67,322 +70,79 @@ $(function() {
 <div class="title">mbot_bhy_data_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="imu_8h_source.html">imu.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">base sensor readings in real units</div></td></tr>
-<tr class="memitem:a1a16ce6857c18053fdbd9a2a4d425f07"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a1a16ce6857c18053fdbd9a2a4d425f07">accel</a> [3]</td></tr>
-<tr class="memdesc:a1a16ce6857c18053fdbd9a2a4d425f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">accelerometer (XYZ) in units of m/s^2  <a href="structmbot__bhy__data__t.html#a1a16ce6857c18053fdbd9a2a4d425f07">More...</a><br /></td></tr>
+<tr class="memitem:a1a16ce6857c18053fdbd9a2a4d425f07"><td class="memItemLeft" align="right" valign="top"><a id="a1a16ce6857c18053fdbd9a2a4d425f07"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a1a16ce6857c18053fdbd9a2a4d425f07">accel</a> [3]</td></tr>
+<tr class="memdesc:a1a16ce6857c18053fdbd9a2a4d425f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">accelerometer (XYZ) in units of m/s^2 <br /></td></tr>
 <tr class="separator:a1a16ce6857c18053fdbd9a2a4d425f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a276a6c3605eeb8903d156aad968d891d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a276a6c3605eeb8903d156aad968d891d">gyro</a> [3]</td></tr>
-<tr class="memdesc:a276a6c3605eeb8903d156aad968d891d"><td class="mdescLeft">&#160;</td><td class="mdescRight">gyroscope (XYZ) in units of rad/s  <a href="structmbot__bhy__data__t.html#a276a6c3605eeb8903d156aad968d891d">More...</a><br /></td></tr>
+<tr class="memitem:a276a6c3605eeb8903d156aad968d891d"><td class="memItemLeft" align="right" valign="top"><a id="a276a6c3605eeb8903d156aad968d891d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a276a6c3605eeb8903d156aad968d891d">gyro</a> [3]</td></tr>
+<tr class="memdesc:a276a6c3605eeb8903d156aad968d891d"><td class="mdescLeft">&#160;</td><td class="mdescRight">gyroscope (XYZ) in units of rad/s <br /></td></tr>
 <tr class="separator:a276a6c3605eeb8903d156aad968d891d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9657a5e446fcc530aeccbbfac5136e69"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a9657a5e446fcc530aeccbbfac5136e69">mag</a> [3]</td></tr>
-<tr class="memdesc:a9657a5e446fcc530aeccbbfac5136e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">magnetometer (XYZ) in units of uT  <a href="structmbot__bhy__data__t.html#a9657a5e446fcc530aeccbbfac5136e69">More...</a><br /></td></tr>
+<tr class="memitem:a9657a5e446fcc530aeccbbfac5136e69"><td class="memItemLeft" align="right" valign="top"><a id="a9657a5e446fcc530aeccbbfac5136e69"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a9657a5e446fcc530aeccbbfac5136e69">mag</a> [3]</td></tr>
+<tr class="memdesc:a9657a5e446fcc530aeccbbfac5136e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">magnetometer (XYZ) in units of uT <br /></td></tr>
 <tr class="separator:a9657a5e446fcc530aeccbbfac5136e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a791286dac70afc05b7b2886a6f7a4d9c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a791286dac70afc05b7b2886a6f7a4d9c">quat</a> [4]</td></tr>
-<tr class="memdesc:a791286dac70afc05b7b2886a6f7a4d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">normalized quaternion from Fuser Core  <a href="structmbot__bhy__data__t.html#a791286dac70afc05b7b2886a6f7a4d9c">More...</a><br /></td></tr>
+<tr class="memitem:a791286dac70afc05b7b2886a6f7a4d9c"><td class="memItemLeft" align="right" valign="top"><a id="a791286dac70afc05b7b2886a6f7a4d9c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a791286dac70afc05b7b2886a6f7a4d9c">quat</a> [4]</td></tr>
+<tr class="memdesc:a791286dac70afc05b7b2886a6f7a4d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">normalized quaternion from Fuser Core <br /></td></tr>
 <tr class="separator:a791286dac70afc05b7b2886a6f7a4d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc496c27770443fc4ad8c933cda63e2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#accc496c27770443fc4ad8c933cda63e2">rpy</a> [3]</td></tr>
-<tr class="memdesc:accc496c27770443fc4ad8c933cda63e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll(x) pitch(Y) yaw(Z) in radians from Fuser Core.  <a href="structmbot__bhy__data__t.html#accc496c27770443fc4ad8c933cda63e2">More...</a><br /></td></tr>
+<tr class="memitem:accc496c27770443fc4ad8c933cda63e2"><td class="memItemLeft" align="right" valign="top"><a id="accc496c27770443fc4ad8c933cda63e2"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#accc496c27770443fc4ad8c933cda63e2">rpy</a> [3]</td></tr>
+<tr class="memdesc:accc496c27770443fc4ad8c933cda63e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll(x) pitch(Y) yaw(Z) in radians from Fuser Core. <br /></td></tr>
 <tr class="separator:accc496c27770443fc4ad8c933cda63e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62d65a531514c748004bd293dc9595fd"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a62d65a531514c748004bd293dc9595fd">quat_qlty</a></td></tr>
-<tr class="memdesc:a62d65a531514c748004bd293dc9595fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">quality estimate from Fuser Core  <a href="structmbot__bhy__data__t.html#a62d65a531514c748004bd293dc9595fd">More...</a><br /></td></tr>
+<tr class="memitem:a62d65a531514c748004bd293dc9595fd"><td class="memItemLeft" align="right" valign="top"><a id="a62d65a531514c748004bd293dc9595fd"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a62d65a531514c748004bd293dc9595fd">quat_qlty</a></td></tr>
+<tr class="memdesc:a62d65a531514c748004bd293dc9595fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">quality estimate from Fuser Core <br /></td></tr>
 <tr class="separator:a62d65a531514c748004bd293dc9595fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">16 bit raw readings and conversion rates</div></td></tr>
-<tr class="memitem:aa7e38d485ccd989ad3b4a5c3117097c7"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#aa7e38d485ccd989ad3b4a5c3117097c7">raw_accel</a> [3]</td></tr>
-<tr class="memdesc:aa7e38d485ccd989ad3b4a5c3117097c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw accelerometer (XYZ) from 16-bit ADC  <a href="structmbot__bhy__data__t.html#aa7e38d485ccd989ad3b4a5c3117097c7">More...</a><br /></td></tr>
+<tr class="memitem:aa7e38d485ccd989ad3b4a5c3117097c7"><td class="memItemLeft" align="right" valign="top"><a id="aa7e38d485ccd989ad3b4a5c3117097c7"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#aa7e38d485ccd989ad3b4a5c3117097c7">raw_accel</a> [3]</td></tr>
+<tr class="memdesc:aa7e38d485ccd989ad3b4a5c3117097c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw accelerometer (XYZ) from 16-bit ADC <br /></td></tr>
 <tr class="separator:aa7e38d485ccd989ad3b4a5c3117097c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af099376c135a75bc8d275525bfc01dfd"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#af099376c135a75bc8d275525bfc01dfd">raw_gyro</a> [3]</td></tr>
-<tr class="memdesc:af099376c135a75bc8d275525bfc01dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw gyroscope (XYZ)from 16-bit ADC  <a href="structmbot__bhy__data__t.html#af099376c135a75bc8d275525bfc01dfd">More...</a><br /></td></tr>
+<tr class="memitem:af099376c135a75bc8d275525bfc01dfd"><td class="memItemLeft" align="right" valign="top"><a id="af099376c135a75bc8d275525bfc01dfd"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#af099376c135a75bc8d275525bfc01dfd">raw_gyro</a> [3]</td></tr>
+<tr class="memdesc:af099376c135a75bc8d275525bfc01dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw gyroscope (XYZ)from 16-bit ADC <br /></td></tr>
 <tr class="separator:af099376c135a75bc8d275525bfc01dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a902a28ae20f7fc08e6ca04d17f12df37"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a902a28ae20f7fc08e6ca04d17f12df37">raw_mag</a> [3]</td></tr>
-<tr class="memdesc:a902a28ae20f7fc08e6ca04d17f12df37"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw magnetometer (XYZ)from 16-bit ADC  <a href="structmbot__bhy__data__t.html#a902a28ae20f7fc08e6ca04d17f12df37">More...</a><br /></td></tr>
+<tr class="memitem:a902a28ae20f7fc08e6ca04d17f12df37"><td class="memItemLeft" align="right" valign="top"><a id="a902a28ae20f7fc08e6ca04d17f12df37"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a902a28ae20f7fc08e6ca04d17f12df37">raw_mag</a> [3]</td></tr>
+<tr class="memdesc:a902a28ae20f7fc08e6ca04d17f12df37"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw magnetometer (XYZ)from 16-bit ADC <br /></td></tr>
 <tr class="separator:a902a28ae20f7fc08e6ca04d17f12df37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a42e93a23e9754df32b80798d8de6df"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a6a42e93a23e9754df32b80798d8de6df">raw_quat</a> [4]</td></tr>
-<tr class="memdesc:a6a42e93a23e9754df32b80798d8de6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw quaternion (WXYZ) from 16-bit ADC  <a href="structmbot__bhy__data__t.html#a6a42e93a23e9754df32b80798d8de6df">More...</a><br /></td></tr>
+<tr class="memitem:a6a42e93a23e9754df32b80798d8de6df"><td class="memItemLeft" align="right" valign="top"><a id="a6a42e93a23e9754df32b80798d8de6df"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a6a42e93a23e9754df32b80798d8de6df">raw_quat</a> [4]</td></tr>
+<tr class="memdesc:a6a42e93a23e9754df32b80798d8de6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw quaternion (WXYZ) from 16-bit ADC <br /></td></tr>
 <tr class="separator:a6a42e93a23e9754df32b80798d8de6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adab0497a9eddcc9f20bb007466c9602c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#adab0497a9eddcc9f20bb007466c9602c">raw_rpy</a> [3]</td></tr>
-<tr class="memdesc:adab0497a9eddcc9f20bb007466c9602c"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw RPY vector (XYZ) Converted to -2^15 TO 2^15  <a href="structmbot__bhy__data__t.html#adab0497a9eddcc9f20bb007466c9602c">More...</a><br /></td></tr>
+<tr class="memitem:adab0497a9eddcc9f20bb007466c9602c"><td class="memItemLeft" align="right" valign="top"><a id="adab0497a9eddcc9f20bb007466c9602c"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#adab0497a9eddcc9f20bb007466c9602c">raw_rpy</a> [3]</td></tr>
+<tr class="memdesc:adab0497a9eddcc9f20bb007466c9602c"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw RPY vector (XYZ) Converted to -2^15 TO 2^15 <br /></td></tr>
 <tr class="separator:adab0497a9eddcc9f20bb007466c9602c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a240ea503f1fd9c10294d1b0be452a589"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a240ea503f1fd9c10294d1b0be452a589">accel_to_ms2</a></td></tr>
-<tr class="memdesc:a240ea503f1fd9c10294d1b0be452a589"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw accelerometer to m/s^2  <a href="structmbot__bhy__data__t.html#a240ea503f1fd9c10294d1b0be452a589">More...</a><br /></td></tr>
+<tr class="memitem:a240ea503f1fd9c10294d1b0be452a589"><td class="memItemLeft" align="right" valign="top"><a id="a240ea503f1fd9c10294d1b0be452a589"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a240ea503f1fd9c10294d1b0be452a589">accel_to_ms2</a></td></tr>
+<tr class="memdesc:a240ea503f1fd9c10294d1b0be452a589"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw accelerometer to m/s^2 <br /></td></tr>
 <tr class="separator:a240ea503f1fd9c10294d1b0be452a589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1b99426e9faf679a40ba67be9b3bf67"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#aa1b99426e9faf679a40ba67be9b3bf67">gyro_to_rads</a></td></tr>
-<tr class="memdesc:aa1b99426e9faf679a40ba67be9b3bf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw gyroscope to rad/s  <a href="structmbot__bhy__data__t.html#aa1b99426e9faf679a40ba67be9b3bf67">More...</a><br /></td></tr>
+<tr class="memitem:aa1b99426e9faf679a40ba67be9b3bf67"><td class="memItemLeft" align="right" valign="top"><a id="aa1b99426e9faf679a40ba67be9b3bf67"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#aa1b99426e9faf679a40ba67be9b3bf67">gyro_to_rads</a></td></tr>
+<tr class="memdesc:aa1b99426e9faf679a40ba67be9b3bf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw gyroscope to rad/s <br /></td></tr>
 <tr class="separator:aa1b99426e9faf679a40ba67be9b3bf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8876f65fb3744653367a4fb33924df"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a0f8876f65fb3744653367a4fb33924df">mag_to_uT</a></td></tr>
-<tr class="memdesc:a0f8876f65fb3744653367a4fb33924df"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw gyroscope to uT  <a href="structmbot__bhy__data__t.html#a0f8876f65fb3744653367a4fb33924df">More...</a><br /></td></tr>
+<tr class="memitem:a0f8876f65fb3744653367a4fb33924df"><td class="memItemLeft" align="right" valign="top"><a id="a0f8876f65fb3744653367a4fb33924df"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a0f8876f65fb3744653367a4fb33924df">mag_to_uT</a></td></tr>
+<tr class="memdesc:a0f8876f65fb3744653367a4fb33924df"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw gyroscope to uT <br /></td></tr>
 <tr class="separator:a0f8876f65fb3744653367a4fb33924df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7a412fe155626cd053cd46168a2a0e9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#ad7a412fe155626cd053cd46168a2a0e9">quat_to_norm</a></td></tr>
-<tr class="memdesc:ad7a412fe155626cd053cd46168a2a0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw quaternion  <a href="structmbot__bhy__data__t.html#ad7a412fe155626cd053cd46168a2a0e9">More...</a><br /></td></tr>
+<tr class="memitem:ad7a412fe155626cd053cd46168a2a0e9"><td class="memItemLeft" align="right" valign="top"><a id="ad7a412fe155626cd053cd46168a2a0e9"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#ad7a412fe155626cd053cd46168a2a0e9">quat_to_norm</a></td></tr>
+<tr class="memdesc:ad7a412fe155626cd053cd46168a2a0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw quaternion <br /></td></tr>
 <tr class="separator:ad7a412fe155626cd053cd46168a2a0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22c065b647633643bb19b8568ff07893"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a22c065b647633643bb19b8568ff07893">rpy_to_rad</a></td></tr>
-<tr class="memdesc:a22c065b647633643bb19b8568ff07893"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw RPY vector to radians  <a href="structmbot__bhy__data__t.html#a22c065b647633643bb19b8568ff07893">More...</a><br /></td></tr>
+<tr class="memitem:a22c065b647633643bb19b8568ff07893"><td class="memItemLeft" align="right" valign="top"><a id="a22c065b647633643bb19b8568ff07893"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbot__bhy__data__t.html#a22c065b647633643bb19b8568ff07893">rpy_to_rad</a></td></tr>
+<tr class="memdesc:a22c065b647633643bb19b8568ff07893"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion rate from raw RPY vector to radians <br /></td></tr>
 <tr class="separator:a22c065b647633643bb19b8568ff07893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1a16ce6857c18053fdbd9a2a4d425f07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a16ce6857c18053fdbd9a2a4d425f07">&#9670;&nbsp;</a></span>accel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::accel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>accelerometer (XYZ) in units of m/s^2 </p>
-
-</div>
-</div>
-<a id="a240ea503f1fd9c10294d1b0be452a589"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a240ea503f1fd9c10294d1b0be452a589">&#9670;&nbsp;</a></span>accel_to_ms2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::accel_to_ms2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>conversion rate from raw accelerometer to m/s^2 </p>
-
-</div>
-</div>
-<a id="a276a6c3605eeb8903d156aad968d891d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a276a6c3605eeb8903d156aad968d891d">&#9670;&nbsp;</a></span>gyro</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::gyro</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>gyroscope (XYZ) in units of rad/s </p>
-
-</div>
-</div>
-<a id="aa1b99426e9faf679a40ba67be9b3bf67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1b99426e9faf679a40ba67be9b3bf67">&#9670;&nbsp;</a></span>gyro_to_rads</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::gyro_to_rads</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>conversion rate from raw gyroscope to rad/s </p>
-
-</div>
-</div>
-<a id="a9657a5e446fcc530aeccbbfac5136e69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9657a5e446fcc530aeccbbfac5136e69">&#9670;&nbsp;</a></span>mag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::mag</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>magnetometer (XYZ) in units of uT </p>
-
-</div>
-</div>
-<a id="a0f8876f65fb3744653367a4fb33924df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f8876f65fb3744653367a4fb33924df">&#9670;&nbsp;</a></span>mag_to_uT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::mag_to_uT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>conversion rate from raw gyroscope to uT </p>
-
-</div>
-</div>
-<a id="a791286dac70afc05b7b2886a6f7a4d9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a791286dac70afc05b7b2886a6f7a4d9c">&#9670;&nbsp;</a></span>quat</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::quat</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>normalized quaternion from Fuser Core </p>
-
-</div>
-</div>
-<a id="a62d65a531514c748004bd293dc9595fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62d65a531514c748004bd293dc9595fd">&#9670;&nbsp;</a></span>quat_qlty</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t mbot_bhy_data_t::quat_qlty</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>quality estimate from Fuser Core </p>
-
-</div>
-</div>
-<a id="ad7a412fe155626cd053cd46168a2a0e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7a412fe155626cd053cd46168a2a0e9">&#9670;&nbsp;</a></span>quat_to_norm</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::quat_to_norm</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>conversion rate from raw quaternion </p>
-
-</div>
-</div>
-<a id="aa7e38d485ccd989ad3b4a5c3117097c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7e38d485ccd989ad3b4a5c3117097c7">&#9670;&nbsp;</a></span>raw_accel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t mbot_bhy_data_t::raw_accel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>raw accelerometer (XYZ) from 16-bit ADC </p>
-
-</div>
-</div>
-<a id="af099376c135a75bc8d275525bfc01dfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af099376c135a75bc8d275525bfc01dfd">&#9670;&nbsp;</a></span>raw_gyro</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t mbot_bhy_data_t::raw_gyro</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>raw gyroscope (XYZ)from 16-bit ADC </p>
-
-</div>
-</div>
-<a id="a902a28ae20f7fc08e6ca04d17f12df37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a902a28ae20f7fc08e6ca04d17f12df37">&#9670;&nbsp;</a></span>raw_mag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t mbot_bhy_data_t::raw_mag</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>raw magnetometer (XYZ)from 16-bit ADC </p>
-
-</div>
-</div>
-<a id="a6a42e93a23e9754df32b80798d8de6df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a42e93a23e9754df32b80798d8de6df">&#9670;&nbsp;</a></span>raw_quat</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t mbot_bhy_data_t::raw_quat</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>raw quaternion (WXYZ) from 16-bit ADC </p>
-
-</div>
-</div>
-<a id="adab0497a9eddcc9f20bb007466c9602c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adab0497a9eddcc9f20bb007466c9602c">&#9670;&nbsp;</a></span>raw_rpy</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t mbot_bhy_data_t::raw_rpy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>raw RPY vector (XYZ) Converted to -2^15 TO 2^15 </p>
-
-</div>
-</div>
-<a id="accc496c27770443fc4ad8c933cda63e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc496c27770443fc4ad8c933cda63e2">&#9670;&nbsp;</a></span>rpy</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::rpy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Roll(x) pitch(Y) yaw(Z) in radians from Fuser Core. </p>
-
-</div>
-</div>
-<a id="a22c065b647633643bb19b8568ff07893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22c065b647633643bb19b8568ff07893">&#9670;&nbsp;</a></span>rpy_to_rad</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mbot_bhy_data_t::rpy_to_rad</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>conversion rate from raw RPY vector to radians </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>mbot_firmware/mbot/include/mbot/imu/<a class="el" href="imu_8h_source.html">imu.h</a></li>
-<li>mbot_firmware/tests/<a class="el" href="mbot__bhy__test_8c.html">mbot_bhy_test.c</a></li>
+<li>/home/xssun/Workspace/botlab_ws/mbot_firmware/mbot/include/mbot/imu/<a class="el" href="imu_8h_source.html">imu.h</a></li>
+<li>/home/xssun/Workspace/botlab_ws/mbot_firmware/tests/mbot_bhy_test.c</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

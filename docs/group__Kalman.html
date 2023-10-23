@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -81,12 +84,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga0da30f3b8e8ab0e1b5107153a7587b93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Kalman.html#ga0da30f3b8e8ab0e1b5107153a7587b93">RC_KALMAN_INITIALIZER</a></td></tr>
+<tr class="memitem:ga0da30f3b8e8ab0e1b5107153a7587b93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RC_KALMAN_INITIALIZER</b></td></tr>
 <tr class="separator:ga0da30f3b8e8ab0e1b5107153a7587b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga017973a86246a2d4010769032eb4c487"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrc__kalman__t.html">rc_kalman_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Kalman.html#ga017973a86246a2d4010769032eb4c487">rc_kalman_t</a></td></tr>
+<tr class="memitem:ga017973a86246a2d4010769032eb4c487"><td class="memItemLeft" align="right" valign="top"><a id="ga017973a86246a2d4010769032eb4c487"></a>
+typedef struct <a class="el" href="structrc__kalman__t.html">rc_kalman_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rc_kalman_t</b></td></tr>
 <tr class="separator:ga017973a86246a2d4010769032eb4c487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -115,13 +119,13 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Kalman filter implementation. </p>
-<p>&lt;<a class="el" href="kalman_8h.html">rc/math/kalman.h</a>&gt;</p>
+<p>&lt;<a class="el" href="kalman_8h_source.html">rc/math/kalman.h</a>&gt;</p>
 <p>This may be used to implement a discrete time linear or extended kalman filter.</p>
 <p>For the linear case, initialize the filter with <a class="el" href="group__Kalman.html#gaef5414ac19de6879ebc973080ef9937e" title="Allocates memory for a Kalman filter of given dimensions.">rc_kalman_alloc_lin()</a> which takes in the linear state matrices. These are then saved and used by rc_kalman_update_lin to calculate the predicted state x_pre and predicted sensor measurements h internally each step.</p>
 <p>Basic loop structure for Linear case:</p>
 <div class="fragment"><div class="line"><a class="code" href="structrc__kalman__t.html">rc_kalman_t</a> kf = <a class="code" href="group__Kalman.html#ga80ea8020dd1c094fd8c68d1e113635e2">rc_kalman_empty</a>();</div>
 <div class="line"><a class="code" href="group__Kalman.html#gaef5414ac19de6879ebc973080ef9937e">rc_kalman_alloc_lin</a>(&amp;kf,F,G,H,Q,R,Pi);</div>
-<div class="line"><span class="keywordflow">while</span>(<a class="code" href="namespacembot__test__drive.html#ae0960295307fcb603f447fd8db0a53cb">running</a>){</div>
+<div class="line"><span class="keywordflow">while</span>(running){</div>
 <div class="line">     measure sensors, calculate y;</div>
 <div class="line">     <a class="code" href="group__Kalman.html#gaf96115115c3ce643cc4bbd4e86af423d">rc_kalman_update_lin</a>(&amp;kf, u, y);</div>
 <div class="line">     calculate <span class="keyword">new</span> actuator control output u;</div>
@@ -133,13 +137,12 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup__Kalman_html_gab6cb032f310a746c267f40b5943f0a78"><div class="ttname"><a href="group__Kalman.html#gab6cb032f310a746c267f40b5943f0a78">rc_kalman_free</a></div><div class="ttdeci">int rc_kalman_free(rc_kalman_t *kf)</div><div class="ttdoc">Frees the memory allocated by a kalman filter's matrices and vectors. Also resets all values to 0 lik...</div><div class="ttdef"><b>Definition:</b> kalman.c:115</div></div>
 <div class="ttc" id="agroup__Kalman_html_gaef5414ac19de6879ebc973080ef9937e"><div class="ttname"><a href="group__Kalman.html#gaef5414ac19de6879ebc973080ef9937e">rc_kalman_alloc_lin</a></div><div class="ttdeci">int rc_kalman_alloc_lin(rc_kalman_t *kf, rc_matrix_t F, rc_matrix_t G, rc_matrix_t H, rc_matrix_t Q, rc_matrix_t R, rc_matrix_t Pi)</div><div class="ttdoc">Allocates memory for a Kalman filter of given dimensions.</div><div class="ttdef"><b>Definition:</b> kalman.c:21</div></div>
 <div class="ttc" id="agroup__Kalman_html_gaf96115115c3ce643cc4bbd4e86af423d"><div class="ttname"><a href="group__Kalman.html#gaf96115115c3ce643cc4bbd4e86af423d">rc_kalman_update_lin</a></div><div class="ttdeci">int rc_kalman_update_lin(rc_kalman_t *kf, rc_vector_t u, rc_vector_t y)</div><div class="ttdoc">Kalman Filter state prediction step based on physical model.</div><div class="ttdef"><b>Definition:</b> kalman.c:159</div></div>
-<div class="ttc" id="anamespacembot__test__drive_html_ae0960295307fcb603f447fd8db0a53cb"><div class="ttname"><a href="namespacembot__test__drive.html#ae0960295307fcb603f447fd8db0a53cb">mbot_test_drive.running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> mbot_test_drive.py:19</div></div>
 <div class="ttc" id="astructrc__kalman__t_html"><div class="ttname"><a href="structrc__kalman__t.html">rc_kalman_t</a></div><div class="ttdef"><b>Definition:</b> kalman.h:82</div></div>
 </div><!-- fragment --><p>For the non-linear EKF case, the user should initialize the filter with <a class="el" href="group__Kalman.html#gaa1396714a36d70df657215770a947f41" title="Allocates memory for a Kalman filter of given dimensions.">rc_kalman_alloc_ekf()</a> which does NOT take in the state transition matrices F,G,H. Instead it's up to the user to calculate the new predicted state x_pre and predicted sensor measurement h for their own non-linear system model each step. Those user-calculated predictions are then given to the non-linear <a class="el" href="group__Kalman.html#gaa4f40b5e155334765875814996558ebd" title="Kalman Filter measurement update step.">rc_kalman_update_ekf()</a> function.</p>
 <p>Basic loop structure for non-linear EKF case:</p>
 <div class="fragment"><div class="line"><a class="code" href="structrc__kalman__t.html">rc_kalman_t</a> kf = <a class="code" href="group__Kalman.html#ga80ea8020dd1c094fd8c68d1e113635e2">rc_kalman_empty</a>();</div>
 <div class="line"><a class="code" href="group__Kalman.html#gaa1396714a36d70df657215770a947f41">rc_kalman_alloc_ekf</a>(&amp;kf,Q,R,Pi);</div>
-<div class="line"><span class="keywordflow">while</span>(<a class="code" href="namespacembot__test__drive.html#ae0960295307fcb603f447fd8db0a53cb">running</a>){</div>
+<div class="line"><span class="keywordflow">while</span>(running){</div>
 <div class="line">     measure sensors, calculate y</div>
 <div class="line">     calculate <span class="keyword">new</span> Jacobian F given x_est from previous loop;</div>
 <div class="line">     calculate <span class="keyword">new</span> predicted x_pre <span class="keyword">using</span> x_est from previous</div>
@@ -169,35 +172,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    {\</div>
-<div class="line">    .F = <a class="code" href="group__Matrix.html#ga1fe4da792f1d95eb45f773a26b7c40d7">RC_MATRIX_INITIALIZER</a>,\</div>
-<div class="line">    .G = <a class="code" href="group__Matrix.html#ga1fe4da792f1d95eb45f773a26b7c40d7">RC_MATRIX_INITIALIZER</a>,\</div>
-<div class="line">    .H = <a class="code" href="group__Matrix.html#ga1fe4da792f1d95eb45f773a26b7c40d7">RC_MATRIX_INITIALIZER</a>,\</div>
-<div class="line">    .Q = <a class="code" href="group__Matrix.html#ga1fe4da792f1d95eb45f773a26b7c40d7">RC_MATRIX_INITIALIZER</a>,\</div>
-<div class="line">    .R = <a class="code" href="group__Matrix.html#ga1fe4da792f1d95eb45f773a26b7c40d7">RC_MATRIX_INITIALIZER</a>,\</div>
-<div class="line">    .P = <a class="code" href="group__Matrix.html#ga1fe4da792f1d95eb45f773a26b7c40d7">RC_MATRIX_INITIALIZER</a>,\</div>
-<div class="line">    .Pi = <a class="code" href="group__Matrix.html#ga1fe4da792f1d95eb45f773a26b7c40d7">RC_MATRIX_INITIALIZER</a>,\</div>
-<div class="line">    .x_est = <a class="code" href="group__Vector.html#gab72eb22064075a2bc691904c5a6f64a4">RC_VECTOR_INITIALIZER</a>,\</div>
-<div class="line">    .x_pre = <a class="code" href="group__Vector.html#gab72eb22064075a2bc691904c5a6f64a4">RC_VECTOR_INITIALIZER</a>,\</div>
+<div class="line">    .F = RC_MATRIX_INITIALIZER,\</div>
+<div class="line">    .G = RC_MATRIX_INITIALIZER,\</div>
+<div class="line">    .H = RC_MATRIX_INITIALIZER,\</div>
+<div class="line">    .Q = RC_MATRIX_INITIALIZER,\</div>
+<div class="line">    .R = RC_MATRIX_INITIALIZER,\</div>
+<div class="line">    .P = RC_MATRIX_INITIALIZER,\</div>
+<div class="line">    .Pi = RC_MATRIX_INITIALIZER,\</div>
+<div class="line">    .x_est = RC_VECTOR_INITIALIZER,\</div>
+<div class="line">    .x_pre = RC_VECTOR_INITIALIZER,\</div>
 <div class="line">    .initialized = 0,\</div>
 <div class="line">    .step = 0}</div>
-<div class="ttc" id="agroup__Matrix_html_ga1fe4da792f1d95eb45f773a26b7c40d7"><div class="ttname"><a href="group__Matrix.html#ga1fe4da792f1d95eb45f773a26b7c40d7">RC_MATRIX_INITIALIZER</a></div><div class="ttdeci">#define RC_MATRIX_INITIALIZER</div><div class="ttdef"><b>Definition:</b> matrix.h:39</div></div>
-<div class="ttc" id="agroup__Vector_html_gab72eb22064075a2bc691904c5a6f64a4"><div class="ttname"><a href="group__Vector.html#gab72eb22064075a2bc691904c5a6f64a4">RC_VECTOR_INITIALIZER</a></div><div class="ttdeci">#define RC_VECTOR_INITIALIZER</div><div class="ttdef"><b>Definition:</b> vector.h:48</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga017973a86246a2d4010769032eb4c487"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga017973a86246a2d4010769032eb4c487">&#9670;&nbsp;</a></span>rc_kalman_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structrc__kalman__t.html">rc_kalman_t</a> <a class="el" href="structrc__kalman__t.html">rc_kalman_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>

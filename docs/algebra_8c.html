@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/rc/src/math/algebra.c File Reference</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/rc/src/math/algebra.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -80,30 +83,31 @@ $(function() {
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="vector_8h_source.html">rc/math/vector.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="matrix_8h_source.html">rc/math/matrix.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="algebra_8h_source.html">rc/math/algebra.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="algebra__common_8h_source.html">algebra_common.h</a>&quot;</code><br />
+<code>#include &lt;rc/math/vector.h&gt;</code><br />
+<code>#include &lt;rc/math/matrix.h&gt;</code><br />
+<code>#include &lt;rc/math/algebra.h&gt;</code><br />
+<code>#include &quot;algebra_common.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for algebra.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="algebra_8c__incl.png" border="0" usemap="#ambot__firmware_2rc_2src_2math_2algebra_8c" alt=""/></div>
-<map name="ambot__firmware_2rc_2src_2math_2algebra_8c" id="ambot__firmware_2rc_2src_2math_2algebra_8c">
-<area shape="rect" title="Collection of advanced linear algebra functions." alt="" coords="275,5,435,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,72,121"/>
-<area shape="rect" title=" " alt="" coords="97,95,167,121"/>
-<area shape="rect" title=" " alt="" coords="191,95,259,121"/>
-<area shape="rect" title=" " alt="" coords="283,95,354,121"/>
-<area shape="rect" href="vector_8h.html" title=" " alt="" coords="379,244,507,271"/>
-<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="429,169,560,196"/>
-<area shape="rect" href="algebra_8h.html" title=" " alt="" coords="481,95,618,121"/>
-<area shape="rect" href="algebra__common_8h.html" title=" " alt="" coords="643,95,789,121"/>
+<div class="center"><img src="algebra_8c__incl.png" border="0" usemap="#a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2algebra_8c" alt=""/></div>
+<map name="a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2algebra_8c" id="a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2algebra_8c">
+<area shape="rect" title="Collection of advanced linear algebra functions." alt="" coords="257,5,452,61"/>
+<area shape="rect" title=" " alt="" coords="5,109,72,136"/>
+<area shape="rect" title=" " alt="" coords="97,109,167,136"/>
+<area shape="rect" title=" " alt="" coords="191,109,259,136"/>
+<area shape="rect" title=" " alt="" coords="283,109,354,136"/>
+<area shape="rect" href="vector_8h_source.html" title=" " alt="" coords="379,259,507,285"/>
+<area shape="rect" href="matrix_8h_source.html" title=" " alt="" coords="429,184,560,211"/>
+<area shape="rect" href="algebra_8h_source.html" title=" " alt="" coords="481,109,618,136"/>
+<area shape="rect" href="algebra__common_8h_source.html" title=" " alt="" coords="643,109,789,136"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a59063432d5e3fb898e897edb3f2417a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algebra_8c.html#a59063432d5e3fb898e897edb3f2417a5">DEFAULT_ZERO_TOLERANCE</a>&#160;&#160;&#160;1e-8</td></tr>
+<tr class="memitem:a59063432d5e3fb898e897edb3f2417a5"><td class="memItemLeft" align="right" valign="top"><a id="a59063432d5e3fb898e897edb3f2417a5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_ZERO_TOLERANCE</b>&#160;&#160;&#160;1e-8</td></tr>
 <tr class="separator:a59063432d5e3fb898e897edb3f2417a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -135,29 +139,15 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga408c35375eaaf1ca251b040b1deeed0c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Vector.html#ga408c35375eaaf1ca251b040b1deeed0c">zero_tolerance</a> =<a class="el" href="algebra_8c.html#a59063432d5e3fb898e897edb3f2417a5">DEFAULT_ZERO_TOLERANCE</a></td></tr>
+<tr class="memitem:ga408c35375eaaf1ca251b040b1deeed0c"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>zero_tolerance</b> =DEFAULT_ZERO_TOLERANCE</td></tr>
 <tr class="separator:ga408c35375eaaf1ca251b040b1deeed0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Collection of advanced linear algebra functions. </p>
 <dl class="section author"><dt>Author</dt><dd>James Strawson </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2016 </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a59063432d5e3fb898e897edb3f2417a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59063432d5e3fb898e897edb3f2417a5">&#9670;&nbsp;</a></span>DEFAULT_ZERO_TOLERANCE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEFAULT_ZERO_TOLERANCE&#160;&#160;&#160;1e-8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

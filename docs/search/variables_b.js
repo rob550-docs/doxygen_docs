@@ -1,13 +1,21 @@
 var searchData=
 [
-  ['last_5fdev_5fticks_4865',['last_dev_ticks',['../structtimestamp__sync__state.html#a7c5d682e3a65f197c2da128d0a072342',1,'timestamp_sync_state']]],
-  ['last_5ftap_5fcount_4866',['last_tap_count',['../group__IMU__MPU.html#ga9f735882bffa48927a520a3e1b1853d2',1,'rc_mpu_data_t']]],
-  ['last_5ftap_5fdirection_4867',['last_tap_direction',['../group__IMU__MPU.html#ga0cbaa2d5b722db09a1999ea32a082ea1',1,'rc_mpu_data_t']]],
-  ['lc_4868',['lc',['../namespacembot__test__drive.html#ac025bd1433c2ff3cf193d5158d74f26a',1,'mbot_test_drive.lc()'],['../namespacembot__test__drive__omni.html#a5024a585ffa0c1424725582759e1976a',1,'mbot_test_drive_omni.lc()']]],
-  ['left_4869',['left',['../structtopic__registry__entry.html#afe3b660b6f9f9b3bd4da8d9ea80e27fc',1,'topic_registry_entry::left()'],['../structtopic__data__entry.html#a0500a60e49d14ed106cb8824d981218b',1,'topic_data_entry::left()'],['../structmbot__ctlr__cfg__t.html#a11c187dbaf5dd2785b7c693694734bb8',1,'mbot_ctlr_cfg_t::left()']]],
-  ['left_5fwheel_5fpid_4870',['left_wheel_pid',['../controller_8h.html#a591f54b7526825460475e901e18bd9aa',1,'controller.h']]],
-  ['len_4871',['len',['../structrc__vector__t.html#a76b2217e47c1417b0adaaf487bc8a617',1,'rc_vector_t']]],
-  ['lin_5fvel_5fcmd_4872',['LIN_VEL_CMD',['../namespacembot__test__drive.html#a23725f12fc356b5a92803c66f1d0bb45',1,'mbot_test_drive.LIN_VEL_CMD()'],['../namespacembot__test__drive__omni.html#a47d64adbe368cb08f7de7bc947e11ef5',1,'mbot_test_drive_omni.LIN_VEL_CMD()']]],
-  ['lname_4873',['lname',['../structgetopt__option.html#a5b53dd1069f1b4e40499f0630a504aab',1,'getopt_option']]],
-  ['lopts_4874',['lopts',['../structgetopt.html#ac4884d98d9c3ec9cbe5b9e7854b3547d',1,'getopt']]]
+  ['newest_5finput_1042',['newest_input',['../structrc__filter__t.html#a09c55575580e80c70a4d8efabd6d605d',1,'rc_filter_t']]],
+  ['newest_5foutput_1043',['newest_output',['../structrc__filter__t.html#a66dca6550d90ecfa9bbdce15633ad42a',1,'rc_filter_t']]],
+  ['non_5fwakeup_5fchange_5fsensitivity_1044',['non_wakeup_change_sensitivity',['../structsensor__configuration__non__wakeup__t.html#aee3768a0391087c42e2086f9e77af87c',1,'sensor_configuration_non_wakeup_t']]],
+  ['non_5fwakeup_5fdriver_5fid_1045',['non_wakeup_driver_id',['../structsensor__information__non__wakeup__t.html#a65a3390c500b4eb05c83adcae83883e2',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5fdriver_5fversion_1046',['non_wakeup_driver_version',['../structsensor__information__non__wakeup__t.html#af17c4c3f163c788f505ee99e0ecb989e',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5fdynamic_5frange_1047',['non_wakeup_dynamic_range',['../structsensor__configuration__non__wakeup__t.html#a1d6a63bf857bda43d99beb9e29c69ddb',1,'sensor_configuration_non_wakeup_t']]],
+  ['non_5fwakeup_5fevent_5fsize_1048',['non_wakeup_event_size',['../structsensor__information__non__wakeup__t.html#a258c3f98dd266ff319208f93aa0b1c25',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5ffifo_5fmax_1049',['non_wakeup_fifo_max',['../structsensor__information__non__wakeup__t.html#a50e1e6fab02ed9ecc550ea18d28ba3f4',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5ffifo_5freserved_1050',['non_wakeup_fifo_reserved',['../structsensor__information__non__wakeup__t.html#ad46574074ca81cbb12db1fba1c91173d',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5fmax_5frange_1051',['non_wakeup_max_range',['../structsensor__information__non__wakeup__t.html#a82e685781b9ce3dd1c3f18f0b1a5c83e',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5fmax_5frate_1052',['non_wakeup_max_rate',['../structsensor__information__non__wakeup__t.html#a1d96222d004b4a2a14e9f53e587b311b',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5fmax_5freport_5flatency_1053',['non_wakeup_max_report_latency',['../structsensor__configuration__non__wakeup__t.html#a95e8997d7c30ef127a2222572c35d256',1,'sensor_configuration_non_wakeup_t']]],
+  ['non_5fwakeup_5fmin_5frate_1054',['non_wakeup_min_rate',['../structsensor__information__non__wakeup__t.html#a892b3ccb48c5000fdbff39d4ffe4d2a6',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5fpower_1055',['non_wakeup_power',['../structsensor__information__non__wakeup__t.html#aa0c5c294e50f18e305c88fd0f57d6967',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5fresolution_1056',['non_wakeup_resolution',['../structsensor__information__non__wakeup__t.html#af3c7169523336b449ddce620e97d8171',1,'sensor_information_non_wakeup_t']]],
+  ['non_5fwakeup_5fsample_5frate_1057',['non_wakeup_sample_rate',['../structsensor__configuration__non__wakeup__t.html#a7246af3a754b56dd923f2a957285c1b2',1,'sensor_configuration_non_wakeup_t']]],
+  ['non_5fwakeup_5fsensor_5ftype_1058',['non_wakeup_sensor_type',['../structsensor__information__non__wakeup__t.html#ae8757c24ae30d80ac0b3c25de0efc363',1,'sensor_information_non_wakeup_t']]],
+  ['num_1059',['num',['../structrc__filter__t.html#ac3c7af4011f1a83670023011cf61a98c',1,'rc_filter_t']]]
 ];

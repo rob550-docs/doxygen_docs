@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['fifo_5fsize_5ftwo_5ft_3841',['fifo_size_two_t',['../structfifo__size__two__t.html',1,'']]],
-  ['frontier_5fprocessing_5ft_3842',['frontier_processing_t',['../structfrontier__processing__t.html',1,'']]],
-  ['frontier_5ft_3843',['frontier_t',['../structfrontier__t.html',1,'']]]
+  ['heart_5frate_5fdata_5fprocess_5ft_631',['heart_rate_data_process_t',['../structheart__rate__data__process__t.html',1,'']]]
 ];

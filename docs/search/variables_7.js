@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['g_4821',['G',['../structrc__kalman__t.html#a6a07a4395e60dae1c07b32633375d75e',1,'rc_kalman_t']]],
-  ['g_5fcost_4822',['g_cost',['../structNode.html#ae4a5f1a3658c1ebb30deab9965a52e5c',1,'Node']]],
-  ['gain_4823',['gain',['../structrc__filter__t.html#a6ef40395d4696f4d6b7499278064b98e',1,'rc_filter_t']]],
-  ['gear_5fratio_4824',['gear_ratio',['../structmbot__params__t.html#a1f00e2ddec53c9fa4b280bbedc508e11',1,'mbot_params_t']]],
-  ['gfail_4825',['gFail',['../astar__test_8cpp.html#a4ac20c7102549e5b1b5d5d695a4b6a91',1,'astar_test.cpp']]],
-  ['gpio_5finterrupt_5fpin_4826',['gpio_interrupt_pin',['../group__IMU__MPU.html#gada4f53edbf8dbaecf3da46f240005f2e',1,'rc_mpu_config_t']]],
-  ['gsuccess_4827',['gSuccess',['../astar__test_8cpp.html#a8459a7fbb5c89762b21dbbee4930c4dd',1,'astar_test.cpp']]],
-  ['gyro_4828',['gyro',['../group__IMU__MPU.html#ga11fdd1802cd363a997832b61e820fbb4',1,'rc_mpu_data_t::gyro()'],['../structmbot__bhy__data__t.html#a276a6c3605eeb8903d156aad968d891d',1,'mbot_bhy_data_t::gyro()']]],
-  ['gyro_5fdlpf_4829',['gyro_dlpf',['../group__IMU__MPU.html#gad5049431c21b029d0b1a151e5d849e90',1,'rc_mpu_config_t']]],
-  ['gyro_5fdynamic_5frange_4830',['gyro_dynamic_range',['../structgyro__physical__status__t.html#a088fb3227a0e635868349843208caf04',1,'gyro_physical_status_t']]],
-  ['gyro_5fflag_4831',['gyro_flag',['../structgyro__physical__status__t.html#a11d35966ef6b79842e6f02ef3b2b1db0',1,'gyro_physical_status_t']]],
-  ['gyro_5ffsr_4832',['gyro_fsr',['../group__IMU__MPU.html#ga3dee5ded5841533bfc61e1370fd2656a',1,'rc_mpu_config_t']]],
-  ['gyro_5frange_4833',['gyro_range',['../structmbot__bhy__config__t.html#a3d9fef1ad43da5c9df262edf016d3f3a',1,'mbot_bhy_config_t']]],
-  ['gyro_5fsample_5frate_4834',['gyro_sample_rate',['../structgyro__physical__status__t.html#a898fb5ffafd859e0d80baa6e0530f47b',1,'gyro_physical_status_t']]],
-  ['gyro_5fto_5fdegs_4835',['gyro_to_degs',['../group__IMU__MPU.html#ga57ed100916f16856a9a2ae346e17e770',1,'rc_mpu_data_t']]],
-  ['gyro_5fto_5frads_4836',['gyro_to_rads',['../structmbot__bhy__data__t.html#aa1b99426e9faf679a40ba67be9b3bf67',1,'mbot_bhy_data_t']]]
+  ['h_960',['H',['../structrc__kalman__t.html#a1f1481b7954098a98cebd75418490bca',1,'rc_kalman_t']]]
 ];

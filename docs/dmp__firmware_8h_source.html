@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/rc/include/rc/mpu/dmp_firmware.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/rc/include/rc/mpu/dmp_firmware.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +72,7 @@ $(function() {
 <div class="title">dmp_firmware.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="dmp__firmware_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* These definitions are pulled from the RC Control Library here:</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* These definitions are pulled from the RC Control Library here:</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">https://github.com/beagleboard/librobotcontrol/blob/master/library/src/mpu/dmp_firmware.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">and used in accordance with the MIT license below:</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span> </div>
@@ -100,21 +103,21 @@ $(function() {
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*****************************************************************</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">* DMP definitions</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">******************************************************************/</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aa9b69653124235f45f91f353a3ebc003">   32</a></span>&#160;<span class="preprocessor">#define MPU6500_PRGM_START_H    0x70</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aeb99c2eae9f4e799af935618a5c0bb82">   33</a></span>&#160;<span class="preprocessor">#define MPU6500_BANK_SIZE       256</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ad85510df68f035ceb260c51dac552fd7">   34</a></span>&#160;<span class="preprocessor">#define MPU6500_BANK_SEL        0x6D</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#acfe34737aa104ee04c5ee5379d78651a">   35</a></span>&#160;<span class="preprocessor">#define MPU6500_MEM_R_W         0x6F</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae3b9af9db8e8cf6875feb0882e6fd061">   36</a></span>&#160;<span class="preprocessor">#define DMP_LOAD_CHUNK          (16)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a304702b72a030fceea30b45d1ab53a5c">   37</a></span>&#160;<span class="preprocessor">#define DMP_CODE_SIZE           (3062)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a9d0f0425cbcb58186500cb8686e41e67">   38</a></span>&#160;<span class="preprocessor">#define DMP_SAMPLE_RATE         (200)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define MPU6500_PRGM_START_H    0x70</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define MPU6500_BANK_SIZE       256</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define MPU6500_BANK_SEL        0x6D</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define MPU6500_MEM_R_W         0x6F</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define DMP_LOAD_CHUNK          (16)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define DMP_CODE_SIZE           (3062)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define DMP_SAMPLE_RATE         (200)</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aab5d80253aaee2470c95c6981b731255">   40</a></span>&#160;<span class="preprocessor">#define DMP_INT_GESTURE     (0x01)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aabccda0e9ccd1a2f4287d23fe4b0c776">   41</a></span>&#160;<span class="preprocessor">#define DMP_INT_CONTINUOUS  (0x02)</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define DMP_INT_GESTURE     (0x01)</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define DMP_INT_CONTINUOUS  (0x02)</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> uint16_t dmp_start_addr = 0x0400;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> uint8_t dmp_firmware[<a class="code" href="dmp__firmware_8h.html#a304702b72a030fceea30b45d1ab53a5c">DMP_CODE_SIZE</a>] = {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> uint8_t dmp_firmware[DMP_CODE_SIZE] = {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* bank # 0 */</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x24, 0x00, 0x00, 0x00, 0x02, 0x00, 0x03, 0x00, 0x00,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    0x00, 0x65, 0x00, 0x54, 0xff, 0xef, 0x00, 0x00, 0xfa, 0x80, 0x00, 0x0b, 0x12, 0x82, 0x00, 0x01,</div>
@@ -327,178 +330,177 @@ $(function() {
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment"> * releases. These defines may change for each DMP image, so be sure to modify</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"> * these values when switching to a new image.</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#adf5652e51b8c08c2eb6a902d1d1f319c">  259</a></span>&#160;<span class="preprocessor">#define CFG_LP_QUAT             (2712)</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a5c2c9516862587e8e1aa8c0c428076d9">  260</a></span>&#160;<span class="preprocessor">#define END_ORIENT_TEMP         (1866)</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aae53afa64170cb4723c04f16c2fa5f30">  261</a></span>&#160;<span class="preprocessor">#define CFG_27                  (2742)</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a12aa4c3bdc65c24ca29ef08e62fd3e13">  262</a></span>&#160;<span class="preprocessor">#define CFG_20                  (2224)</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a18ca772a0ce432c5ccb0e318af3c2b86">  263</a></span>&#160;<span class="preprocessor">#define CFG_23                  (2745)</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a7aa6ed56d6fd41be120b9bdb488c220a">  264</a></span>&#160;<span class="preprocessor">#define CFG_FIFO_ON_EVENT       (2690)</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a89e5662bddc67ac00f5b85035bd60ed8">  265</a></span>&#160;<span class="preprocessor">#define END_PREDICTION_UPDATE   (1761)</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#afd43f64b7c6bc86374cedfcf69c6b12f">  266</a></span>&#160;<span class="preprocessor">#define CGNOTICE_INTR           (2620)</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a0ff907b44d0e42641e71e6da41829090">  267</a></span>&#160;<span class="preprocessor">#define X_GRT_Y_TMP             (1358)</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aca5a7c1f2519e622571bda2aa2311553">  268</a></span>&#160;<span class="preprocessor">#define CFG_DR_INT              (1029)</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a93cd3f526d9e31b00c9364bab3df41e0">  269</a></span>&#160;<span class="preprocessor">#define CFG_AUTH                (1035)</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ac90829b4b9a77480e0582bb7551e182e">  270</a></span>&#160;<span class="preprocessor">#define UPDATE_PROP_ROT         (1835)</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a7b344f27570daf0f096213bfcd8e0627">  271</a></span>&#160;<span class="preprocessor">#define END_COMPARE_Y_X_TMP2    (1455)</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab280108da935f42e6a3e30d6af04a7c1">  272</a></span>&#160;<span class="preprocessor">#define SKIP_X_GRT_Y_TMP        (1359)</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a962a3b26ee2dd822ebc67d5ed7e01bc1">  273</a></span>&#160;<span class="preprocessor">#define SKIP_END_COMPARE        (1435)</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a68df22b3699418acab9063ee5f996d8e">  274</a></span>&#160;<span class="preprocessor">#define FCFG_3                  (1088)</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ac0e79063d1a071c1a8bd3f7081e4299e">  275</a></span>&#160;<span class="preprocessor">#define FCFG_2                  (1066)</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a9a7d63d6add8f9fdf9edc722a01aeb92">  276</a></span>&#160;<span class="preprocessor">#define FCFG_1                  (1062)</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a3658f219d52dff5022cc499a747ca589">  277</a></span>&#160;<span class="preprocessor">#define END_COMPARE_Y_X_TMP3    (1434)</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a687777b4390e4a84ac774cf0600abe20">  278</a></span>&#160;<span class="preprocessor">#define FCFG_7                  (1073)</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a2ba17b85493f082e37d7e57f45200144">  279</a></span>&#160;<span class="preprocessor">#define FCFG_6                  (1106)</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a5c1ebd0914bd0e30766c9cbcc25c31c5">  280</a></span>&#160;<span class="preprocessor">#define FLAT_STATE_END          (1713)</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aa6efdc55c49bd242ffafb9a9b227cca8">  281</a></span>&#160;<span class="preprocessor">#define SWING_END_4             (1616)</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a8a156eab56c25c1f9156a2751fa2155d">  282</a></span>&#160;<span class="preprocessor">#define SWING_END_2             (1565)</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a3ff31c1255dc1fceb7c590bc7f0b3ab0">  283</a></span>&#160;<span class="preprocessor">#define SWING_END_3             (1587)</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a6f4579a77f23d509cd63d4506e44fa23">  284</a></span>&#160;<span class="preprocessor">#define SWING_END_1             (1550)</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a3dc0e5c81e361fb871fbf63eeba82520">  285</a></span>&#160;<span class="preprocessor">#define CFG_8                   (2718)</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a1fe6e4489855269e7197beb38b07c723">  286</a></span>&#160;<span class="preprocessor">#define CFG_15                  (2727)</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a7e9d5deadbd595432b6319178d573cd3">  287</a></span>&#160;<span class="preprocessor">#define CFG_16                  (2746)</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a63971727875ac02e2ce6632bd3f82bc2">  288</a></span>&#160;<span class="preprocessor">#define CFG_EXT_GYRO_BIAS       (1189)</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae9f800bcc27bb65de184d1dbe9c0ce24">  289</a></span>&#160;<span class="preprocessor">#define END_COMPARE_Y_X_TMP     (1407)</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae7f639b1d39b818bc03ba14cf334bf68">  290</a></span>&#160;<span class="preprocessor">#define DO_NOT_UPDATE_PROP_ROT  (1839)</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#af07742dc92c885f8f7d59e70683f9257">  291</a></span>&#160;<span class="preprocessor">#define CFG_7                   (1205)</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aba18283a93fa46f0251d4a6131ed2d5d">  292</a></span>&#160;<span class="preprocessor">#define FLAT_STATE_END_TEMP     (1683)</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab843d731bb3863d28961b6a92f302053">  293</a></span>&#160;<span class="preprocessor">#define END_COMPARE_Y_X         (1484)</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae14f280fb2449ecb6dcb8782a8dfd088">  294</a></span>&#160;<span class="preprocessor">#define SKIP_SWING_END_1        (1551)</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a17ac0b4bafc904502e30e9c718a83d15">  295</a></span>&#160;<span class="preprocessor">#define SKIP_SWING_END_3        (1588)</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ad179280ab7654fcada6f0816f6b0eda8">  296</a></span>&#160;<span class="preprocessor">#define SKIP_SWING_END_2        (1566)</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a158f88485952a3849f3833c145854d99">  297</a></span>&#160;<span class="preprocessor">#define TILTG75_START           (1672)</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a40938f669c5b33b4316a7a5fba679eba">  298</a></span>&#160;<span class="preprocessor">#define CFG_6                   (2753)</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ac23b1dfe6637cd51283c18aa3d2e9c50">  299</a></span>&#160;<span class="preprocessor">#define TILTL75_END             (1669)</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#abe465e03425237cc6043670f55f28d02">  300</a></span>&#160;<span class="preprocessor">#define END_ORIENT              (1884)</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ad4e759975ee4ab865e8bd1ebd7f48908">  301</a></span>&#160;<span class="preprocessor">#define CFG_FLICK_IN            (2573)</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a0ca3aa6c4c503f68cab0bbba28325f12">  302</a></span>&#160;<span class="preprocessor">#define TILTL75_START           (1643)</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a8214527cbba23694722d04715126be0f">  303</a></span>&#160;<span class="preprocessor">#define CFG_MOTION_BIAS         (1208)</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a70e52e79b5774e056a86795a52e3b027">  304</a></span>&#160;<span class="preprocessor">#define X_GRT_Y                 (1408)</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#af08a08d5d5c6944564fe84a46227968d">  305</a></span>&#160;<span class="preprocessor">#define TEMPLABEL               (2324)</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#acc91af9a664cf438b93a3faa108bb603">  306</a></span>&#160;<span class="preprocessor">#define CFG_ANDROID_ORIENT_INT  (1853)</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a01dcbc69fa28559529653a3b4aabea00">  307</a></span>&#160;<span class="preprocessor">#define CFG_GYRO_RAW_DATA       (2722)</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a193d85c2bd5dd9e43c1f89445e999ac6">  308</a></span>&#160;<span class="preprocessor">#define X_GRT_Y_TMP2            (1379)</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#define CFG_LP_QUAT             (2712)</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#define END_ORIENT_TEMP         (1866)</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#define CFG_27                  (2742)</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#define CFG_20                  (2224)</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#define CFG_23                  (2745)</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#define CFG_FIFO_ON_EVENT       (2690)</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#define END_PREDICTION_UPDATE   (1761)</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#define CGNOTICE_INTR           (2620)</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">#define X_GRT_Y_TMP             (1358)</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#define CFG_DR_INT              (1029)</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#define CFG_AUTH                (1035)</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#define UPDATE_PROP_ROT         (1835)</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#define END_COMPARE_Y_X_TMP2    (1455)</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#define SKIP_X_GRT_Y_TMP        (1359)</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#define SKIP_END_COMPARE        (1435)</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#define FCFG_3                  (1088)</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#define FCFG_2                  (1066)</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#define FCFG_1                  (1062)</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#define END_COMPARE_Y_X_TMP3    (1434)</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#define FCFG_7                  (1073)</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#define FCFG_6                  (1106)</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#define FLAT_STATE_END          (1713)</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#define SWING_END_4             (1616)</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#define SWING_END_2             (1565)</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#define SWING_END_3             (1587)</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#define SWING_END_1             (1550)</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#define CFG_8                   (2718)</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#define CFG_15                  (2727)</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#define CFG_16                  (2746)</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#define CFG_EXT_GYRO_BIAS       (1189)</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#define END_COMPARE_Y_X_TMP     (1407)</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#define DO_NOT_UPDATE_PROP_ROT  (1839)</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#define CFG_7                   (1205)</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#define FLAT_STATE_END_TEMP     (1683)</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#define END_COMPARE_Y_X         (1484)</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#define SKIP_SWING_END_1        (1551)</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#define SKIP_SWING_END_3        (1588)</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#define SKIP_SWING_END_2        (1566)</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">#define TILTG75_START           (1672)</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#define CFG_6                   (2753)</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">#define TILTL75_END             (1669)</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#define END_ORIENT              (1884)</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#define CFG_FLICK_IN            (2573)</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#define TILTL75_START           (1643)</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#define CFG_MOTION_BIAS         (1208)</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#define X_GRT_Y                 (1408)</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#define TEMPLABEL               (2324)</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#define CFG_ANDROID_ORIENT_INT  (1853)</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#define CFG_GYRO_RAW_DATA       (2722)</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#define X_GRT_Y_TMP2            (1379)</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a155b1481095edac7a26c8c3d5b9c5a24">  310</a></span>&#160;<span class="preprocessor">#define D_0_22                  (22+512)</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a15d46d25c01d6bc9c849c3ba42dcfa54">  311</a></span>&#160;<span class="preprocessor">#define D_0_24                  (24+512)</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#define D_0_22                  (22+512)</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#define D_0_24                  (24+512)</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a98e58a52ab30dcc007284b185347cf0f">  313</a></span>&#160;<span class="preprocessor">#define D_0_36                  (36)</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aa3d478603bf46f77a6eb95f2c71ee48e">  314</a></span>&#160;<span class="preprocessor">#define D_0_52                  (52)</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a7e992a46da86f1d053f9ef5fc2e53b7a">  315</a></span>&#160;<span class="preprocessor">#define D_0_96                  (96)</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a5edbce4fdd515aa31a227fb8eaf0151f">  316</a></span>&#160;<span class="preprocessor">#define D_0_104                 (104)</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#abbbb1d6730f23abc1e951d7741fa24d5">  317</a></span>&#160;<span class="preprocessor">#define D_0_108                 (108)</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a4d6d669548fe77f07062baf9e452fb06">  318</a></span>&#160;<span class="preprocessor">#define D_0_163                 (163)</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#abe9d05e6c0b53d1452944c767ec4e39f">  319</a></span>&#160;<span class="preprocessor">#define D_0_188                 (188)</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a737381384143cf039503023e04037a26">  320</a></span>&#160;<span class="preprocessor">#define D_0_192                 (192)</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#afd5baf97b37c848b12dec9b718d27188">  321</a></span>&#160;<span class="preprocessor">#define D_0_224                 (224)</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a87090eb84fc9a689a087e9f7e59cd4fb">  322</a></span>&#160;<span class="preprocessor">#define D_0_228                 (228)</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#afd752a244bd3eb5e07f77712d9653197">  323</a></span>&#160;<span class="preprocessor">#define D_0_232                 (232)</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a9141d44a2f2636d23c001b5832118326">  324</a></span>&#160;<span class="preprocessor">#define D_0_236                 (236)</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#define D_0_36                  (36)</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#define D_0_52                  (52)</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#define D_0_96                  (96)</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#define D_0_104                 (104)</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#define D_0_108                 (108)</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#define D_0_163                 (163)</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">#define D_0_188                 (188)</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#define D_0_192                 (192)</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#define D_0_224                 (224)</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#define D_0_228                 (228)</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#define D_0_232                 (232)</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">#define D_0_236                 (236)</span></div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
-<div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab444dc9d9eaf98f46563cc87fcb965a4">  326</a></span>&#160;<span class="preprocessor">#define D_1_2                   (256 + 2)</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a83973bf9de6879524cca19f3332e707e">  327</a></span>&#160;<span class="preprocessor">#define D_1_4                   (256 + 4)</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a2f44fbe8696fcc34619d6e61916c22d0">  328</a></span>&#160;<span class="preprocessor">#define D_1_8                   (256 + 8)</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a6b208218857c2067078082e832148f61">  329</a></span>&#160;<span class="preprocessor">#define D_1_10                  (256 + 10)</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ac84316958d525db0c89e1519e8af6637">  330</a></span>&#160;<span class="preprocessor">#define D_1_24                  (256 + 24)</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a2533cfdd19cb87a86667620a33a9d561">  331</a></span>&#160;<span class="preprocessor">#define D_1_28                  (256 + 28)</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a359aac18087bef8a3f044faf13952fa2">  332</a></span>&#160;<span class="preprocessor">#define D_1_36                  (256 + 36)</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae0dfa8b55558dff48604d4ac2c28fa9c">  333</a></span>&#160;<span class="preprocessor">#define D_1_40                  (256 + 40)</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a4fd075d6c0e817fbafca24af8305386e">  334</a></span>&#160;<span class="preprocessor">#define D_1_44                  (256 + 44)</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a065f93eacb4dcc7020cc21146e533110">  335</a></span>&#160;<span class="preprocessor">#define D_1_72                  (256 + 72)</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aadac9643410cb6abb08481bebc549d0d">  336</a></span>&#160;<span class="preprocessor">#define D_1_74                  (256 + 74)</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae6ba99808ab9bc8eaddbc7c7cc6af1f3">  337</a></span>&#160;<span class="preprocessor">#define D_1_79                  (256 + 79)</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a05bc14cf9653fc7778acfa75c9ac19df">  338</a></span>&#160;<span class="preprocessor">#define D_1_88                  (256 + 88)</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a63bb29a8be69128a60f4716aacc447a8">  339</a></span>&#160;<span class="preprocessor">#define D_1_90                  (256 + 90)</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#abd8a1ea9b71ac9389116a33e317aad6c">  340</a></span>&#160;<span class="preprocessor">#define D_1_92                  (256 + 92)</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a9deaa01235044f6470a4269db6b624ea">  341</a></span>&#160;<span class="preprocessor">#define D_1_96                  (256 + 96)</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aa3060f343d69794f21fcb65974c135bd">  342</a></span>&#160;<span class="preprocessor">#define D_1_98                  (256 + 98)</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a1a90f348e71ec52d2ae6af1b56a513e6">  343</a></span>&#160;<span class="preprocessor">#define D_1_106                 (256 + 106)</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a0443e52a615f3203ebc5ca43189bdcb8">  344</a></span>&#160;<span class="preprocessor">#define D_1_108                 (256 + 108)</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a2c149c0691ea56561d9f3cd0f34bb1d9">  345</a></span>&#160;<span class="preprocessor">#define D_1_112                 (256 + 112)</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a782fd500c37614a9a83b50adf3f18a2d">  346</a></span>&#160;<span class="preprocessor">#define D_1_128                 (256 + 144)</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a3248b12d5c7a9f33e19f32da0822ce60">  347</a></span>&#160;<span class="preprocessor">#define D_1_152                 (256 + 12)</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a97169732d7858751120c9b32109f5875">  348</a></span>&#160;<span class="preprocessor">#define D_1_160                 (256 + 160)</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab7a349f836821460da79b4bbcb1089c2">  349</a></span>&#160;<span class="preprocessor">#define D_1_176                 (256 + 176)</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a783f9fddb57c3462c7d4344c46cbec51">  350</a></span>&#160;<span class="preprocessor">#define D_1_178                 (256 + 178)</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a0c4568c70e2cd501e8de6c3147eb0276">  351</a></span>&#160;<span class="preprocessor">#define D_1_218                 (256 + 218)</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a2b58e015c2162382339b7c57607ee32c">  352</a></span>&#160;<span class="preprocessor">#define D_1_232                 (256 + 232)</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a1ac208ac9e1ba17e8b116176c2878068">  353</a></span>&#160;<span class="preprocessor">#define D_1_236                 (256 + 236)</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a9156998202039a8904e4733bd37faf4e">  354</a></span>&#160;<span class="preprocessor">#define D_1_240                 (256 + 240)</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aa65adef1ba1e6fd197e3058089c559fb">  355</a></span>&#160;<span class="preprocessor">#define D_1_244                 (256 + 244)</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab5988bd1329cb108a57a5e81ecd2c26b">  356</a></span>&#160;<span class="preprocessor">#define D_1_250                 (256 + 250)</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a0f11a9f42b3d13434b8a62aefd077912">  357</a></span>&#160;<span class="preprocessor">#define D_1_252                 (256 + 252)</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a57d4674cf7793419f7dfa54606c73bf2">  358</a></span>&#160;<span class="preprocessor">#define D_2_12                  (512 + 12)</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a36e10f13d70b3d8e038d39d807587202">  359</a></span>&#160;<span class="preprocessor">#define D_2_96                  (512 + 96)</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a09ccdf661a9ab9f8df8f2c7070d0dff9">  360</a></span>&#160;<span class="preprocessor">#define D_2_108                 (512 + 108)</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae2175af550784283fee34f3e67ba9c35">  361</a></span>&#160;<span class="preprocessor">#define D_2_208                 (512 + 208)</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a08f00bcef1e8814906c2354dc8b9e8b8">  362</a></span>&#160;<span class="preprocessor">#define D_2_224                 (512 + 224)</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#afe0c8ed2924052fe714ec9174389bbe0">  363</a></span>&#160;<span class="preprocessor">#define D_2_236                 (512 + 236)</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#af53e9ad71a55861be572b74497681bb1">  364</a></span>&#160;<span class="preprocessor">#define D_2_244                 (512 + 244)</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab8953d8cd2c2dbeea3cc33ee50d0e3e1">  365</a></span>&#160;<span class="preprocessor">#define D_2_248                 (512 + 248)</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a94327b4d894185063c5104a02d9714ee">  366</a></span>&#160;<span class="preprocessor">#define D_2_252                 (512 + 252)</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">#define D_1_2                   (256 + 2)</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#define D_1_4                   (256 + 4)</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#define D_1_8                   (256 + 8)</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor">#define D_1_10                  (256 + 10)</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#define D_1_24                  (256 + 24)</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#define D_1_28                  (256 + 28)</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#define D_1_36                  (256 + 36)</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#define D_1_40                  (256 + 40)</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#define D_1_44                  (256 + 44)</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#define D_1_72                  (256 + 72)</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#define D_1_74                  (256 + 74)</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#define D_1_79                  (256 + 79)</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#define D_1_88                  (256 + 88)</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#define D_1_90                  (256 + 90)</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#define D_1_92                  (256 + 92)</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor">#define D_1_96                  (256 + 96)</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#define D_1_98                  (256 + 98)</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#define D_1_106                 (256 + 106)</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#define D_1_108                 (256 + 108)</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#define D_1_112                 (256 + 112)</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#define D_1_128                 (256 + 144)</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor">#define D_1_152                 (256 + 12)</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#define D_1_160                 (256 + 160)</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#define D_1_176                 (256 + 176)</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#define D_1_178                 (256 + 178)</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#define D_1_218                 (256 + 218)</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#define D_1_232                 (256 + 232)</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#define D_1_236                 (256 + 236)</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor">#define D_1_240                 (256 + 240)</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor">#define D_1_244                 (256 + 244)</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#define D_1_250                 (256 + 250)</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#define D_1_252                 (256 + 252)</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#define D_2_12                  (512 + 12)</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor">#define D_2_96                  (512 + 96)</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#define D_2_108                 (512 + 108)</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor">#define D_2_208                 (512 + 208)</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#define D_2_224                 (512 + 224)</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#define D_2_236                 (512 + 236)</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#define D_2_244                 (512 + 244)</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">#define D_2_248                 (512 + 248)</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor">#define D_2_252                 (512 + 252)</span></div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aaf010f875dd67b0107be3e9fa31b3e27">  368</a></span>&#160;<span class="preprocessor">#define CPASS_BIAS_X            (35 * 16 + 4)</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a6d24a81ab42b7fa4eb8139de1f61dabd">  369</a></span>&#160;<span class="preprocessor">#define CPASS_BIAS_Y            (35 * 16 + 8)</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab931596f83f81d20cb6f79b99a6d71c7">  370</a></span>&#160;<span class="preprocessor">#define CPASS_BIAS_Z            (35 * 16 + 12)</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a6a6966c355589a06d8fb29efaff9902f">  371</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_00            (36 * 16)</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#af0c24262e6d095fbd0b259111221d22f">  372</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_01            (36 * 16 + 4)</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ac5f1350e9764b47bad1e5338e1f42e42">  373</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_02            (36 * 16 + 8)</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a345d7d640ac1340e3eaf23c4efc9cd80">  374</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_10            (36 * 16 + 12)</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ad6a7e3d40cf198dd69e7d3caeefc8453">  375</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_11            (37 * 16)</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a5f4053bd26eb944d431d93d282be9296">  376</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_12            (37 * 16 + 4)</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a452f20a72e035275b876e8cc592691f6">  377</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_20            (37 * 16 + 8)</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae126c2fef7bf856f38d6d04b7504a3c4">  378</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_21            (37 * 16 + 12)</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab45a80c778b591671aa8f10a64209423">  379</a></span>&#160;<span class="preprocessor">#define CPASS_MTX_22            (43 * 16 + 12)</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae48ad5d76a4abec0759ff23ba2b2a68e">  380</a></span>&#160;<span class="preprocessor">#define D_EXT_GYRO_BIAS_X       (61 * 16)</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a6de6f7302f19c1f63f1a04b51ff14b1a">  381</a></span>&#160;<span class="preprocessor">#define D_EXT_GYRO_BIAS_Y       (61 * 16) + 4</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#acd6dead1c0b0458f1ec5d66914a1cf90">  382</a></span>&#160;<span class="preprocessor">#define D_EXT_GYRO_BIAS_Z       (61 * 16) + 8</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a5d68a8e4a168cc789fb481ba9b1ac431">  383</a></span>&#160;<span class="preprocessor">#define D_ACT0                  (40 * 16)</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a3d6aba10b057d1b66f0c5f33334afb07">  384</a></span>&#160;<span class="preprocessor">#define D_ACSX                  (40 * 16 + 4)</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a289d47aab7f881d4e0c1233229462644">  385</a></span>&#160;<span class="preprocessor">#define D_ACSY                  (40 * 16 + 8)</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aae2baed3a317cde49f3ab8af10e73e97">  386</a></span>&#160;<span class="preprocessor">#define D_ACSZ                  (40 * 16 + 12)</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">#define CPASS_BIAS_X            (35 * 16 + 4)</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">#define CPASS_BIAS_Y            (35 * 16 + 8)</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor">#define CPASS_BIAS_Z            (35 * 16 + 12)</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">#define CPASS_MTX_00            (36 * 16)</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#define CPASS_MTX_01            (36 * 16 + 4)</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#define CPASS_MTX_02            (36 * 16 + 8)</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#define CPASS_MTX_10            (36 * 16 + 12)</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#define CPASS_MTX_11            (37 * 16)</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#define CPASS_MTX_12            (37 * 16 + 4)</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor">#define CPASS_MTX_20            (37 * 16 + 8)</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#define CPASS_MTX_21            (37 * 16 + 12)</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor">#define CPASS_MTX_22            (43 * 16 + 12)</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#define D_EXT_GYRO_BIAS_X       (61 * 16)</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#define D_EXT_GYRO_BIAS_Y       (61 * 16) + 4</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#define D_EXT_GYRO_BIAS_Z       (61 * 16) + 8</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">#define D_ACT0                  (40 * 16)</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#define D_ACSX                  (40 * 16 + 4)</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor">#define D_ACSY                  (40 * 16 + 8)</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor">#define D_ACSZ                  (40 * 16 + 12)</span></div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a045a0c3dbfc3523917e914681f437c3f">  388</a></span>&#160;<span class="preprocessor">#define FLICK_MSG               (45 * 16 + 4)</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae0cb172ae789a96d344d5dd008aca254">  389</a></span>&#160;<span class="preprocessor">#define FLICK_COUNTER           (45 * 16 + 8)</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a2e56bca3c291c9a618b572307216ec1d">  390</a></span>&#160;<span class="preprocessor">#define FLICK_LOWER             (45 * 16 + 12)</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#adf0738d3c6f0096ecb157aa2b296f1e1">  391</a></span>&#160;<span class="preprocessor">#define FLICK_UPPER             (46 * 16 + 12)</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor">#define FLICK_MSG               (45 * 16 + 4)</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#define FLICK_COUNTER           (45 * 16 + 8)</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">#define FLICK_LOWER             (45 * 16 + 12)</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="preprocessor">#define FLICK_UPPER             (46 * 16 + 12)</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#afcd825024b1b4f2dd4570e897c3fe24e">  393</a></span>&#160;<span class="preprocessor">#define D_AUTH_OUT              (992)</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ad59a17a973be28ebc0d0bc3ae1e3316f">  394</a></span>&#160;<span class="preprocessor">#define D_AUTH_IN               (996)</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#af2eaee2b8c50adbd556a815d7ab795e9">  395</a></span>&#160;<span class="preprocessor">#define D_AUTH_A                (1000)</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a7ee552ff37e87403b24788c2b8e80ce6">  396</a></span>&#160;<span class="preprocessor">#define D_AUTH_B                (1004)</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="preprocessor">#define D_AUTH_OUT              (992)</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor">#define D_AUTH_IN               (996)</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#define D_AUTH_A                (1000)</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor">#define D_AUTH_B                (1004)</span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a2c2d27ad76c61cf19da3460f810eefb1">  398</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_B           (768 + 0x1C)</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a14795bbdfea8a4d5961d2e0d0affe162">  399</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_HP_A           (768 + 0x78)</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a36c0d5ca76fbb5df31ec8ca0a26db835">  400</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_HP_B           (768 + 0x7C)</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ac2bece455bcecb189a347b6c0edf2b6f">  401</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_A4          (768 + 0x40)</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a41557d8ab6be78f157aa4770d5123235">  402</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_A3          (768 + 0x44)</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a000da9f0c92ec1a103f8e1c50e7e61fd">  403</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_A2          (768 + 0x48)</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a6c42f0b2097fe55659dc5ec653681d50">  404</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_A1          (768 + 0x4C)</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a35d9c5ca325de3055539cdae8e5b497c">  405</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_INT_THRSH      (768 + 0x68)</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a211abccbe885d02059206ca4da711b54">  406</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_CLIP           (768 + 0x6C)</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a50a1a44c925cadaa77b3b88e08db7e08">  407</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_SB             (768 + 0x28)</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a0d3790675bcf0bbb837f2834523aca11">  408</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_SB_TIME        (768 + 0x2C)</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a3b281a8de65d0ac3ed6321b4df4ab6d0">  409</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_PEAKTHRSH      (768 + 0x98)</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a1968b4f2f2daece7e19a24bad6388864">  410</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_TIML           (768 + 0x2A)</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a3c410f5ee95cf78486e71a276ed8b36a">  411</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_TIMH           (768 + 0x2E)</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a1e71c4f2fc11aa787bd4c8a5a4126525">  412</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_PEAK           (768 + 0X94)</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a4925c8f2bfe6e2698c10bf5b1094dc54">  413</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_STEPCTR        (768 + 0x60)</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#aee461dfb8a3fcd18ea6dddeaba63457b">  414</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_TIMECTR        (964)</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ae84f6c1fd0f4ccc0f0b5aedc01d48636">  415</a></span>&#160;<span class="preprocessor">#define D_PEDSTD_DECI           (768 + 0xA0)</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_B           (768 + 0x1C)</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#define D_PEDSTD_HP_A           (768 + 0x78)</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">#define D_PEDSTD_HP_B           (768 + 0x7C)</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_A4          (768 + 0x40)</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_A3          (768 + 0x44)</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_A2          (768 + 0x48)</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#define D_PEDSTD_BP_A1          (768 + 0x4C)</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#define D_PEDSTD_INT_THRSH      (768 + 0x68)</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor">#define D_PEDSTD_CLIP           (768 + 0x6C)</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#define D_PEDSTD_SB             (768 + 0x28)</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor">#define D_PEDSTD_SB_TIME        (768 + 0x2C)</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#define D_PEDSTD_PEAKTHRSH      (768 + 0x98)</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">#define D_PEDSTD_TIML           (768 + 0x2A)</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#define D_PEDSTD_TIMH           (768 + 0x2E)</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#define D_PEDSTD_PEAK           (768 + 0X94)</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">#define D_PEDSTD_STEPCTR        (768 + 0x60)</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#define D_PEDSTD_TIMECTR        (964)</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">#define D_PEDSTD_DECI           (768 + 0xA0)</span></div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
-<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a0ee24f50eee31a512b652647521d24bb">  417</a></span>&#160;<span class="preprocessor">#define D_HOST_NO_MOT           (976)</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a2cc522b8f621f32418257ab61144a744">  418</a></span>&#160;<span class="preprocessor">#define D_ACCEL_BIAS            (660)</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">#define D_HOST_NO_MOT           (976)</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">#define D_ACCEL_BIAS            (660)</span></div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ac74c2352245609d469f38d6ffff9030e">  420</a></span>&#160;<span class="preprocessor">#define D_ORIENT_GAP            (76)</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#define D_ORIENT_GAP            (76)</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a214de0f949e6ed8fcf11ce1b3b6eebad">  422</a></span>&#160;<span class="preprocessor">#define D_TILT0_H               (48)</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a6c85fceb5f74a918b0399d0307158ff7">  423</a></span>&#160;<span class="preprocessor">#define D_TILT0_L               (50)</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a4e1a6f62758ed17f6f950a15dae3f71f">  424</a></span>&#160;<span class="preprocessor">#define D_TILT1_H               (52)</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a4e42a147afc872019b8affbbe545e233">  425</a></span>&#160;<span class="preprocessor">#define D_TILT1_L               (54)</span></div>
-<div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a9325b74799bbe82c52821c1a3d31cb0a">  426</a></span>&#160;<span class="preprocessor">#define D_TILT2_H               (56)</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a1f94ccf82d2693832423d759dba5dbfa">  427</a></span>&#160;<span class="preprocessor">#define D_TILT2_L               (58)</span></div>
-<div class="line"><a name="l00428"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#a296360133bdb8e75a844083e52ae6542">  428</a></span>&#160;<span class="preprocessor">#define D_TILT3_H               (60)</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno"><a class="line" href="dmp__firmware_8h.html#ab62313b938bb0a02efe7584203c0c950">  429</a></span>&#160;<span class="preprocessor">#define D_TILT3_L               (62)</span></div>
-<div class="ttc" id="admp__firmware_8h_html_a304702b72a030fceea30b45d1ab53a5c"><div class="ttname"><a href="dmp__firmware_8h.html#a304702b72a030fceea30b45d1ab53a5c">DMP_CODE_SIZE</a></div><div class="ttdeci">#define DMP_CODE_SIZE</div><div class="ttdef"><b>Definition:</b> dmp_firmware.h:37</div></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#define D_TILT0_H               (48)</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">#define D_TILT0_L               (50)</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#define D_TILT1_H               (52)</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#define D_TILT1_L               (54)</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#define D_TILT2_H               (56)</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#define D_TILT2_L               (58)</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#define D_TILT3_H               (60)</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="preprocessor">#define D_TILT3_L               (62)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

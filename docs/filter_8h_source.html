@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/rc/include/rc/math/filter.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/rc/include/rc/math/filter.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +72,7 @@ $(function() {
 <div class="title">filter.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="filter_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef RC_FILTER_H</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define RC_FILTER_H</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
@@ -78,8 +81,8 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vector_8h.html">rc/math/vector.h</a>&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ring__buffer_8h.html">rc/math/ring_buffer.h</a>&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;rc/math/vector.h&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;rc/math/ring_buffer.h&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structrc__filter__t.html">   43</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structrc__filter__t.html">rc_filter_t</a>{</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structrc__filter__t.html#aa0b28170bb26a0016d94ee384c68d00e">   46</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structrc__filter__t.html#aa0b28170bb26a0016d94ee384c68d00e">order</a>;      </div>
@@ -96,8 +99,8 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structrc__filter__t.html#a49b4dfd163de3cc02b652c053993e442">   63</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structrc__filter__t.html#a49b4dfd163de3cc02b652c053993e442">ss_en</a>;      </div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structrc__filter__t.html#aca5aceca7c3b699bfa0e0cc8d44e4ff0">   64</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structrc__filter__t.html#aca5aceca7c3b699bfa0e0cc8d44e4ff0">ss_steps</a>;        </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structrc__filter__t.html#afbebc6ec5bae8293629ff88c72011e28">   69</a></span>&#160;    <a class="code" href="structrc__ringbuf__t.html">rc_ringbuf_t</a> <a class="code" href="structrc__filter__t.html#afbebc6ec5bae8293629ff88c72011e28">in_buf</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structrc__filter__t.html#a29e2b0aab950885f51254fe07894c3a8">   70</a></span>&#160;    <a class="code" href="structrc__ringbuf__t.html">rc_ringbuf_t</a> <a class="code" href="structrc__filter__t.html#a29e2b0aab950885f51254fe07894c3a8">out_buf</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="structrc__ringbuf__t.html">rc_ringbuf_t</a> in_buf;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="structrc__ringbuf__t.html">rc_ringbuf_t</a> out_buf;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structrc__filter__t.html#a09c55575580e80c70a4d8efabd6d605d">   75</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structrc__filter__t.html#a09c55575580e80c70a4d8efabd6d605d">newest_input</a>;    </div>
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structrc__filter__t.html#a66dca6550d90ecfa9bbdce15633ad42a">   76</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structrc__filter__t.html#a66dca6550d90ecfa9bbdce15633ad42a">newest_output</a>;   </div>
@@ -105,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structrc__filter__t.html#acaba5162ba365716182618141b23c68d">   78</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structrc__filter__t.html#acaba5162ba365716182618141b23c68d">initialized</a>;    </div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group__SISO__Filter.html#ga6655489c061812b4e934ffb82b0c36e7">   80</a></span>&#160;} <a class="code" href="group__SISO__Filter.html#ga6655489c061812b4e934ffb82b0c36e7">rc_filter_t</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group__SISO__Filter.html#gaaba65c89772d2ad4b3f64b2142dab928">   82</a></span>&#160;<span class="preprocessor">#define RC_FILTER_INITIALIZER {\</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#define RC_FILTER_INITIALIZER {\</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">    .order      = 0,\</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    .dt     = 0.0,\</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">    .gain       = 1.0,\</span></div>
@@ -141,7 +144,7 @@ $(function() {
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SISO__Filter.html#ga4544fbb000ae45030f1cfd0f0aaff311">rc_filter_reset</a>(<a class="code" href="structrc__filter__t.html">rc_filter_t</a>* f);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SISO__Filter.html#gae6ec99be7a22f8d4280daf18b1eacd18">rc_filter_enable_saturation</a>(<a class="code" href="structrc__filter__t.html">rc_filter_t</a>* f, <span class="keywordtype">double</span> <a class="code" href="group__IMU__MPU.html#gac6afabdc09a49a433ee19d8a9486056d">min</a>, <span class="keywordtype">double</span> max);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SISO__Filter.html#gae6ec99be7a22f8d4280daf18b1eacd18">rc_filter_enable_saturation</a>(<a class="code" href="structrc__filter__t.html">rc_filter_t</a>* f, <span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__SISO__Filter.html#gaa670c91acf8c6d633938ea51905a0ab7">rc_filter_get_saturation_flag</a>(<a class="code" href="structrc__filter__t.html">rc_filter_t</a>* f);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
@@ -188,7 +191,6 @@ $(function() {
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160; </div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// RC_FILTER_H</span></div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160; </div>
-<div class="ttc" id="agroup__IMU__MPU_html_gac6afabdc09a49a433ee19d8a9486056d"><div class="ttname"><a href="group__IMU__MPU.html#gac6afabdc09a49a433ee19d8a9486056d">min</a></div><div class="ttdeci">#define min(a, b)</div><div class="ttdef"><b>Definition:</b> mpu.h:62</div></div>
 <div class="ttc" id="agroup__SISO__Filter_html_ga140687c148aa3bb47073c9a64afd467f"><div class="ttname"><a href="group__SISO__Filter.html#ga140687c148aa3bb47073c9a64afd467f">rc_filter_previous_output</a></div><div class="ttdeci">double rc_filter_previous_output(rc_filter_t *f, int steps)</div><div class="ttdoc">Returns the output 'steps' back in time. Steps = 0 returns most recent output.</div><div class="ttdef"><b>Definition:</b> filter.c:350</div></div>
 <div class="ttc" id="agroup__SISO__Filter_html_ga1803dedd16ea27c59031bddeb084e893"><div class="ttname"><a href="group__SISO__Filter.html#ga1803dedd16ea27c59031bddeb084e893">rc_filter_pid</a></div><div class="ttdeci">int rc_filter_pid(rc_filter_t *f, double kp, double ki, double kd, double Tf, double dt)</div><div class="ttdoc">Creates a discrete-time implementation of a parallel PID controller with high-frequency rolloff using...</div><div class="ttdef"><b>Definition:</b> filter.c:777</div></div>
 <div class="ttc" id="agroup__SISO__Filter_html_ga30c826f6a4c74e641310a0c06d9f1c6c"><div class="ttname"><a href="group__SISO__Filter.html#ga30c826f6a4c74e641310a0c06d9f1c6c">rc_filter_alloc_from_arrays</a></div><div class="ttdeci">int rc_filter_alloc_from_arrays(rc_filter_t *f, double dt, double *num, int numlen, double *den, int denlen)</div><div class="ttdoc">Like rc_filter_alloc(), but takes arrays for the numerator and denominator coefficients instead of ve...</div><div class="ttdef"><b>Definition:</b> filter.c:100</div></div>
@@ -218,11 +220,9 @@ $(function() {
 <div class="ttc" id="agroup__SISO__Filter_html_gaf5d5aba736c2ba22e4f295c2cee8afd7"><div class="ttname"><a href="group__SISO__Filter.html#gaf5d5aba736c2ba22e4f295c2cee8afd7">rc_filter_previous_input</a></div><div class="ttdeci">double rc_filter_previous_input(rc_filter_t *f, int steps)</div><div class="ttdoc">Returns the input 'steps' back in time. Steps=0 returns most recent input.</div><div class="ttdef"><b>Definition:</b> filter.c:340</div></div>
 <div class="ttc" id="agroup__SISO__Filter_html_gaf6a559a80489a453ebe745ea331ef7eb"><div class="ttname"><a href="group__SISO__Filter.html#gaf6a559a80489a453ebe745ea331ef7eb">rc_filter_moving_average</a></div><div class="ttdeci">int rc_filter_moving_average(rc_filter_t *f, int samples, double dt)</div><div class="ttdoc">Makes a FIR moving average filter that averages over specified number of samples.</div><div class="ttdef"><b>Definition:</b> filter.c:687</div></div>
 <div class="ttc" id="agroup__SISO__Filter_html_gaf6c1857225c1d1fcd31791f529108fc7"><div class="ttname"><a href="group__SISO__Filter.html#gaf6c1857225c1d1fcd31791f529108fc7">rc_filter_butterworth_highpass</a></div><div class="ttdeci">int rc_filter_butterworth_highpass(rc_filter_t *f, int order, double dt, double wc)</div><div class="ttdoc">Creates a Butterworth high pass filter of specified order and cutoff frequency.</div><div class="ttdef"><b>Definition:</b> filter.c:659</div></div>
-<div class="ttc" id="aring__buffer_8h_html"><div class="ttname"><a href="ring__buffer_8h.html">ring_buffer.h</a></div></div>
 <div class="ttc" id="astructrc__filter__t_html"><div class="ttname"><a href="structrc__filter__t.html">rc_filter_t</a></div><div class="ttdoc">Struct containing configuration and state of a SISO filter.</div><div class="ttdef"><b>Definition:</b> filter.h:43</div></div>
 <div class="ttc" id="astructrc__filter__t_html_a09c55575580e80c70a4d8efabd6d605d"><div class="ttname"><a href="structrc__filter__t.html#a09c55575580e80c70a4d8efabd6d605d">rc_filter_t::newest_input</a></div><div class="ttdeci">double newest_input</div><div class="ttdoc">shortcut for the most recent input</div><div class="ttdef"><b>Definition:</b> filter.h:75</div></div>
 <div class="ttc" id="astructrc__filter__t_html_a1007ea43daf7b9a37e9bb93fdb5a2862"><div class="ttname"><a href="structrc__filter__t.html#a1007ea43daf7b9a37e9bb93fdb5a2862">rc_filter_t::sat_max</a></div><div class="ttdeci">double sat_max</div><div class="ttdoc">upper saturation limit</div><div class="ttdef"><b>Definition:</b> filter.h:57</div></div>
-<div class="ttc" id="astructrc__filter__t_html_a29e2b0aab950885f51254fe07894c3a8"><div class="ttname"><a href="structrc__filter__t.html#a29e2b0aab950885f51254fe07894c3a8">rc_filter_t::out_buf</a></div><div class="ttdeci">rc_ringbuf_t out_buf</div><div class="ttdef"><b>Definition:</b> filter.h:70</div></div>
 <div class="ttc" id="astructrc__filter__t_html_a49b4dfd163de3cc02b652c053993e442"><div class="ttname"><a href="structrc__filter__t.html#a49b4dfd163de3cc02b652c053993e442">rc_filter_t::ss_en</a></div><div class="ttdeci">int ss_en</div><div class="ttdoc">set to 1 by enbale_soft_start()</div><div class="ttdef"><b>Definition:</b> filter.h:63</div></div>
 <div class="ttc" id="astructrc__filter__t_html_a4ec16fb60b43a49423a34febea4e0d5e"><div class="ttname"><a href="structrc__filter__t.html#a4ec16fb60b43a49423a34febea4e0d5e">rc_filter_t::sat_min</a></div><div class="ttdeci">double sat_min</div><div class="ttdoc">lower saturation limit</div><div class="ttdef"><b>Definition:</b> filter.h:56</div></div>
 <div class="ttc" id="astructrc__filter__t_html_a66dca6550d90ecfa9bbdce15633ad42a"><div class="ttname"><a href="structrc__filter__t.html#a66dca6550d90ecfa9bbdce15633ad42a">rc_filter_t::newest_output</a></div><div class="ttdeci">double newest_output</div><div class="ttdoc">shortcut for the most recent output</div><div class="ttdef"><b>Definition:</b> filter.h:76</div></div>
@@ -236,10 +236,8 @@ $(function() {
 <div class="ttc" id="astructrc__filter__t_html_aceffda52afb5aafc8012a0dfc42ec5ef"><div class="ttname"><a href="structrc__filter__t.html#aceffda52afb5aafc8012a0dfc42ec5ef">rc_filter_t::sat_flag</a></div><div class="ttdeci">int sat_flag</div><div class="ttdoc">1 if saturated on the last step</div><div class="ttdef"><b>Definition:</b> filter.h:58</div></div>
 <div class="ttc" id="astructrc__filter__t_html_aee09a10c5723cd3ac99b5062129edf26"><div class="ttname"><a href="structrc__filter__t.html#aee09a10c5723cd3ac99b5062129edf26">rc_filter_t::den</a></div><div class="ttdeci">rc_vector_t den</div><div class="ttdoc">denominator coefficients</div><div class="ttdef"><b>Definition:</b> filter.h:50</div></div>
 <div class="ttc" id="astructrc__filter__t_html_af0510651470505b02c2c8cf874dde82d"><div class="ttname"><a href="structrc__filter__t.html#af0510651470505b02c2c8cf874dde82d">rc_filter_t::step</a></div><div class="ttdeci">uint64_t step</div><div class="ttdoc">steps since last reset</div><div class="ttdef"><b>Definition:</b> filter.h:77</div></div>
-<div class="ttc" id="astructrc__filter__t_html_afbebc6ec5bae8293629ff88c72011e28"><div class="ttname"><a href="structrc__filter__t.html#afbebc6ec5bae8293629ff88c72011e28">rc_filter_t::in_buf</a></div><div class="ttdeci">rc_ringbuf_t in_buf</div><div class="ttdef"><b>Definition:</b> filter.h:69</div></div>
 <div class="ttc" id="astructrc__ringbuf__t_html"><div class="ttname"><a href="structrc__ringbuf__t.html">rc_ringbuf_t</a></div><div class="ttdoc">Struct containing state of a ringbuffer and pointer to dynamically allocated memory.</div><div class="ttdef"><b>Definition:</b> ring_buffer.h:34</div></div>
 <div class="ttc" id="astructrc__vector__t_html"><div class="ttname"><a href="structrc__vector__t.html">rc_vector_t</a></div><div class="ttdoc">Struct containing the state of a vector and a pointer to dynamically allocated memory to hold its con...</div><div class="ttdef"><b>Definition:</b> vector.h:41</div></div>
-<div class="ttc" id="avector_8h_html"><div class="ttname"><a href="vector_8h.html">vector.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

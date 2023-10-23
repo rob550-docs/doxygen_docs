@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/src/controller.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/src/controller.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,60 +72,37 @@ $(function() {
 <div class="title">controller.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="controller_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;mbot_lcm_msgs_serial.h&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mbot__params_8h.html">mbot/defs/mbot_params.h</a>&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;mbot_lcm_msgs_serial.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;mbot/defs/mbot_params.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="structmbot__pid__cfg__t.html">    4</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a>{</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structmbot__pid__cfg__t.html#ac20d3e0268f943ceaa6996a29ca53163">    5</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structmbot__pid__cfg__t.html#ac20d3e0268f943ceaa6996a29ca53163">kp</a>;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structmbot__pid__cfg__t.html#a17c6ebbcc601eacb5cb119d61e395c1c">    6</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structmbot__pid__cfg__t.html#a17c6ebbcc601eacb5cb119d61e395c1c">ki</a>;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structmbot__pid__cfg__t.html#ac20d3e0268f943ceaa6996a29ca53163">kp</a>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structmbot__pid__cfg__t.html#ac0a56adf3c29e00e148b159ad3ef6494">    8</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structmbot__pid__cfg__t.html#ac0a56adf3c29e00e148b159ad3ef6494">Tf</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="controller_8h.html#a28902aa66318c6058a48e88b8fc0e3b7">    9</a></span>&#160;} <a class="code" href="controller_8h.html#a28902aa66318c6058a48e88b8fc0e3b7">mbot_pid_cfg_t</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keywordtype">float</span> kp;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordtype">float</span> ki;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">float</span> kp;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">float</span> Tf;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;} <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structmbot__ctlr__cfg__t.html">   11</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structmbot__ctlr__cfg__t.html">mbot_ctlr_cfg_t</a>{</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structmbot__ctlr__cfg__t.html#a02c677c480c439127f8bd5ac6685d164">   12</a></span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> <a class="code" href="structmbot__ctlr__cfg__t.html#a02c677c480c439127f8bd5ac6685d164">right</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structmbot__ctlr__cfg__t.html#a11c187dbaf5dd2785b7c693694734bb8">   13</a></span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> <a class="code" href="structmbot__ctlr__cfg__t.html#a11c187dbaf5dd2785b7c693694734bb8">left</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structmbot__ctlr__cfg__t.html#ade07e9f6670f1d09b98847485c4b9065">   14</a></span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> <a class="code" href="structmbot__ctlr__cfg__t.html#ade07e9f6670f1d09b98847485c4b9065">back</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structmbot__ctlr__cfg__t.html#ab4f3a90df076717810eb8a5d2fabf933">   15</a></span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> <a class="code" href="structmbot__ctlr__cfg__t.html#ab4f3a90df076717810eb8a5d2fabf933">vx</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structmbot__ctlr__cfg__t.html#a2353c81e19cb334c4cd8dd6c714e399d">   16</a></span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> <a class="code" href="structmbot__ctlr__cfg__t.html#a2353c81e19cb334c4cd8dd6c714e399d">vy</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structmbot__ctlr__cfg__t.html#a6f26f805f1cc52de6e9c7bf45da14588">   17</a></span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> <a class="code" href="structmbot__ctlr__cfg__t.html#a6f26f805f1cc52de6e9c7bf45da14588">wz</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="controller_8h.html#a569aad6dd4bc0aeec4c146d48b8f76bb">   18</a></span>&#160;} <a class="code" href="controller_8h.html#a569aad6dd4bc0aeec4c146d48b8f76bb">mbot_ctlr_cfg_t</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> right;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> left;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> back;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> vx;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> vy;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a> wz;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;} <a class="code" href="structmbot__ctlr__cfg__t.html">mbot_ctlr_cfg_t</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="controller_8h.html#a591f54b7526825460475e901e18bd9aa">   20</a></span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> <a class="code" href="controller_8h.html#a591f54b7526825460475e901e18bd9aa">left_wheel_pid</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="controller_8h.html#a54c3254ef085ba8b6cb2c2e773591cb4">   21</a></span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> <a class="code" href="controller_8h.html#a54c3254ef085ba8b6cb2c2e773591cb4">right_wheel_pid</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="controller_8h.html#a839f5890366cf7e82356d43cc94ee173">   22</a></span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> <a class="code" href="controller_8h.html#a839f5890366cf7e82356d43cc94ee173">back_wheel_pid</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="controller_8h.html#a907e1cb09552a0dd79f1940739c9e719">   23</a></span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> <a class="code" href="controller_8h.html#a907e1cb09552a0dd79f1940739c9e719">mbot_vx_pid</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="controller_8h.html#a1813a75980ce3b121773295fa33e2cb7">   24</a></span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> <a class="code" href="controller_8h.html#a1813a75980ce3b121773295fa33e2cb7">mbot_vy_pid</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="controller_8h.html#a4e80ef4e0855fe2eb4e77928e34a675c">   25</a></span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> <a class="code" href="controller_8h.html#a4e80ef4e0855fe2eb4e77928e34a675c">mbot_wz_pid</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> left_wheel_pid;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> right_wheel_pid;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> back_wheel_pid;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> mbot_vx_pid;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> mbot_vy_pid;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="structrc__filter__t.html">rc_filter_t</a> mbot_wz_pid;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controller_8h.html#a54d842eccefb324a9a7092ddb1daa5bd">mbot_init_ctlr</a>(<a class="code" href="structmbot__ctlr__cfg__t.html">mbot_ctlr_cfg_t</a> ctlr_cfg);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span> <a class="code" href="controller_8h.html#a6b1796197a8cc48085af4ba4e419364e">mbot_motor_vel_ctlr</a>(serial_mbot_motor_vel_t vel_cmd, serial_mbot_motor_vel_t vel, serial_mbot_motor_pwm_t &amp;<a class="code" href="mbot_8h.html#a467a608388a9c52714b6dfcb8b0388ae">mbot_motor_pwm</a>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="controller_8h.html#a3554f82c3b4a22ef8896e7fb485ff35f">   29</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="controller_8h.html#a3554f82c3b4a22ef8896e7fb485ff35f">mbot_ctlr</a>(serial_twist2D_t vel_cmd, serial_twist2D_t vel, serial_mbot_motor_vel_t &amp;<a class="code" href="mbot_8h.html#a71664780fc236de17d3f64411d082068">mbot_motor_vel</a>);</div>
-<div class="ttc" id="acontroller_8h_html_a1813a75980ce3b121773295fa33e2cb7"><div class="ttname"><a href="controller_8h.html#a1813a75980ce3b121773295fa33e2cb7">mbot_vy_pid</a></div><div class="ttdeci">rc_filter_t mbot_vy_pid</div><div class="ttdef"><b>Definition:</b> controller.h:24</div></div>
-<div class="ttc" id="acontroller_8h_html_a28902aa66318c6058a48e88b8fc0e3b7"><div class="ttname"><a href="controller_8h.html#a28902aa66318c6058a48e88b8fc0e3b7">mbot_pid_cfg_t</a></div><div class="ttdeci">struct mbot_pid_cfg_t mbot_pid_cfg_t</div></div>
-<div class="ttc" id="acontroller_8h_html_a3554f82c3b4a22ef8896e7fb485ff35f"><div class="ttname"><a href="controller_8h.html#a3554f82c3b4a22ef8896e7fb485ff35f">mbot_ctlr</a></div><div class="ttdeci">int mbot_ctlr(serial_twist2D_t vel_cmd, serial_twist2D_t vel, serial_mbot_motor_vel_t &amp;mbot_motor_vel)</div></div>
-<div class="ttc" id="acontroller_8h_html_a4e80ef4e0855fe2eb4e77928e34a675c"><div class="ttname"><a href="controller_8h.html#a4e80ef4e0855fe2eb4e77928e34a675c">mbot_wz_pid</a></div><div class="ttdeci">rc_filter_t mbot_wz_pid</div><div class="ttdef"><b>Definition:</b> controller.h:25</div></div>
-<div class="ttc" id="acontroller_8h_html_a54c3254ef085ba8b6cb2c2e773591cb4"><div class="ttname"><a href="controller_8h.html#a54c3254ef085ba8b6cb2c2e773591cb4">right_wheel_pid</a></div><div class="ttdeci">rc_filter_t right_wheel_pid</div><div class="ttdef"><b>Definition:</b> controller.h:21</div></div>
-<div class="ttc" id="acontroller_8h_html_a54d842eccefb324a9a7092ddb1daa5bd"><div class="ttname"><a href="controller_8h.html#a54d842eccefb324a9a7092ddb1daa5bd">mbot_init_ctlr</a></div><div class="ttdeci">int mbot_init_ctlr(mbot_ctlr_cfg_t ctlr_cfg)</div><div class="ttdef"><b>Definition:</b> controller.c:4</div></div>
-<div class="ttc" id="acontroller_8h_html_a569aad6dd4bc0aeec4c146d48b8f76bb"><div class="ttname"><a href="controller_8h.html#a569aad6dd4bc0aeec4c146d48b8f76bb">mbot_ctlr_cfg_t</a></div><div class="ttdeci">struct mbot_ctlr_cfg_t mbot_ctlr_cfg_t</div></div>
-<div class="ttc" id="acontroller_8h_html_a591f54b7526825460475e901e18bd9aa"><div class="ttname"><a href="controller_8h.html#a591f54b7526825460475e901e18bd9aa">left_wheel_pid</a></div><div class="ttdeci">rc_filter_t left_wheel_pid</div><div class="ttdef"><b>Definition:</b> controller.h:20</div></div>
-<div class="ttc" id="acontroller_8h_html_a6b1796197a8cc48085af4ba4e419364e"><div class="ttname"><a href="controller_8h.html#a6b1796197a8cc48085af4ba4e419364e">mbot_motor_vel_ctlr</a></div><div class="ttdeci">int mbot_motor_vel_ctlr(serial_mbot_motor_vel_t vel_cmd, serial_mbot_motor_vel_t vel, serial_mbot_motor_pwm_t &amp;mbot_motor_pwm)</div><div class="ttdef"><b>Definition:</b> controller.c:19</div></div>
-<div class="ttc" id="acontroller_8h_html_a839f5890366cf7e82356d43cc94ee173"><div class="ttname"><a href="controller_8h.html#a839f5890366cf7e82356d43cc94ee173">back_wheel_pid</a></div><div class="ttdeci">rc_filter_t back_wheel_pid</div><div class="ttdef"><b>Definition:</b> controller.h:22</div></div>
-<div class="ttc" id="acontroller_8h_html_a907e1cb09552a0dd79f1940739c9e719"><div class="ttname"><a href="controller_8h.html#a907e1cb09552a0dd79f1940739c9e719">mbot_vx_pid</a></div><div class="ttdeci">rc_filter_t mbot_vx_pid</div><div class="ttdef"><b>Definition:</b> controller.h:23</div></div>
-<div class="ttc" id="ambot_8h_html_a467a608388a9c52714b6dfcb8b0388ae"><div class="ttname"><a href="mbot_8h.html#a467a608388a9c52714b6dfcb8b0388ae">mbot_motor_pwm</a></div><div class="ttdeci">serial_mbot_motor_pwm_t mbot_motor_pwm</div><div class="ttdef"><b>Definition:</b> mbot.h:60</div></div>
-<div class="ttc" id="ambot_8h_html_a71664780fc236de17d3f64411d082068"><div class="ttname"><a href="mbot_8h.html#a71664780fc236de17d3f64411d082068">mbot_motor_vel</a></div><div class="ttdeci">serial_mbot_motor_vel_t mbot_motor_vel</div><div class="ttdef"><b>Definition:</b> mbot.h:61</div></div>
-<div class="ttc" id="ambot__params_8h_html"><div class="ttname"><a href="mbot__params_8h.html">mbot_params.h</a></div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> mbot_init_ctlr(<a class="code" href="structmbot__ctlr__cfg__t.html">mbot_ctlr_cfg_t</a> ctlr_cfg);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span> mbot_motor_vel_ctlr(serial_mbot_motor_vel_t vel_cmd, serial_mbot_motor_vel_t vel, serial_mbot_motor_pwm_t &amp;mbot_motor_pwm);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">int</span> mbot_ctlr(serial_twist2D_t vel_cmd, serial_twist2D_t vel, serial_mbot_motor_vel_t &amp;mbot_motor_vel);</div>
 <div class="ttc" id="astructmbot__ctlr__cfg__t_html"><div class="ttname"><a href="structmbot__ctlr__cfg__t.html">mbot_ctlr_cfg_t</a></div><div class="ttdef"><b>Definition:</b> controller.h:11</div></div>
-<div class="ttc" id="astructmbot__ctlr__cfg__t_html_a02c677c480c439127f8bd5ac6685d164"><div class="ttname"><a href="structmbot__ctlr__cfg__t.html#a02c677c480c439127f8bd5ac6685d164">mbot_ctlr_cfg_t::right</a></div><div class="ttdeci">mbot_pid_cfg_t right</div><div class="ttdef"><b>Definition:</b> controller.h:12</div></div>
-<div class="ttc" id="astructmbot__ctlr__cfg__t_html_a11c187dbaf5dd2785b7c693694734bb8"><div class="ttname"><a href="structmbot__ctlr__cfg__t.html#a11c187dbaf5dd2785b7c693694734bb8">mbot_ctlr_cfg_t::left</a></div><div class="ttdeci">mbot_pid_cfg_t left</div><div class="ttdef"><b>Definition:</b> controller.h:13</div></div>
-<div class="ttc" id="astructmbot__ctlr__cfg__t_html_a2353c81e19cb334c4cd8dd6c714e399d"><div class="ttname"><a href="structmbot__ctlr__cfg__t.html#a2353c81e19cb334c4cd8dd6c714e399d">mbot_ctlr_cfg_t::vy</a></div><div class="ttdeci">mbot_pid_cfg_t vy</div><div class="ttdef"><b>Definition:</b> controller.h:16</div></div>
-<div class="ttc" id="astructmbot__ctlr__cfg__t_html_a6f26f805f1cc52de6e9c7bf45da14588"><div class="ttname"><a href="structmbot__ctlr__cfg__t.html#a6f26f805f1cc52de6e9c7bf45da14588">mbot_ctlr_cfg_t::wz</a></div><div class="ttdeci">mbot_pid_cfg_t wz</div><div class="ttdef"><b>Definition:</b> controller.h:17</div></div>
-<div class="ttc" id="astructmbot__ctlr__cfg__t_html_ab4f3a90df076717810eb8a5d2fabf933"><div class="ttname"><a href="structmbot__ctlr__cfg__t.html#ab4f3a90df076717810eb8a5d2fabf933">mbot_ctlr_cfg_t::vx</a></div><div class="ttdeci">mbot_pid_cfg_t vx</div><div class="ttdef"><b>Definition:</b> controller.h:15</div></div>
-<div class="ttc" id="astructmbot__ctlr__cfg__t_html_ade07e9f6670f1d09b98847485c4b9065"><div class="ttname"><a href="structmbot__ctlr__cfg__t.html#ade07e9f6670f1d09b98847485c4b9065">mbot_ctlr_cfg_t::back</a></div><div class="ttdeci">mbot_pid_cfg_t back</div><div class="ttdef"><b>Definition:</b> controller.h:14</div></div>
 <div class="ttc" id="astructmbot__pid__cfg__t_html"><div class="ttname"><a href="structmbot__pid__cfg__t.html">mbot_pid_cfg_t</a></div><div class="ttdef"><b>Definition:</b> controller.h:4</div></div>
-<div class="ttc" id="astructmbot__pid__cfg__t_html_a17c6ebbcc601eacb5cb119d61e395c1c"><div class="ttname"><a href="structmbot__pid__cfg__t.html#a17c6ebbcc601eacb5cb119d61e395c1c">mbot_pid_cfg_t::ki</a></div><div class="ttdeci">float ki</div><div class="ttdef"><b>Definition:</b> controller.h:6</div></div>
-<div class="ttc" id="astructmbot__pid__cfg__t_html_ac0a56adf3c29e00e148b159ad3ef6494"><div class="ttname"><a href="structmbot__pid__cfg__t.html#ac0a56adf3c29e00e148b159ad3ef6494">mbot_pid_cfg_t::Tf</a></div><div class="ttdeci">float Tf</div><div class="ttdef"><b>Definition:</b> controller.h:8</div></div>
-<div class="ttc" id="astructmbot__pid__cfg__t_html_ac20d3e0268f943ceaa6996a29ca53163"><div class="ttname"><a href="structmbot__pid__cfg__t.html#ac20d3e0268f943ceaa6996a29ca53163">mbot_pid_cfg_t::kp</a></div><div class="ttdeci">float kp</div><div class="ttdef"><b>Definition:</b> controller.h:5</div></div>
 <div class="ttc" id="astructrc__filter__t_html"><div class="ttname"><a href="structrc__filter__t.html">rc_filter_t</a></div><div class="ttdoc">Struct containing configuration and state of a SISO filter.</div><div class="ttdef"><b>Definition:</b> filter.h:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

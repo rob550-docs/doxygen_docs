@@ -1,18 +1,12 @@
 var searchData=
 [
-  ['mag_5fphysical_5fstatus_5ft_3848',['mag_physical_status_t',['../structmag__physical__status__t.html',1,'']]],
-  ['maneuvercontrollerbase_3849',['ManeuverControllerBase',['../classManeuverControllerBase.html',1,'']]],
-  ['mapping_3850',['Mapping',['../classMapping.html',1,'']]],
-  ['mbot_5fbhy_5fconfig_5ft_3851',['mbot_bhy_config_t',['../structmbot__bhy__config__t.html',1,'']]],
-  ['mbot_5fbhy_5fdata_5ft_3852',['mbot_bhy_data_t',['../structmbot__bhy__data__t.html',1,'']]],
-  ['mbot_5fctlr_5fcfg_5ft_3853',['mbot_ctlr_cfg_t',['../structmbot__ctlr__cfg__t.html',1,'']]],
-  ['mbot_5fparams_5ft_3854',['mbot_params_t',['../structmbot__params__t.html',1,'']]],
-  ['mbot_5fpid_5fcfg_5ft_3855',['mbot_pid_cfg_t',['../structmbot__pid__cfg__t.html',1,'']]],
-  ['meta_5fevent_5fevent_5ft_3856',['meta_event_event_t',['../structmeta__event__event__t.html',1,'']]],
-  ['meta_5fevent_5fintr_5ft_3857',['meta_event_intr_t',['../structmeta__event__intr__t.html',1,'']]],
-  ['motioncontroller_3858',['MotionController',['../classMotionController.html',1,'']]],
-  ['motionplanner_3859',['MotionPlanner',['../classMotionPlanner.html',1,'']]],
-  ['motionplannerparams_3860',['MotionPlannerParams',['../structMotionPlannerParams.html',1,'']]],
-  ['motionplannerserver_3861',['MotionPlannerServer',['../classMotionPlannerServer.html',1,'']]],
-  ['movinglaserscan_3862',['MovingLaserScan',['../classMovingLaserScan.html',1,'']]]
+  ['rc_5ffilter_5ft_644',['rc_filter_t',['../structrc__filter__t.html',1,'']]],
+  ['rc_5fint_5fdouble_5ft_645',['rc_int_double_t',['../unionrc__int__double__t.html',1,'']]],
+  ['rc_5fint_5ffloat_5ft_646',['rc_int_float_t',['../unionrc__int__float__t.html',1,'']]],
+  ['rc_5fkalman_5ft_647',['rc_kalman_t',['../structrc__kalman__t.html',1,'']]],
+  ['rc_5fmatrix_5ft_648',['rc_matrix_t',['../structrc__matrix__t.html',1,'']]],
+  ['rc_5fmpu_5fconfig_5ft_649',['rc_mpu_config_t',['../structrc__mpu__config__t.html',1,'']]],
+  ['rc_5fmpu_5fdata_5ft_650',['rc_mpu_data_t',['../structrc__mpu__data__t.html',1,'']]],
+  ['rc_5fringbuf_5ft_651',['rc_ringbuf_t',['../structrc__ringbuf__t.html',1,'']]],
+  ['rc_5fvector_5ft_652',['rc_vector_t',['../structrc__vector__t.html',1,'']]]
 ];

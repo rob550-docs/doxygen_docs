@@ -1,22 +1,4 @@
 var searchData=
 [
-  ['tap_5fdetected_5084',['tap_detected',['../group__IMU__MPU.html#ga9af18cf2469b03631843fd3b46eb174b',1,'rc_mpu_data_t']]],
-  ['tap_5fthreshold_5085',['tap_threshold',['../group__IMU__MPU.html#ga3b7b2580f3459e08908e0ab68f06716f',1,'rc_mpu_config_t']]],
-  ['tasks_5fto_5fkeep_5086',['tasks_to_keep',['../namespacetemplate__generate.html#a160b56b9a99747df1c769d91a2c1d21c',1,'template_generate']]],
-  ['temp_5087',['temp',['../group__IMU__MPU.html#ga7d10c1a89983a691354d9c126df99b6d',1,'rc_mpu_data_t']]],
-  ['temperature_5088',['temperature',['../structprocess__temperature__t.html#a411138cb9743d9fca02361766d538fba',1,'process_temperature_t']]],
-  ['tf_5089',['Tf',['../structmbot__pid__cfg__t.html#ac0a56adf3c29e00e148b159ad3ef6494',1,'mbot_pid_cfg_t']]],
-  ['theta_5090',['theta',['../structadjusted__ray__t.html#a59183c5a6a7f30a6960a74454a9621e2',1,'adjusted_ray_t']]],
-  ['time_5fnow_5091',['time_now',['../imu_8c.html#a987278fda834e452596448a4ee2ab2c8',1,'imu.c']]],
-  ['timestamp_5092',['timestamp',['../structbsx__process__data__t.html#a7dfb105935fb7d7110a2bdf77a36b17c',1,'bsx_process_data_t::timestamp()'],['../structbhy__data__bsx__t.html#a3d667b9a00d1e22a39666d275318e345',1,'bhy_data_bsx_t::timestamp()']]],
-  ['topic_5fdata_5093',['topic_data',['../structtopic__data__val.html#a5618bf5a5d94445507f3d75cd2fa42f1',1,'topic_data_val']]],
-  ['topic_5fdata_5flen_5094',['topic_data_len',['../structtopic__registry__val.html#ae7cfe10e7d29b2270e7050c7b972ac03',1,'topic_registry_val']]],
-  ['topic_5fdata_5froot_5fnode_5095',['topic_data_root_node',['../topic__data_8c.html#a4a4d879105c01a57d0c2e46c4d57a131',1,'topic_data_root_node():&#160;topic_data.c'],['../topic__data_8h.html#a4a4d879105c01a57d0c2e46c4d57a131',1,'topic_data_root_node():&#160;topic_data.c']]],
-  ['topic_5fid_5096',['topic_id',['../structtopic__registry__val.html#aac1b938ddb228ce230cbb183c4b5548a',1,'topic_registry_val::topic_id()'],['../structtopic__data__val.html#a8bb965f40cce19b4f4bf2f5af1c1eac2',1,'topic_data_val::topic_id()']]],
-  ['topic_5flen_5097',['topic_len',['../structtopic__data__val.html#ab459d2b2d00d70bd54a9a3a759254f7c',1,'topic_data_val']]],
-  ['topic_5fmutex_5098',['topic_mutex',['../structtopic__data__val.html#ab322ebcf537125a60265d6e54df96602',1,'topic_data_val']]],
-  ['topic_5fregistry_5froot_5fnode_5099',['topic_registry_root_node',['../protocol_8h.html#acb94c8f873e339b8e7821fecbacf7eb1',1,'topic_registry_root_node():&#160;protocol.c'],['../protocol_8c.html#acb94c8f873e339b8e7821fecbacf7eb1',1,'topic_registry_root_node():&#160;protocol.c']]],
-  ['transient_5ferror_5100',['transient_error',['../structsensor__status__bank__t.html#a703209cf07df5df606a9da86493ec4ab',1,'sensor_status_bank_t']]],
-  ['turn_5fvel_5101',['turn_vel',['../namespacembot__test__drive.html#aca733bc287a76390db0666a0c37f88fa',1,'mbot_test_drive']]],
-  ['type_5102',['type',['../structgetopt__option.html#a63087f53bd946f4f1522a0dc8a906351',1,'getopt_option::type()'],['../namespacefw__gen.html#a4dd2a333dcdc92fe294588bc003f9df1',1,'fw_gen.type()']]]
+  ['vector_1122',['vector',['../structbsx__process__data__t.html#ad3542f5943bed689bcd2d8b48c074106',1,'bsx_process_data_t']]]
 ];

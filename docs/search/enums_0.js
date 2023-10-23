@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['bhi160_5faccelrange_5211',['BHI160_AccelRange',['../imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1',1,'imu.h']]],
-  ['bhi160_5fgyrorange_5212',['BHI160_GyroRange',['../imu_8h.html#a26706752a033a4eaef5eca33850484d2',1,'imu.h']]],
-  ['bhi160_5fsamplerate_5213',['BHI160_SampleRate',['../imu_8h.html#ae1160d74692e10bae964bc949f71ff0d',1,'imu.h']]],
-  ['bhy_5fdata_5ftype_5ft_5214',['bhy_data_type_t',['../bhy__uc__driver__types_8h.html#a660225e570c8d5a807a5a0b4ff900f05',1,'bhy_uc_driver_types.h']]],
-  ['bhy_5fgp_5fregister_5ftype_5ft_5215',['bhy_gp_register_type_t',['../bhy__uc__driver__types_8h.html#a15b011bbd2a04a65af88f9dbe47eb82d',1,'bhy_uc_driver_types.h']]],
-  ['bhy_5fmeta_5fevent_5ffifo_5ftype_5ft_5216',['bhy_meta_event_fifo_type_t',['../bhy__uc__driver__types_8h.html#a2496469facf51a9b273365b4111d7f29',1,'bhy_uc_driver_types.h']]],
-  ['bhy_5fmeta_5fevent_5ftype_5ft_5217',['bhy_meta_event_type_t',['../bhy__uc__driver__types_8h.html#a4ed8d52109aae7b5db916f2a5548397e',1,'bhy_uc_driver_types.h']]],
-  ['bhy_5fphysical_5fsensor_5findex_5ftype_5ft_5218',['bhy_physical_sensor_index_type_t',['../bhy__uc__driver__types_8h.html#abc0569cdd467515105fa433d7d21a910',1,'bhy_uc_driver_types.h']]],
-  ['bhy_5fvirtual_5fsensor_5ft_5219',['bhy_virtual_sensor_t',['../bhy__uc__driver__types_8h.html#afca1b920788955224f43d2468ff3797c',1,'bhy_uc_driver_types.h']]]
+  ['rc_5fmpu_5faccel_5fdlpf_5ft_1171',['rc_mpu_accel_dlpf_t',['../group__IMU__MPU.html#gae212fc0e408486c37f3297a01f75d8e2',1,'mpu.h']]],
+  ['rc_5fmpu_5faccel_5ffsr_5ft_1172',['rc_mpu_accel_fsr_t',['../group__IMU__MPU.html#ga6a40bfb1b31c95c07c440ee1a7c464b8',1,'mpu.h']]],
+  ['rc_5fmpu_5fcfg_5foffset_5ft_1173',['rc_mpu_cfg_offset_t',['../group__IMU__MPU.html#ga7462dedc15a4d4d10fdccdd84eef96b1',1,'mpu.h']]],
+  ['rc_5fmpu_5fgyro_5fdlpf_5ft_1174',['rc_mpu_gyro_dlpf_t',['../group__IMU__MPU.html#ga615c10012ca9942ee0a06e59720aac85',1,'mpu.h']]],
+  ['rc_5fmpu_5fgyro_5ffsr_5ft_1175',['rc_mpu_gyro_fsr_t',['../group__IMU__MPU.html#ga41a163936d06090d69a234035ff0b734',1,'mpu.h']]],
+  ['rc_5fmpu_5forientation_5ft_1176',['rc_mpu_orientation_t',['../group__IMU__MPU.html#ga0ae4e14519b15e255477a9b51217f571',1,'mpu.h']]]
 ];

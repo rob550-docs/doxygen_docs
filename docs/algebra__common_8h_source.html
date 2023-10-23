@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/rc/src/math/algebra_common.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/rc/src/math/algebra_common.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,16 +72,16 @@ $(function() {
 <div class="title">algebra_common.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="algebra__common_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef RC_ALGEBRA_COMMON_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define RC_ALGEBRA_COMMON_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef unlikely</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="algebra__common_8h.html#ac6c45889010c1bd68631771b64f18101">   11</a></span>&#160;<span class="preprocessor">#define unlikely(x) __builtin_expect (!!(x), 0)</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define unlikely(x) __builtin_expect (!!(x), 0)</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef likely</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="algebra__common_8h.html#a217a0bd562b98ae8c2ffce44935351e1">   15</a></span>&#160;<span class="preprocessor">#define likely(x)   __builtin_expect (!!(x), 1)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define likely(x)   __builtin_expect (!!(x), 1)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/*</span></div>
@@ -89,7 +92,7 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * the C compiler that the pointers are not aliased which helps the vectorization</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * process for optimization with the NEON FPU or similar</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">double</span> <a class="code" href="algebra__common_8h.html#ae2969e223c12ce50b0d765d55e3e749a">__vectorized_mult_accumulate</a>(<span class="keywordtype">double</span> * __restrict__ a, <span class="keywordtype">double</span> * __restrict__ b, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">double</span> __vectorized_mult_accumulate(<span class="keywordtype">double</span> * __restrict__ a, <span class="keywordtype">double</span> * __restrict__ b, <span class="keywordtype">int</span> n);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * Performs a vector dot product on the contents of a with itself</span></div>
@@ -99,11 +102,9 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * the C compiler that the pointers are not aliased which helps the vectorization</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * process for optimization with the NEON FPU or similar</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">double</span> <a class="code" href="algebra__common_8h.html#af285af914c329f72200fec7845269d23">__vectorized_square_accumulate</a>(<span class="keywordtype">double</span> * __restrict__ a, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">double</span> __vectorized_square_accumulate(<span class="keywordtype">double</span> * __restrict__ a, <span class="keywordtype">int</span> n);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// RC_ALGEBRA_COMMON_H</span></div>
-<div class="ttc" id="aalgebra__common_8h_html_ae2969e223c12ce50b0d765d55e3e749a"><div class="ttname"><a href="algebra__common_8h.html#ae2969e223c12ce50b0d765d55e3e749a">__vectorized_mult_accumulate</a></div><div class="ttdeci">double __vectorized_mult_accumulate(double *__restrict__ a, double *__restrict__ b, int n)</div><div class="ttdef"><b>Definition:</b> algebra_common.c:9</div></div>
-<div class="ttc" id="aalgebra__common_8h_html_af285af914c329f72200fec7845269d23"><div class="ttname"><a href="algebra__common_8h.html#af285af914c329f72200fec7845269d23">__vectorized_square_accumulate</a></div><div class="ttdeci">double __vectorized_square_accumulate(double *__restrict__ a, int n)</div><div class="ttdef"><b>Definition:</b> algebra_common.c:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

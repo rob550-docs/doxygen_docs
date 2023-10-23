@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/src/odometry.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/src/odometry.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,26 +72,19 @@ $(function() {
 <div class="title">odometry.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="odometry_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;mbot_lcm_msgs_serial.h&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mbot__params_8h.html">mbot/defs/mbot_params.h</a>&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;mbot_lcm_msgs_serial.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;mbot/defs/mbot_params.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> <a class="code" href="odometry_8h.html#aee3d690e717fc2a7adaadbb4dc628e7a">mbot_calculate_diff_body_vel</a>(<span class="keywordtype">float</span> wheel_left_vel, <span class="keywordtype">float</span> wheel_right_vel, serial_twist2D_t *<a class="code" href="mbot_8h.html#ae20877c57b74323938dbedf36256ae0e">mbot_vel</a>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> mbot_calculate_diff_body_vel(<span class="keywordtype">float</span> wheel_left_vel, <span class="keywordtype">float</span> wheel_right_vel, serial_twist2D_t *mbot_vel);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="odometry_8h.html#ad86ad88683b24a5a161a399abcf81a59">mbot_calculate_diff_body_vel_imu</a>(<span class="keywordtype">float</span> wheel_left_vel, <span class="keywordtype">float</span> wheel_right_vel, serial_mbot_imu_t imu, serial_twist2D_t *<a class="code" href="mbot_8h.html#ae20877c57b74323938dbedf36256ae0e">mbot_vel</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> mbot_calculate_diff_body_vel_imu(<span class="keywordtype">float</span> wheel_left_vel, <span class="keywordtype">float</span> wheel_right_vel, serial_mbot_imu_t imu, serial_twist2D_t *mbot_vel);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> <a class="code" href="odometry_8h.html#a778cebf5fc49651c265925014481b7e8">mbot_calculate_omni_body_vel</a>(<span class="keywordtype">float</span> wheel_left_vel, <span class="keywordtype">float</span> wheel_right_vel, <span class="keywordtype">float</span> wheel_back_vel, serial_twist2D_t *<a class="code" href="mbot_8h.html#ae20877c57b74323938dbedf36256ae0e">mbot_vel</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> mbot_calculate_omni_body_vel(<span class="keywordtype">float</span> wheel_left_vel, <span class="keywordtype">float</span> wheel_right_vel, <span class="keywordtype">float</span> wheel_back_vel, serial_twist2D_t *mbot_vel);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">int</span> <a class="code" href="odometry_8h.html#a72e6058c9e8bf1c2e5da03a5c736a7d7">mbot_calculate_omni_body_vel_imu</a>(<span class="keywordtype">float</span> wheel_left_vel, <span class="keywordtype">float</span> wheel_right_vel, <span class="keywordtype">float</span> wheel_back_vel, serial_mbot_imu_t imu, serial_twist2D_t *<a class="code" href="mbot_8h.html#ae20877c57b74323938dbedf36256ae0e">mbot_vel</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">int</span> mbot_calculate_omni_body_vel_imu(<span class="keywordtype">float</span> wheel_left_vel, <span class="keywordtype">float</span> wheel_right_vel, <span class="keywordtype">float</span> wheel_back_vel, serial_mbot_imu_t imu, serial_twist2D_t *mbot_vel);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">int</span> <a class="code" href="odometry_8h.html#aa748c9c5de2be4de00c0569585ef386e">mbot_calculate_odometry</a>(serial_twist2D_t <a class="code" href="mbot_8h.html#ae20877c57b74323938dbedf36256ae0e">mbot_vel</a>,  <span class="keywordtype">float</span> dt, serial_pose2D_t *odometry);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">int</span> mbot_calculate_odometry(serial_twist2D_t mbot_vel,  <span class="keywordtype">float</span> dt, serial_pose2D_t *odometry);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="ttc" id="ambot_8h_html_ae20877c57b74323938dbedf36256ae0e"><div class="ttname"><a href="mbot_8h.html#ae20877c57b74323938dbedf36256ae0e">mbot_vel</a></div><div class="ttdeci">serial_twist2D_t mbot_vel</div><div class="ttdef"><b>Definition:</b> mbot.h:59</div></div>
-<div class="ttc" id="ambot__params_8h_html"><div class="ttname"><a href="mbot__params_8h.html">mbot_params.h</a></div></div>
-<div class="ttc" id="aodometry_8h_html_a72e6058c9e8bf1c2e5da03a5c736a7d7"><div class="ttname"><a href="odometry_8h.html#a72e6058c9e8bf1c2e5da03a5c736a7d7">mbot_calculate_omni_body_vel_imu</a></div><div class="ttdeci">int mbot_calculate_omni_body_vel_imu(float wheel_left_vel, float wheel_right_vel, float wheel_back_vel, serial_mbot_imu_t imu, serial_twist2D_t *mbot_vel)</div><div class="ttdoc">Calculate the body velocity of an omnidirectional (Kiwi) robot using an IMU for angular velocity.</div><div class="ttdef"><b>Definition:</b> odometry.c:19</div></div>
-<div class="ttc" id="aodometry_8h_html_a778cebf5fc49651c265925014481b7e8"><div class="ttname"><a href="odometry_8h.html#a778cebf5fc49651c265925014481b7e8">mbot_calculate_omni_body_vel</a></div><div class="ttdeci">int mbot_calculate_omni_body_vel(float wheel_left_vel, float wheel_right_vel, float wheel_back_vel, serial_twist2D_t *mbot_vel)</div><div class="ttdoc">Calculate the body velocity of an omnidirectional (Kiwi) robot.</div><div class="ttdef"><b>Definition:</b> odometry.c:13</div></div>
-<div class="ttc" id="aodometry_8h_html_aa748c9c5de2be4de00c0569585ef386e"><div class="ttname"><a href="odometry_8h.html#aa748c9c5de2be4de00c0569585ef386e">mbot_calculate_odometry</a></div><div class="ttdeci">int mbot_calculate_odometry(serial_twist2D_t mbot_vel, float dt, serial_pose2D_t *odometry)</div><div class="ttdoc">Calculate the odometry (position and orientation) of the robot based on its body velocity.</div><div class="ttdef"><b>Definition:</b> odometry.c:23</div></div>
-<div class="ttc" id="aodometry_8h_html_ad86ad88683b24a5a161a399abcf81a59"><div class="ttname"><a href="odometry_8h.html#ad86ad88683b24a5a161a399abcf81a59">mbot_calculate_diff_body_vel_imu</a></div><div class="ttdeci">int mbot_calculate_diff_body_vel_imu(float wheel_left_vel, float wheel_right_vel, serial_mbot_imu_t imu, serial_twist2D_t *mbot_vel)</div><div class="ttdoc">Calculate the body velocity of a differential drive robot using an IMU for angular velocity.</div><div class="ttdef"><b>Definition:</b> odometry.c:10</div></div>
-<div class="ttc" id="aodometry_8h_html_aee3d690e717fc2a7adaadbb4dc628e7a"><div class="ttname"><a href="odometry_8h.html#aee3d690e717fc2a7adaadbb4dc628e7a">mbot_calculate_diff_body_vel</a></div><div class="ttdeci">int mbot_calculate_diff_body_vel(float wheel_left_vel, float wheel_right_vel, serial_twist2D_t *mbot_vel)</div><div class="ttdoc">Calculate the body velocity of a differential drive robot.</div><div class="ttdef"><b>Definition:</b> odometry.c:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/rc/src/math/algebra_common.c File Reference</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/rc/src/math/algebra_common.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -71,90 +74,29 @@ $(function() {
 <div class="title">algebra_common.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="algebra__common_8h_source.html">algebra_common.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;algebra_common.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for algebra_common.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="algebra__common_8c__incl.png" border="0" usemap="#ambot__firmware_2rc_2src_2math_2algebra__common_8c" alt=""/></div>
-<map name="ambot__firmware_2rc_2src_2math_2algebra__common_8c" id="ambot__firmware_2rc_2src_2math_2algebra__common_8c">
-<area shape="rect" title=" " alt="" coords="5,5,193,47"/>
-<area shape="rect" href="algebra__common_8h.html" title=" " alt="" coords="26,95,173,121"/>
+<div class="center"><img src="algebra__common_8c__incl.png" border="0" usemap="#a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2algebra__common_8c" alt=""/></div>
+<map name="a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2algebra__common_8c" id="a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2algebra__common_8c">
+<area shape="rect" title=" " alt="" coords="5,5,232,61"/>
+<area shape="rect" href="algebra__common_8h_source.html" title=" " alt="" coords="45,109,192,136"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae2969e223c12ce50b0d765d55e3e749a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algebra__common_8c.html#ae2969e223c12ce50b0d765d55e3e749a">__vectorized_mult_accumulate</a> (double *__restrict__ a, double *__restrict__ b, int n)</td></tr>
+<tr class="memitem:ae2969e223c12ce50b0d765d55e3e749a"><td class="memItemLeft" align="right" valign="top"><a id="ae2969e223c12ce50b0d765d55e3e749a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>__vectorized_mult_accumulate</b> (double *__restrict__ a, double *__restrict__ b, int n)</td></tr>
 <tr class="separator:ae2969e223c12ce50b0d765d55e3e749a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af285af914c329f72200fec7845269d23"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algebra__common_8c.html#af285af914c329f72200fec7845269d23">__vectorized_square_accumulate</a> (double *__restrict__ a, int n)</td></tr>
+<tr class="memitem:af285af914c329f72200fec7845269d23"><td class="memItemLeft" align="right" valign="top"><a id="af285af914c329f72200fec7845269d23"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>__vectorized_square_accumulate</b> (double *__restrict__ a, int n)</td></tr>
 <tr class="separator:af285af914c329f72200fec7845269d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>see <a class="el" href="algebra__common_8h.html">algebra_common.h</a> </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ae2969e223c12ce50b0d765d55e3e749a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2969e223c12ce50b0d765d55e3e749a">&#9670;&nbsp;</a></span>__vectorized_mult_accumulate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double __vectorized_mult_accumulate </td>
-          <td>(</td>
-          <td class="paramtype">double *__restrict__&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *__restrict__&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af285af914c329f72200fec7845269d23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af285af914c329f72200fec7845269d23">&#9670;&nbsp;</a></span>__vectorized_square_accumulate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double __vectorized_square_accumulate </td>
-          <td>(</td>
-          <td class="paramtype">double *__restrict__&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>see <a class="el" href="algebra__common_8h_source.html">algebra_common.h</a> </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -63,90 +66,528 @@ $(function() {
 <div class="contents">
 &#160;
 
-<h3><a id="index__5F"></a>- _ -</h3><ul>
-<li>__get_device_id()
-: <a class="el" href="fram_8c.html#a13cc79b856328fb3a7f04e776bcdf61f">fram.c</a>
+<h3><a id="index_b"></a>- b -</h3><ul>
+<li>bhy_delay_msec()
+: <a class="el" href="bhy__support_8c.html#a4bfc527d639466bf453bb3f84e08bef4">bhy_support.c</a>
+, <a class="el" href="bhy__support_8h.html#a4bfc527d639466bf453bb3f84e08bef4">bhy_support.h</a>
 </li>
-<li>__i2c_fram_read_byte()
-: <a class="el" href="fram_8c.html#a64a768cf1ef7bd891bf462833f1e3101">fram.c</a>
+<li>bhy_disable_virtual_sensor()
+: <a class="el" href="bhy__uc__driver_8c.html#afc63290177bca9a852cb443c8a2ef8b3">bhy_uc_driver.c</a>
+, <a class="el" href="bhy__uc__driver_8h.html#afc63290177bca9a852cb443c8a2ef8b3">bhy_uc_driver.h</a>
 </li>
-<li>__i2c_fram_read_bytes()
-: <a class="el" href="fram_8c.html#a69caea26ab99c235ca7698e58a49b2cc">fram.c</a>
+<li>bhy_driver_init()
+: <a class="el" href="bhy__uc__driver_8c.html#a07b423f2dfa0fcba3e179b4068a78964">bhy_uc_driver.c</a>
+, <a class="el" href="bhy__uc__driver_8h.html#a07b423f2dfa0fcba3e179b4068a78964">bhy_uc_driver.h</a>
 </li>
-<li>__i2c_fram_read_word()
-: <a class="el" href="fram_8c.html#a5444cdda852f649ec52994bc5b879d9d">fram.c</a>
+<li>bhy_enable_virtual_sensor()
+: <a class="el" href="bhy__uc__driver_8h.html#a30e82659e79b8926101fb7aa95afbc98">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a30e82659e79b8926101fb7aa95afbc98">bhy_uc_driver.c</a>
 </li>
-<li>__i2c_fram_write_byte()
-: <a class="el" href="fram_8c.html#a72f8025ce23d69c1efeebab3a0cafe81">fram.c</a>
+<li>bhy_get_chip_control()
+: <a class="el" href="bhy_8h.html#af7286db679545fcecbefbe8d50f1301e">bhy.h</a>
 </li>
-<li>__i2c_fram_write_bytes()
-: <a class="el" href="fram_8c.html#a19b12c0baefcd63ba2e2b18f92be1467">fram.c</a>
+<li>bhy_get_chip_status()
+: <a class="el" href="bhy_8h.html#a9392817da6c4f18b78b846e245758641">bhy.h</a>
 </li>
-<li>__i2c_fram_write_word()
-: <a class="el" href="fram_8c.html#a2b6f1c9b386a8e21dfb9b4910aae49fd">fram.c</a>
+<li>bhy_get_crc_host()
+: <a class="el" href="bhy_8h.html#a9ef7b428832a01212adbdb6b7a264703">bhy.h</a>
 </li>
-<li>__i2c_mag_read_byte()
-: <a class="el" href="mpu_8c.html#af8a0dfdc57b3b0f858012ce1294ebecb">mpu.c</a>
+<li>bhy_get_cus_evt_size()
+: <a class="el" href="bhy__uc__driver_8h.html#abb6352cb13230cf960220f0d30f7934f">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#abb6352cb13230cf960220f0d30f7934f">bhy_uc_driver.c</a>
 </li>
-<li>__i2c_mag_read_bytes()
-: <a class="el" href="mpu_8c.html#ac8817c8bd036be5f9b8f726c55f5bf26">mpu.c</a>
+<li>bhy_get_fifo_flush()
+: <a class="el" href="bhy_8h.html#ac19ed36db73514778be94bcb8f1a122f">bhy.h</a>
 </li>
-<li>__i2c_mag_read_word()
-: <a class="el" href="mpu_8c.html#a8604b5f19c595ec9c8663e74eb62f0c1">mpu.c</a>
+<li>bhy_get_fifo_size()
+: <a class="el" href="bhy_8h.html#a97d8c00b1812cf53f0f8c66de2bec3e9">bhy.h</a>
 </li>
-<li>__i2c_mag_write_byte()
-: <a class="el" href="mpu_8c.html#ae89f4b9aa5cb4a5893b346518da52c12">mpu.c</a>
+<li>bhy_get_fifo_water_mark()
+: <a class="el" href="bhy_8h.html#abf4deef12b0f0d993b335c72efaa0eb1">bhy.h</a>
 </li>
-<li>__i2c_mag_write_bytes()
-: <a class="el" href="mpu_8c.html#a5083d07b02369c966209ac11dfdf095e">mpu.c</a>
+<li>bhy_get_host_interface_control()
+: <a class="el" href="bhy_8h.html#a574e9c8765f1dcf153ccb263b6bba0e9">bhy.h</a>
 </li>
-<li>__i2c_mag_write_word()
-: <a class="el" href="mpu_8c.html#a1811157ac8a79f484d153ec0bcf6a717">mpu.c</a>
+<li>bhy_get_host_irq_timestamp()
+: <a class="el" href="bhy_8h.html#a549316940c06da6d85fdaf0cb53c7816">bhy.h</a>
 </li>
-<li>__i2c_read_byte()
-: <a class="el" href="mpu_8c.html#a638a7c216ddd22f9491d555a4c043aab">mpu.c</a>
+<li>bhy_get_host_status()
+: <a class="el" href="bhy_8h.html#a39c305be187826e377ac3d2cb65064bd">bhy.h</a>
 </li>
-<li>__i2c_read_bytes()
-: <a class="el" href="mpu_8c.html#af43f0572f96c9b52b42e7c469a9f0e92">mpu.c</a>
+<li>bhy_get_interrupt_status()
+: <a class="el" href="bhy_8h.html#a9d56e56f741f57aeb77fbd4a9a23f850">bhy.h</a>
 </li>
-<li>__i2c_read_word()
-: <a class="el" href="mpu_8c.html#a138587b3c6246b8cf2f19049a071ea14">mpu.c</a>
+<li>bhy_get_meta_event()
+: <a class="el" href="bhy_8h.html#a8fab1cfbebf6f17082204d3feedef025">bhy.h</a>
 </li>
-<li>__i2c_write_byte()
-: <a class="el" href="mpu_8c.html#a49fbacaa18637d59e332cc025e9d7907">mpu.c</a>
+<li>bhy_get_non_wakeup_sensor_configuration()
+: <a class="el" href="bhy_8h.html#a1e65ec0649ba1e5b104b0278532e903d">bhy.h</a>
 </li>
-<li>__i2c_write_bytes()
-: <a class="el" href="mpu_8c.html#a9ef05f7df9e1bbada606fae8d6dfe86c">mpu.c</a>
+<li>bhy_get_non_wakeup_sensor_information()
+: <a class="el" href="bhy_8h.html#aa02fa15a1fe2a420357e33e9bb0a2528">bhy.h</a>
 </li>
-<li>__i2c_write_word()
-: <a class="el" href="mpu_8c.html#ab2d20b3172e2c806f4290b0aca3336d2">mpu.c</a>
+<li>bhy_get_parameter_acknowledge()
+: <a class="el" href="bhy_8h.html#acf25f54c41349c0c777293e2409955ad">bhy.h</a>
 </li>
-<li>__vectorized_mult_accumulate()
-: <a class="el" href="algebra__common_8c.html#ae2969e223c12ce50b0d765d55e3e749a">algebra_common.c</a>
-, <a class="el" href="algebra__common_8h.html#ae2969e223c12ce50b0d765d55e3e749a">algebra_common.h</a>
+<li>bhy_get_parameter_page_select()
+: <a class="el" href="bhy_8h.html#a32aa4560d3129c9acd174eac7a6e079d">bhy.h</a>
 </li>
-<li>__vectorized_square_accumulate()
-: <a class="el" href="algebra__common_8c.html#af285af914c329f72200fec7845269d23">algebra_common.c</a>
-, <a class="el" href="algebra__common_8h.html#af285af914c329f72200fec7845269d23">algebra_common.h</a>
+<li>bhy_get_parameter_request()
+: <a class="el" href="bhy_8h.html#ac0122d6d5e7803a3e171c20d0ecec442">bhy.h</a>
 </li>
-<li>_bhy_dump_status()
-: <a class="el" href="imu_8c.html#a3c5db41f249fcb1b59d0aa80fceac87a">imu.c</a>
+<li>bhy_get_physical_sensor_status()
+: <a class="el" href="bhy_8h.html#aea59b753d2a41d2cb70ad79ee0f372ec">bhy.h</a>
 </li>
-<li>_calibrated_pwm_from_vel_cmd()
-: <a class="el" href="mbot_8c.html#a4c6785ca44f1516de7e805924e54f375">mbot.c</a>
-, <a class="el" href="mbot_8h.html#a4c6785ca44f1516de7e805924e54f375">mbot.h</a>
-, <a class="el" href="mbot__closed__loop__ctrler__test_8c.html#a4c6785ca44f1516de7e805924e54f375">mbot_closed_loop_ctrler_test.c</a>
+<li>bhy_get_product_id()
+: <a class="el" href="bhy_8h.html#a15305d6245c94dcb503baf9146e3543f">bhy.h</a>
 </li>
-<li>_check_i2c0_enabled()
-: <a class="el" href="utils_8h.html#af04796a3d2d6a9cf8bcbc350f908c43a">utils.h</a>
-, <a class="el" href="utils_8c.html#af04796a3d2d6a9cf8bcbc350f908c43a">utils.c</a>
+<li>bhy_get_ram_version()
+: <a class="el" href="bhy_8h.html#a9b8a424192beac364558e9b0d860d286">bhy.h</a>
 </li>
-<li>_imu_callback()
-: <a class="el" href="imu_8c.html#af88bbd8cc310fe883681bbfc7fe04095">imu.c</a>
+<li>bhy_get_revision_id()
+: <a class="el" href="bhy_8h.html#ae272a648eff13f5765cf19c5f1aacf30">bhy.h</a>
 </li>
-<li>_mbot_init_i2c()
-: <a class="el" href="utils_8h.html#accce3112980bb7b8809c3a2aae6a1c66">utils.h</a>
-, <a class="el" href="utils_8c.html#accce3112980bb7b8809c3a2aae6a1c66">utils.c</a>
+<li>bhy_get_rom_version()
+: <a class="el" href="bhy_8h.html#a22f8cf448cdf0a026374f2656a3a9f87">bhy.h</a>
+</li>
+<li>bhy_get_sensor_status_bank()
+: <a class="el" href="bhy_8h.html#ac39254ca6e172537d7d19422d9f34622">bhy.h</a>
+</li>
+<li>bhy_get_sic_matrix()
+: <a class="el" href="bhy__uc__driver_8h.html#a3a4d40240947d219b8b5afaa2959ddbb">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a3a4d40240947d219b8b5afaa2959ddbb">bhy_uc_driver.c</a>
+</li>
+<li>bhy_get_soft_pass_through()
+: <a class="el" href="bhy_8h.html#adb0cbcb6d2d5344ce5491524b6b89eca">bhy.h</a>
+</li>
+<li>bhy_get_time_stamp()
+: <a class="el" href="bhy_8h.html#a940cf5f08a49851764df78d9a0ba7f91">bhy.h</a>
+</li>
+<li>bhy_get_version()
+: <a class="el" href="bhy__support_8h.html#aff51ebdafb1e759eaa30057ed49eaab0">bhy_support.h</a>
+, <a class="el" href="bhy__support_8c.html#aff51ebdafb1e759eaa30057ed49eaab0">bhy_support.c</a>
+</li>
+<li>bhy_get_wakeup_sensor_configuration()
+: <a class="el" href="bhy_8h.html#af6f1af9d601f37674b65cfbb7303e88b">bhy.h</a>
+</li>
+<li>bhy_get_wakeup_sensor_information()
+: <a class="el" href="bhy_8h.html#ac77ab90648e05d350d9cb4f551a3ac03">bhy.h</a>
+</li>
+<li>bhy_gp_register_read()
+: <a class="el" href="bhy__uc__driver_8h.html#a9165edad90ec3ca739803f681be706c0">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a08a46e53334bdee0f3817f254e4d06d3">bhy_uc_driver.c</a>
+</li>
+<li>bhy_gp_register_write()
+: <a class="el" href="bhy__uc__driver_8h.html#abe99d5242f6a2417027a823a78b576c8">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#abe99d5242f6a2417027a823a78b576c8">bhy_uc_driver.c</a>
+</li>
+<li>bhy_init()
+: <a class="el" href="bhy_8h.html#ab605432f25bf85699caf214aa02faf33">bhy.h</a>
+</li>
+<li>bhy_initialize()
+: <a class="el" href="bhy_8h.html#ab89aa0526f380008a58ba6480390acdb">bhy.h</a>
+</li>
+<li>bhy_initialize_support()
+: <a class="el" href="bhy__support_8c.html#aa9a806d9c59b9a8da71fc359e672d3f0">bhy_support.c</a>
+, <a class="el" href="bhy__support_8h.html#aa9a806d9c59b9a8da71fc359e672d3f0">bhy_support.h</a>
+</li>
+<li>bhy_mapping_matrix_get()
+: <a class="el" href="bhy__uc__driver_8h.html#a5214956d976229562e900535fa9634de">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#ac0104e0e2ea3821b7defea4135b9ffb7">bhy_uc_driver.c</a>
+</li>
+<li>bhy_mapping_matrix_set()
+: <a class="el" href="bhy__uc__driver_8h.html#a10ec3b54a6f6f37704c2f418552e3650">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#ad874b8b339fe19d060bf37e39eb99b8d">bhy_uc_driver.c</a>
+</li>
+<li>bhy_meta_event_get_config()
+: <a class="el" href="bhy__uc__driver_8h.html#a88280cd345ac94ddb65a3bafe8973977">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a88280cd345ac94ddb65a3bafe8973977">bhy_uc_driver.c</a>
+</li>
+<li>bhy_meta_event_set_config()
+: <a class="el" href="bhy__uc__driver_8h.html#a45458c380e3db7908962a9d23cc460d3">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a45458c380e3db7908962a9d23cc460d3">bhy_uc_driver.c</a>
+</li>
+<li>bhy_parse_next_fifo_packet()
+: <a class="el" href="bhy__uc__driver_8h.html#a1f18d4cd12fc9aa082f185bd2df68ba3">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a1f18d4cd12fc9aa082f185bd2df68ba3">bhy_uc_driver.c</a>
+</li>
+<li>bhy_print_debug_packet()
+: <a class="el" href="bhy__uc__driver_8h.html#adacdcf6a473cf74916e45911e7bf8242">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#adacdcf6a473cf74916e45911e7bf8242">bhy_uc_driver.c</a>
+</li>
+<li>bhy_printf()
+: <a class="el" href="bhy__support_8h.html#ae790ac829f3f0fdcaf960f0c473d6927">bhy_support.h</a>
+, <a class="el" href="bhy__support_8c.html#ae790ac829f3f0fdcaf960f0c473d6927">bhy_support.c</a>
+</li>
+<li>bhy_read_bytes_remaining()
+: <a class="el" href="bhy_8h.html#a6f402bff67981901a5a1f5b062ebdda0">bhy.h</a>
+</li>
+<li>bhy_read_fifo()
+: <a class="el" href="bhy__uc__driver_8h.html#ab3b3eec017da4a49ec60799d4b5eb597">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#ab3b3eec017da4a49ec60799d4b5eb597">bhy_uc_driver.c</a>
+</li>
+<li>bhy_read_parameter_bytes()
+: <a class="el" href="bhy_8h.html#af57fe1d67971912bcf88ee294cb39540">bhy.h</a>
+</li>
+<li>bhy_read_parameter_page()
+: <a class="el" href="bhy__uc__driver_8h.html#a0654e1fac940e8ccbc4487c5fcbbca5a">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a0654e1fac940e8ccbc4487c5fcbbca5a">bhy_uc_driver.c</a>
+</li>
+<li>bhy_read_reg()
+: <a class="el" href="bhy_8h.html#a97934e9c19b7f8b745f3f3c10a56ddb4">bhy.h</a>
+</li>
+<li>bhy_set_chip_control()
+: <a class="el" href="bhy_8h.html#a90deaa6402209f081f3fd8d691df9873">bhy.h</a>
+</li>
+<li>bhy_set_fifo_flush()
+: <a class="el" href="bhy_8h.html#aa1e075c1270c6033f5baeb01f3c8d07d">bhy.h</a>
+</li>
+<li>bhy_set_fifo_water_mark()
+: <a class="el" href="bhy_8h.html#ad8c275acc83fca2f3706469b358017ab">bhy.h</a>
+</li>
+<li>bhy_set_host_interface_control()
+: <a class="el" href="bhy_8h.html#aee12bbc731e9bd6ee61601bda3b498ce">bhy.h</a>
+</li>
+<li>bhy_set_meta_event()
+: <a class="el" href="bhy_8h.html#a2c0316ed5d044c35c4fd2e04b6df539e">bhy.h</a>
+</li>
+<li>bhy_set_non_wakeup_sensor_configuration()
+: <a class="el" href="bhy_8h.html#a80dfd21b40a69616063422a690906f17">bhy.h</a>
+</li>
+<li>bhy_set_parameter_page_select()
+: <a class="el" href="bhy_8h.html#a6a516198ec7e3a6364389242d040b4e4">bhy.h</a>
+</li>
+<li>bhy_set_parameter_request()
+: <a class="el" href="bhy_8h.html#aaad6ae705a3c29af123017627ceee7c2">bhy.h</a>
+</li>
+<li>bhy_set_reset_request()
+: <a class="el" href="bhy_8h.html#a260eb7c574e28cd3e0efc0952ef1a03b">bhy.h</a>
+</li>
+<li>bhy_set_sic_matrix()
+: <a class="el" href="bhy__uc__driver_8h.html#a8f968b7d6a54faded6a752095c025638">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a8f968b7d6a54faded6a752095c025638">bhy_uc_driver.c</a>
+</li>
+<li>bhy_set_soft_pass_through()
+: <a class="el" href="bhy_8h.html#aa7f0e962ba88d42b0d2780daaa1be36a">bhy.h</a>
+</li>
+<li>bhy_set_wakeup_sensor_configuration()
+: <a class="el" href="bhy_8h.html#a69cfbb9b02dee2851034135135e7b0ef">bhy.h</a>
+</li>
+<li>bhy_soft_passthru_read()
+: <a class="el" href="bhy__uc__driver_8h.html#ac32f933d6c60d3f1f300cec61d8da4cf">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#ac32f933d6c60d3f1f300cec61d8da4cf">bhy_uc_driver.c</a>
+</li>
+<li>bhy_soft_passthru_write()
+: <a class="el" href="bhy__uc__driver_8h.html#a711e5935f388e278e4f06f2afc2d3b7c">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a711e5935f388e278e4f06f2afc2d3b7c">bhy_uc_driver.c</a>
+</li>
+<li>bhy_sync_cus_evt_size()
+: <a class="el" href="bhy__uc__driver_8h.html#a0f9a369581c169988b0116cc63d43795">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#a0f9a369581c169988b0116cc63d43795">bhy_uc_driver.c</a>
+</li>
+<li>bhy_update_system_timestamp()
+: <a class="el" href="bhy__uc__driver_8h.html#acb9bb337c5a6ce099b7811b0cba4d77f">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#acb9bb337c5a6ce099b7811b0cba4d77f">bhy_uc_driver.c</a>
+</li>
+<li>bhy_write_parameter_bytes()
+: <a class="el" href="bhy_8h.html#a10fcc4e094cffc39f8344db86e73ccf6">bhy.h</a>
+</li>
+<li>bhy_write_parameter_page()
+: <a class="el" href="bhy__uc__driver_8h.html#ad8c108b54f1d096b0ecfacafd5fffaf1">bhy_uc_driver.h</a>
+, <a class="el" href="bhy__uc__driver_8c.html#ad8c108b54f1d096b0ecfacafd5fffaf1">bhy_uc_driver.c</a>
+</li>
+<li>bhy_write_reg()
+: <a class="el" href="bhy_8h.html#a5c887b668dfc2fc7612d8bbeac32179c">bhy.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>generateTableFloat()
+: <a class="el" href="print__tables_8h.html#a1286d28be9ad040c12df860953bfedcd">print_tables.h</a>
+</li>
+<li>generateTableInt()
+: <a class="el" href="print__tables_8h.html#aaa518cc68ac0b3bfbb74ade6ac0d0c67">print_tables.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>rc_algebra_fit_ellipsoid()
+: <a class="el" href="group__Algebra.html#ga2cc933b6834e5f7020bf6c265ddb0c3f">algebra.c</a>
+</li>
+<li>rc_algebra_invert_matrix()
+: <a class="el" href="group__Algebra.html#ga1918b5344deff62db7d7210f2f663f62">algebra.c</a>
+</li>
+<li>rc_algebra_invert_matrix_inplace()
+: <a class="el" href="group__Algebra.html#gafaf0af53942a159aafb90da77edeefe7">algebra.c</a>
+</li>
+<li>rc_algebra_lin_system_solve()
+: <a class="el" href="group__Algebra.html#gaaca27264e06f3115185bcb8a91d72b4d">algebra.c</a>
+</li>
+<li>rc_algebra_lin_system_solve_qr()
+: <a class="el" href="group__Algebra.html#ga9ba2bdb386795e79ccead5ac58f1f058">algebra.c</a>
+</li>
+<li>rc_algebra_lup_decomp()
+: <a class="el" href="group__Algebra.html#ga688b3c72b1b7054f102cb4a57c0eaf56">algebra.c</a>
+</li>
+<li>rc_algebra_qr_decomp()
+: <a class="el" href="group__Algebra.html#ga09e6028ba76c3251d3d6e6c065dfd28a">algebra.c</a>
+</li>
+<li>rc_algebra_set_zero_tolerance()
+: <a class="el" href="group__Algebra.html#ga8f79a63de0c4a4deba0f1a7d8e898131">algebra.c</a>
+</li>
+<li>rc_filter_alloc()
+: <a class="el" href="group__SISO__Filter.html#gaac5ec6f7e44f3462bcd18b6f307b6d4c">filter.c</a>
+</li>
+<li>rc_filter_alloc_from_arrays()
+: <a class="el" href="group__SISO__Filter.html#ga30c826f6a4c74e641310a0c06d9f1c6c">filter.c</a>
+</li>
+<li>rc_filter_butterworth_highpass()
+: <a class="el" href="group__SISO__Filter.html#gaf6c1857225c1d1fcd31791f529108fc7">filter.c</a>
+</li>
+<li>rc_filter_butterworth_lowpass()
+: <a class="el" href="group__SISO__Filter.html#gaca562d0297b5794c2819ea86f4df6313">filter.c</a>
+</li>
+<li>rc_filter_c2d_tustin()
+: <a class="el" href="group__SISO__Filter.html#ga9f1b40be4cba4f2a2ea7fd9c9da4d161">filter.c</a>
+</li>
+<li>rc_filter_double_integrator()
+: <a class="el" href="group__SISO__Filter.html#ga4287249f7189f02bd6e8f2a8b8730e63">filter.c</a>
+</li>
+<li>rc_filter_duplicate()
+: <a class="el" href="group__SISO__Filter.html#ga916a77192e69202bd709ec5b1e68f3e0">filter.c</a>
+</li>
+<li>rc_filter_empty()
+: <a class="el" href="group__SISO__Filter.html#ga9b5d0ba2693f5b5346c08ab9ce029eaa">filter.c</a>
+</li>
+<li>rc_filter_enable_saturation()
+: <a class="el" href="group__SISO__Filter.html#gae6ec99be7a22f8d4280daf18b1eacd18">filter.c</a>
+</li>
+<li>rc_filter_enable_soft_start()
+: <a class="el" href="group__SISO__Filter.html#ga8b48866c76a96cb49d3ffa6fe19011ae">filter.c</a>
+</li>
+<li>rc_filter_first_order_highpass()
+: <a class="el" href="group__SISO__Filter.html#ga78e1746c63b164f6a9fab2069b92c48d">filter.c</a>
+</li>
+<li>rc_filter_first_order_lowpass()
+: <a class="el" href="group__SISO__Filter.html#ga9fb8529bf9c4b0d34d6b55fca115b5d3">filter.c</a>
+</li>
+<li>rc_filter_free()
+: <a class="el" href="group__SISO__Filter.html#gad7b1abf89fc93d78bdcbd3b08842c468">filter.c</a>
+</li>
+<li>rc_filter_get_saturation_flag()
+: <a class="el" href="group__SISO__Filter.html#gaa670c91acf8c6d633938ea51905a0ab7">filter.c</a>
+</li>
+<li>rc_filter_integrator()
+: <a class="el" href="group__SISO__Filter.html#gabb90ee0db26d85eac94747ff79d954d4">filter.c</a>
+</li>
+<li>rc_filter_march()
+: <a class="el" href="group__SISO__Filter.html#ga61567f5e88cbd1593c01dfd25669b5b1">filter.c</a>
+</li>
+<li>rc_filter_moving_average()
+: <a class="el" href="group__SISO__Filter.html#gaf6a559a80489a453ebe745ea331ef7eb">filter.c</a>
+</li>
+<li>rc_filter_multiply()
+: <a class="el" href="group__SISO__Filter.html#gaed3aa6d5f0e96fccbfcf55cba8b4ed32">filter.c</a>
+</li>
+<li>rc_filter_multiply_three()
+: <a class="el" href="group__SISO__Filter.html#gadd253075d8bbd3b19169731407d54ab9">filter.c</a>
+</li>
+<li>rc_filter_normalize()
+: <a class="el" href="group__SISO__Filter.html#ga5ad8b3d3bf6412a9f59c26ed0453008f">filter.c</a>
+</li>
+<li>rc_filter_pid()
+: <a class="el" href="group__SISO__Filter.html#ga1803dedd16ea27c59031bddeb084e893">filter.c</a>
+</li>
+<li>rc_filter_prefill_inputs()
+: <a class="el" href="group__SISO__Filter.html#ga9c184be395a2727266979010c6bca4c6">filter.c</a>
+</li>
+<li>rc_filter_prefill_outputs()
+: <a class="el" href="group__SISO__Filter.html#ga35c8a9b189a6e2845b6dcad47451ac9e">filter.c</a>
+</li>
+<li>rc_filter_previous_input()
+: <a class="el" href="group__SISO__Filter.html#gaf5d5aba736c2ba22e4f295c2cee8afd7">filter.c</a>
+</li>
+<li>rc_filter_previous_output()
+: <a class="el" href="group__SISO__Filter.html#ga140687c148aa3bb47073c9a64afd467f">filter.c</a>
+</li>
+<li>rc_filter_print()
+: <a class="el" href="group__SISO__Filter.html#gac6dff1f36b8e4ef7db264dd2332d3866">filter.c</a>
+</li>
+<li>rc_filter_reset()
+: <a class="el" href="group__SISO__Filter.html#ga4544fbb000ae45030f1cfd0f0aaff311">filter.c</a>
+</li>
+<li>rc_filter_third_order_complement()
+: <a class="el" href="group__SISO__Filter.html#ga60fcedd8b3e6d15b1c1fcc09c0cf28c4">filter.c</a>
+</li>
+<li>rc_get_random_double()
+: <a class="el" href="group__Other__Math.html#ga734b2c1319085da9f4eecbc586e5c8be">other.c</a>
+</li>
+<li>rc_get_random_float()
+: <a class="el" href="group__Other__Math.html#ga45db375c3247f66f93ff8f58fa2d1e3f">other.c</a>
+</li>
+<li>rc_matrix_add()
+: <a class="el" href="group__Matrix.html#ga4a1850971139797c1f8fae553e77e5fe">matrix.c</a>
+</li>
+<li>rc_matrix_add_inplace()
+: <a class="el" href="group__Matrix.html#ga5f6447a3fd6ca7abc752ebc7e5671ba4">matrix.c</a>
+</li>
+<li>rc_matrix_alloc()
+: <a class="el" href="group__Matrix.html#gaaefaab4215ca5fc77ccc905fb0b1f2ab">matrix.c</a>
+</li>
+<li>rc_matrix_determinant()
+: <a class="el" href="group__Matrix.html#gaffe9ca5086de7856a51bc458880a4685">matrix.c</a>
+</li>
+<li>rc_matrix_diagonal()
+: <a class="el" href="group__Matrix.html#ga1e6fdd2b113e47901ec765ab8a088dfa">matrix.c</a>
+</li>
+<li>rc_matrix_duplicate()
+: <a class="el" href="group__Matrix.html#ga8c723819a991789c9ddf5d2121cc0ebc">matrix.c</a>
+</li>
+<li>rc_matrix_empty()
+: <a class="el" href="group__Matrix.html#ga20f3099c4fbf44d4dc8fb7af99a53646">matrix.c</a>
+</li>
+<li>rc_matrix_free()
+: <a class="el" href="group__Matrix.html#ga0e16d72aaad4b8f522f459c2cee2a874">matrix.c</a>
+</li>
+<li>rc_matrix_identity()
+: <a class="el" href="group__Matrix.html#ga3b702b772126773969500b3cb1465d00">matrix.c</a>
+</li>
+<li>rc_matrix_left_multiply_inplace()
+: <a class="el" href="group__Matrix.html#ga27552eede0fb1b2368f36525b54793ad">matrix.c</a>
+</li>
+<li>rc_matrix_multiply()
+: <a class="el" href="group__Matrix.html#ga58f7c5e2aa2f0b7383faf53f840ad9e9">matrix.c</a>
+</li>
+<li>rc_matrix_outer_product()
+: <a class="el" href="group__Matrix.html#gac58e4907ae2340ea0a3ea4081542a26e">matrix.c</a>
+</li>
+<li>rc_matrix_print()
+: <a class="el" href="group__Matrix.html#ga5a6b08be1c38d7840260125a75f1b06d">matrix.c</a>
+</li>
+<li>rc_matrix_print_sci()
+: <a class="el" href="group__Matrix.html#gaf403b7b6e6af997ef732ae0310558e62">matrix.c</a>
+</li>
+<li>rc_matrix_random()
+: <a class="el" href="group__Matrix.html#gaf040aafb6a95b1303668089d9e30a95a">matrix.c</a>
+</li>
+<li>rc_matrix_right_multiply_inplace()
+: <a class="el" href="group__Matrix.html#gadef5caad52f670b91ea558f1f38edb8e">matrix.c</a>
+</li>
+<li>rc_matrix_row_vec_times_matrix()
+: <a class="el" href="group__Matrix.html#ga8282c41c5e2cf2338c3584a58c9d0597">matrix.c</a>
+</li>
+<li>rc_matrix_subtract_inplace()
+: <a class="el" href="group__Matrix.html#ga1c5f00892b9b782efa3cc4f276e4fa54">matrix.c</a>
+</li>
+<li>rc_matrix_symmetrize()
+: <a class="el" href="group__Matrix.html#ga662571d4eb799084eb9d499cbd6a617c">matrix.c</a>
+</li>
+<li>rc_matrix_times_col_vec()
+: <a class="el" href="group__Matrix.html#ga4f3c2a5dcea5a1dcbbf0f54419d9f490">matrix.c</a>
+</li>
+<li>rc_matrix_times_scalar()
+: <a class="el" href="group__Matrix.html#ga6eaf9454dd32905cca456f5d7273430b">matrix.c</a>
+</li>
+<li>rc_matrix_transpose()
+: <a class="el" href="group__Matrix.html#gab15796534f320083f8315aa5a613b495">matrix.c</a>
+</li>
+<li>rc_matrix_transpose_inplace()
+: <a class="el" href="group__Matrix.html#gab6a7fd781178a95dea4df4182be453ca">matrix.c</a>
+</li>
+<li>rc_matrix_zero_out()
+: <a class="el" href="group__Matrix.html#gacd0d1d6481b2764116db63f63669efe6">matrix.c</a>
+</li>
+<li>rc_matrix_zeros()
+: <a class="el" href="group__Matrix.html#ga00058fd197b0d55e6e795116f9fd8a94">matrix.c</a>
+</li>
+<li>rc_normalize_quaternion()
+: <a class="el" href="group__Quaternion.html#gaa4e42cb59e9789b957067dbf27f011dd">quaternion.c</a>
+</li>
+<li>rc_normalize_quaternion_array()
+: <a class="el" href="group__Quaternion.html#ga007606ce5feff517b932961c3d649641">quaternion.c</a>
+</li>
+<li>rc_quaternion_conjugate()
+: <a class="el" href="group__Quaternion.html#gae6ff0571c5b14a9c9866ccf659ede2be">quaternion.c</a>
+</li>
+<li>rc_quaternion_conjugate_array()
+: <a class="el" href="group__Quaternion.html#gaaab45e4c36c48a2255e219f135d2d7f2">quaternion.c</a>
+</li>
+<li>rc_quaternion_conjugate_array_inplace()
+: <a class="el" href="group__Quaternion.html#ga65878fab307c0efb6be64a728a7e8a88">quaternion.c</a>
+</li>
+<li>rc_quaternion_conjugate_inplace()
+: <a class="el" href="group__Quaternion.html#ga2f6a22394f69065da0db6814ab4cc809">quaternion.c</a>
+</li>
+<li>rc_quaternion_from_tb()
+: <a class="el" href="group__Quaternion.html#ga54339e7a6a4b46357555def9fefd12be">quaternion.c</a>
+</li>
+<li>rc_quaternion_from_tb_array()
+: <a class="el" href="group__Quaternion.html#ga3b9219ba650ccbc10c07c82170c20708">quaternion.c</a>
+</li>
+<li>rc_quaternion_imaginary_part()
+: <a class="el" href="group__Quaternion.html#ga979a8b5919c153ccdd9cf1611bb5da95">quaternion.c</a>
+</li>
+<li>rc_quaternion_multiply()
+: <a class="el" href="group__Quaternion.html#ga69f6fc81fa687d8341bd78dff1e8357e">quaternion.c</a>
+</li>
+<li>rc_quaternion_multiply_array()
+: <a class="el" href="group__Quaternion.html#ga3eb5aa585f53cd592b50125402e704ab">quaternion.c</a>
+</li>
+<li>rc_quaternion_norm()
+: <a class="el" href="group__Quaternion.html#ga98fb13ca78450b2aadcc478bfc4d2751">quaternion.c</a>
+</li>
+<li>rc_quaternion_norm_array()
+: <a class="el" href="group__Quaternion.html#gab18662b737183d141f470eb9026fcbb3">quaternion.c</a>
+</li>
+<li>rc_quaternion_rotate()
+: <a class="el" href="group__Quaternion.html#ga1ad0d9273c7a78b4efac1066abe01b46">quaternion.c</a>
+</li>
+<li>rc_quaternion_rotate_array()
+: <a class="el" href="group__Quaternion.html#ga5b00276788aa94a2d2de69166ec98ef4">quaternion.c</a>
+</li>
+<li>rc_quaternion_rotate_vector()
+: <a class="el" href="group__Quaternion.html#ga4dcacf759d45c9c92782253338c1269b">quaternion.c</a>
+</li>
+<li>rc_quaternion_rotate_vector_array()
+: <a class="el" href="group__Quaternion.html#gade96084808dcf21c49b17326f60d6866">quaternion.c</a>
+</li>
+<li>rc_quaternion_to_rotation_matrix()
+: <a class="el" href="group__Quaternion.html#ga1fbbeb418f6e71f2eefd7dc57c9bfbc8">quaternion.c</a>
+</li>
+<li>rc_quaternion_to_tb()
+: <a class="el" href="group__Quaternion.html#ga563e33eda488bf7b8676bf6104905754">quaternion.c</a>
+</li>
+<li>rc_quaternion_to_tb_array()
+: <a class="el" href="group__Quaternion.html#ga71af2d1badbd962b3b1801da720f9935">quaternion.c</a>
+</li>
+<li>rc_ringbuf_alloc()
+: <a class="el" href="group__Ring__Buffer.html#ga081c474a7a3e607a73080f5b7d6de94c">ring_buffer.c</a>
+</li>
+<li>rc_ringbuf_empty()
+: <a class="el" href="group__Ring__Buffer.html#ga18cecd9dd70482175791871b0ed7d833">ring_buffer.c</a>
+</li>
+<li>rc_ringbuf_free()
+: <a class="el" href="group__Ring__Buffer.html#gacc048f71fcf6c35008c4a42a4c646d79">ring_buffer.c</a>
+</li>
+<li>rc_ringbuf_get_value()
+: <a class="el" href="group__Ring__Buffer.html#ga178409422c694dab381ab6fd51918801">ring_buffer.c</a>
+</li>
+<li>rc_ringbuf_insert()
+: <a class="el" href="group__Ring__Buffer.html#gaa82925c4c7ea0996b4861c89c131afb3">ring_buffer.c</a>
+</li>
+<li>rc_ringbuf_reset()
+: <a class="el" href="group__Ring__Buffer.html#gaa9da5cc641aed10a6212df49f72669c3">ring_buffer.c</a>
+</li>
+<li>rc_ringbuf_std_dev()
+: <a class="el" href="group__Ring__Buffer.html#ga0c8d29b891fc18f77dac6cdd6dbe1e24">ring_buffer.c</a>
+</li>
+<li>rc_saturate_double()
+: <a class="el" href="group__Other__Math.html#ga0db783667dde7eb053dd7ac01bf6f9d9">other.c</a>
+</li>
+<li>rc_saturate_float()
+: <a class="el" href="group__Other__Math.html#ga2977f271b49fb61945c338cb37d56731">other.c</a>
 </li>
 </ul>
 </div><!-- contents -->

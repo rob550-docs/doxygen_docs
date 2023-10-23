@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -76,71 +79,25 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a76b2217e47c1417b0adaaf487bc8a617"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__vector__t.html#a76b2217e47c1417b0adaaf487bc8a617">len</a></td></tr>
-<tr class="memdesc:a76b2217e47c1417b0adaaf487bc8a617"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of elements in the vector  <a href="structrc__vector__t.html#a76b2217e47c1417b0adaaf487bc8a617">More...</a><br /></td></tr>
+<tr class="memitem:a76b2217e47c1417b0adaaf487bc8a617"><td class="memItemLeft" align="right" valign="top"><a id="a76b2217e47c1417b0adaaf487bc8a617"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__vector__t.html#a76b2217e47c1417b0adaaf487bc8a617">len</a></td></tr>
+<tr class="memdesc:a76b2217e47c1417b0adaaf487bc8a617"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of elements in the vector <br /></td></tr>
 <tr class="separator:a76b2217e47c1417b0adaaf487bc8a617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0da3a4a8dfcca86a969ff3e94e465d5"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__vector__t.html#ab0da3a4a8dfcca86a969ff3e94e465d5">d</a></td></tr>
-<tr class="memdesc:ab0da3a4a8dfcca86a969ff3e94e465d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to dynamically allocated data  <a href="structrc__vector__t.html#ab0da3a4a8dfcca86a969ff3e94e465d5">More...</a><br /></td></tr>
+<tr class="memitem:ab0da3a4a8dfcca86a969ff3e94e465d5"><td class="memItemLeft" align="right" valign="top"><a id="ab0da3a4a8dfcca86a969ff3e94e465d5"></a>
+double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__vector__t.html#ab0da3a4a8dfcca86a969ff3e94e465d5">d</a></td></tr>
+<tr class="memdesc:ab0da3a4a8dfcca86a969ff3e94e465d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to dynamically allocated data <br /></td></tr>
 <tr class="separator:ab0da3a4a8dfcca86a969ff3e94e465d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7de9698ea6d1d5b2161ff49eea94fac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__vector__t.html#ac7de9698ea6d1d5b2161ff49eea94fac">initialized</a></td></tr>
-<tr class="memdesc:ac7de9698ea6d1d5b2161ff49eea94fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialization flag  <a href="structrc__vector__t.html#ac7de9698ea6d1d5b2161ff49eea94fac">More...</a><br /></td></tr>
+<tr class="memitem:ac7de9698ea6d1d5b2161ff49eea94fac"><td class="memItemLeft" align="right" valign="top"><a id="ac7de9698ea6d1d5b2161ff49eea94fac"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__vector__t.html#ac7de9698ea6d1d5b2161ff49eea94fac">initialized</a></td></tr>
+<tr class="memdesc:ac7de9698ea6d1d5b2161ff49eea94fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialization flag <br /></td></tr>
 <tr class="separator:ac7de9698ea6d1d5b2161ff49eea94fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Struct containing the state of a vector and a pointer to dynamically allocated memory to hold its contents. </p>
 <p>Set and read values directly with this code: </p><div class="fragment"><div class="line">vec.d[position]=new_value; <span class="comment">// set value in the vector</span></div>
 <div class="line">value = v.d[pos]; <span class="comment">// get value from vector</span></div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab0da3a4a8dfcca86a969ff3e94e465d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0da3a4a8dfcca86a969ff3e94e465d5">&#9670;&nbsp;</a></span>d</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double* rc_vector_t::d</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>pointer to dynamically allocated data </p>
-
-</div>
-</div>
-<a id="ac7de9698ea6d1d5b2161ff49eea94fac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7de9698ea6d1d5b2161ff49eea94fac">&#9670;&nbsp;</a></span>initialized</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int rc_vector_t::initialized</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>initialization flag </p>
-
-</div>
-</div>
-<a id="a76b2217e47c1417b0adaaf487bc8a617"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76b2217e47c1417b0adaaf487bc8a617">&#9670;&nbsp;</a></span>len</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int rc_vector_t::len</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>number of elements in the vector </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>mbot_firmware/rc/include/rc/math/<a class="el" href="vector_8h_source.html">vector.h</a></li>
+</div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/home/xssun/Workspace/botlab_ws/mbot_firmware/rc/include/rc/math/<a class="el" href="vector_8h_source.html">vector.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

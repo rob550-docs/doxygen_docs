@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -83,7 +86,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gab72eb22064075a2bc691904c5a6f64a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Vector.html#gab72eb22064075a2bc691904c5a6f64a4">RC_VECTOR_INITIALIZER</a></td></tr>
+<tr class="memitem:gab72eb22064075a2bc691904c5a6f64a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RC_VECTOR_INITIALIZER</b></td></tr>
 <tr class="separator:gab72eb22064075a2bc691904c5a6f64a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -169,12 +172,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga408c35375eaaf1ca251b040b1deeed0c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Vector.html#ga408c35375eaaf1ca251b040b1deeed0c">zero_tolerance</a></td></tr>
+<tr class="memitem:ga408c35375eaaf1ca251b040b1deeed0c"><td class="memItemLeft" align="right" valign="top"><a id="ga408c35375eaaf1ca251b040b1deeed0c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>zero_tolerance</b></td></tr>
 <tr class="separator:ga408c35375eaaf1ca251b040b1deeed0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for vector manipulation. </p>
-<p>&lt;<a class="el" href="vector_8h.html">rc/math/vector.h</a>&gt;</p>
+<p>&lt;<a class="el" href="vector_8h_source.html">rc/math/vector.h</a>&gt;</p>
 <p>The small <a class="el" href="structrc__vector__t.html" title="Struct containing the state of a vector and a pointer to dynamically allocated memory to hold its con...">rc_vector_t</a> struct contains information about the vector's size and a pointer to where dynamically allocated memory exists that stores the actual data for the vector. Use rc_vector_alloc to dynamically allocate memory for each new vector. Then use <a class="el" href="group__Vector.html#ga866d0dd17fd2d052ffe0edb1ebbcf6ca" title="Frees the memory allocated for vector v.">rc_vector_free()</a> and to free the memory when you are done using it. See the remaining vector, matrix, and linear algebra functions for more details.</p>
 <dl class="section author"><dt>Author</dt><dd>James Strawson </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2016 </dd></dl>
@@ -1083,29 +1087,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns 0 if successful, otherwise returns -1. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ga408c35375eaaf1ca251b040b1deeed0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga408c35375eaaf1ca251b040b1deeed0c">&#9670;&nbsp;</a></span>zero_tolerance</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double zero_tolerance</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

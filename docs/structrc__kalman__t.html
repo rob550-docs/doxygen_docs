@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -67,8 +70,6 @@ $(function() {
 <div class="title">rc_kalman_t Struct Reference<div class="ingroups"><a class="el" href="group__Kalman.html">Kalman</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="kalman_8h_source.html">kalman.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for rc_kalman_t:</div>
 <div class="dyncontent">
@@ -83,222 +84,56 @@ Collaboration diagram for rc_kalman_t:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">State Transition Matrices for linear filter only</div></td></tr>
-<tr class="memitem:aaa89d526421d779ccbb6881538705de4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#aaa89d526421d779ccbb6881538705de4">F</a></td></tr>
-<tr class="memdesc:aaa89d526421d779ccbb6881538705de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">undriven state-transition model  <a href="structrc__kalman__t.html#aaa89d526421d779ccbb6881538705de4">More...</a><br /></td></tr>
+<tr class="memitem:aaa89d526421d779ccbb6881538705de4"><td class="memItemLeft" align="right" valign="top"><a id="aaa89d526421d779ccbb6881538705de4"></a>
+<a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#aaa89d526421d779ccbb6881538705de4">F</a></td></tr>
+<tr class="memdesc:aaa89d526421d779ccbb6881538705de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">undriven state-transition model <br /></td></tr>
 <tr class="separator:aaa89d526421d779ccbb6881538705de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a07a4395e60dae1c07b32633375d75e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a6a07a4395e60dae1c07b32633375d75e">G</a></td></tr>
-<tr class="memdesc:a6a07a4395e60dae1c07b32633375d75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">control input model  <a href="structrc__kalman__t.html#a6a07a4395e60dae1c07b32633375d75e">More...</a><br /></td></tr>
+<tr class="memitem:a6a07a4395e60dae1c07b32633375d75e"><td class="memItemLeft" align="right" valign="top"><a id="a6a07a4395e60dae1c07b32633375d75e"></a>
+<a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a6a07a4395e60dae1c07b32633375d75e">G</a></td></tr>
+<tr class="memdesc:a6a07a4395e60dae1c07b32633375d75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">control input model <br /></td></tr>
 <tr class="separator:a6a07a4395e60dae1c07b32633375d75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f1481b7954098a98cebd75418490bca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a1f1481b7954098a98cebd75418490bca">H</a></td></tr>
-<tr class="memdesc:a1f1481b7954098a98cebd75418490bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">observation-model  <a href="structrc__kalman__t.html#a1f1481b7954098a98cebd75418490bca">More...</a><br /></td></tr>
+<tr class="memitem:a1f1481b7954098a98cebd75418490bca"><td class="memItemLeft" align="right" valign="top"><a id="a1f1481b7954098a98cebd75418490bca"></a>
+<a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a1f1481b7954098a98cebd75418490bca">H</a></td></tr>
+<tr class="memdesc:a1f1481b7954098a98cebd75418490bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">observation-model <br /></td></tr>
 <tr class="separator:a1f1481b7954098a98cebd75418490bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Covariance Matrices</div></td></tr>
-<tr class="memitem:a8ff218f3f48e9e412ca2bb13c2679e6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a8ff218f3f48e9e412ca2bb13c2679e6c">Q</a></td></tr>
-<tr class="memdesc:a8ff218f3f48e9e412ca2bb13c2679e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process noise covariance set by user.  <a href="structrc__kalman__t.html#a8ff218f3f48e9e412ca2bb13c2679e6c">More...</a><br /></td></tr>
+<tr class="memitem:a8ff218f3f48e9e412ca2bb13c2679e6c"><td class="memItemLeft" align="right" valign="top"><a id="a8ff218f3f48e9e412ca2bb13c2679e6c"></a>
+<a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a8ff218f3f48e9e412ca2bb13c2679e6c">Q</a></td></tr>
+<tr class="memdesc:a8ff218f3f48e9e412ca2bb13c2679e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process noise covariance set by user. <br /></td></tr>
 <tr class="separator:a8ff218f3f48e9e412ca2bb13c2679e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79ff1593b7bf80782eb800e7ef00005b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a79ff1593b7bf80782eb800e7ef00005b">R</a></td></tr>
-<tr class="memdesc:a79ff1593b7bf80782eb800e7ef00005b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measurement noise covariance set by user.  <a href="structrc__kalman__t.html#a79ff1593b7bf80782eb800e7ef00005b">More...</a><br /></td></tr>
+<tr class="memitem:a79ff1593b7bf80782eb800e7ef00005b"><td class="memItemLeft" align="right" valign="top"><a id="a79ff1593b7bf80782eb800e7ef00005b"></a>
+<a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a79ff1593b7bf80782eb800e7ef00005b">R</a></td></tr>
+<tr class="memdesc:a79ff1593b7bf80782eb800e7ef00005b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measurement noise covariance set by user. <br /></td></tr>
 <tr class="separator:a79ff1593b7bf80782eb800e7ef00005b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af61be620034672a1658c58d002d5bde5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#af61be620034672a1658c58d002d5bde5">P</a></td></tr>
-<tr class="memdesc:af61be620034672a1658c58d002d5bde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predicted state error covariance calculated by the update functions.  <a href="structrc__kalman__t.html#af61be620034672a1658c58d002d5bde5">More...</a><br /></td></tr>
+<tr class="memitem:af61be620034672a1658c58d002d5bde5"><td class="memItemLeft" align="right" valign="top"><a id="af61be620034672a1658c58d002d5bde5"></a>
+<a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#af61be620034672a1658c58d002d5bde5">P</a></td></tr>
+<tr class="memdesc:af61be620034672a1658c58d002d5bde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predicted state error covariance calculated by the update functions. <br /></td></tr>
 <tr class="separator:af61be620034672a1658c58d002d5bde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb96951335ac0002ed0656da02789e35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#abb96951335ac0002ed0656da02789e35">Pi</a></td></tr>
-<tr class="memdesc:abb96951335ac0002ed0656da02789e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial P matrix set by user.  <a href="structrc__kalman__t.html#abb96951335ac0002ed0656da02789e35">More...</a><br /></td></tr>
+<tr class="memitem:abb96951335ac0002ed0656da02789e35"><td class="memItemLeft" align="right" valign="top"><a id="abb96951335ac0002ed0656da02789e35"></a>
+<a class="el" href="structrc__matrix__t.html">rc_matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#abb96951335ac0002ed0656da02789e35">Pi</a></td></tr>
+<tr class="memdesc:abb96951335ac0002ed0656da02789e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial P matrix set by user. <br /></td></tr>
 <tr class="separator:abb96951335ac0002ed0656da02789e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">State estimates</div></td></tr>
-<tr class="memitem:a1fb698f38b6feff68ef12b67c92c692b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__vector__t.html">rc_vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a1fb698f38b6feff68ef12b67c92c692b">x_est</a></td></tr>
-<tr class="memdesc:a1fb698f38b6feff68ef12b67c92c692b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimated state x[k|k] = x[k|k-1],y[k])  <a href="structrc__kalman__t.html#a1fb698f38b6feff68ef12b67c92c692b">More...</a><br /></td></tr>
+<tr class="memitem:a1fb698f38b6feff68ef12b67c92c692b"><td class="memItemLeft" align="right" valign="top"><a id="a1fb698f38b6feff68ef12b67c92c692b"></a>
+<a class="el" href="structrc__vector__t.html">rc_vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a1fb698f38b6feff68ef12b67c92c692b">x_est</a></td></tr>
+<tr class="memdesc:a1fb698f38b6feff68ef12b67c92c692b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimated state x[k|k] = x[k|k-1],y[k]) <br /></td></tr>
 <tr class="separator:a1fb698f38b6feff68ef12b67c92c692b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac9f194d489e629515ea41404c1ca34e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrc__vector__t.html">rc_vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#aac9f194d489e629515ea41404c1ca34e">x_pre</a></td></tr>
-<tr class="memdesc:aac9f194d489e629515ea41404c1ca34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predicted state x[k|k-1] = f(x[k-1],u[k])  <a href="structrc__kalman__t.html#aac9f194d489e629515ea41404c1ca34e">More...</a><br /></td></tr>
+<tr class="memitem:aac9f194d489e629515ea41404c1ca34e"><td class="memItemLeft" align="right" valign="top"><a id="aac9f194d489e629515ea41404c1ca34e"></a>
+<a class="el" href="structrc__vector__t.html">rc_vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#aac9f194d489e629515ea41404c1ca34e">x_pre</a></td></tr>
+<tr class="memdesc:aac9f194d489e629515ea41404c1ca34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predicted state x[k|k-1] = f(x[k-1],u[k]) <br /></td></tr>
 <tr class="separator:aac9f194d489e629515ea41404c1ca34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">other</div></td></tr>
-<tr class="memitem:a9ac523ad1cfc59415dc3a02b32ef98ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a9ac523ad1cfc59415dc3a02b32ef98ff">initialized</a></td></tr>
-<tr class="memdesc:a9ac523ad1cfc59415dc3a02b32ef98ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to 1 once initialized with rc_kalman_alloc  <a href="structrc__kalman__t.html#a9ac523ad1cfc59415dc3a02b32ef98ff">More...</a><br /></td></tr>
+<tr class="memitem:a9ac523ad1cfc59415dc3a02b32ef98ff"><td class="memItemLeft" align="right" valign="top"><a id="a9ac523ad1cfc59415dc3a02b32ef98ff"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a9ac523ad1cfc59415dc3a02b32ef98ff">initialized</a></td></tr>
+<tr class="memdesc:a9ac523ad1cfc59415dc3a02b32ef98ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to 1 once initialized with rc_kalman_alloc <br /></td></tr>
 <tr class="separator:a9ac523ad1cfc59415dc3a02b32ef98ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b2b2a8273d0206d2807a3a0e7a9377"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a67b2b2a8273d0206d2807a3a0e7a9377">step</a></td></tr>
-<tr class="memdesc:a67b2b2a8273d0206d2807a3a0e7a9377"><td class="mdescLeft">&#160;</td><td class="mdescRight">counts times rc_kalman_measurement_update has been called  <a href="structrc__kalman__t.html#a67b2b2a8273d0206d2807a3a0e7a9377">More...</a><br /></td></tr>
+<tr class="memitem:a67b2b2a8273d0206d2807a3a0e7a9377"><td class="memItemLeft" align="right" valign="top"><a id="a67b2b2a8273d0206d2807a3a0e7a9377"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrc__kalman__t.html#a67b2b2a8273d0206d2807a3a0e7a9377">step</a></td></tr>
+<tr class="memdesc:a67b2b2a8273d0206d2807a3a0e7a9377"><td class="mdescLeft">&#160;</td><td class="mdescRight">counts times rc_kalman_measurement_update has been called <br /></td></tr>
 <tr class="separator:a67b2b2a8273d0206d2807a3a0e7a9377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aaa89d526421d779ccbb6881538705de4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa89d526421d779ccbb6881538705de4">&#9670;&nbsp;</a></span>F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a> rc_kalman_t::F</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>undriven state-transition model </p>
-
-</div>
-</div>
-<a id="a6a07a4395e60dae1c07b32633375d75e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a07a4395e60dae1c07b32633375d75e">&#9670;&nbsp;</a></span>G</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a> rc_kalman_t::G</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>control input model </p>
-
-</div>
-</div>
-<a id="a1f1481b7954098a98cebd75418490bca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f1481b7954098a98cebd75418490bca">&#9670;&nbsp;</a></span>H</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a> rc_kalman_t::H</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>observation-model </p>
-
-</div>
-</div>
-<a id="a9ac523ad1cfc59415dc3a02b32ef98ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ac523ad1cfc59415dc3a02b32ef98ff">&#9670;&nbsp;</a></span>initialized</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int rc_kalman_t::initialized</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>set to 1 once initialized with rc_kalman_alloc </p>
-
-</div>
-</div>
-<a id="af61be620034672a1658c58d002d5bde5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af61be620034672a1658c58d002d5bde5">&#9670;&nbsp;</a></span>P</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a> rc_kalman_t::P</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Predicted state error covariance calculated by the update functions. </p>
-
-</div>
-</div>
-<a id="abb96951335ac0002ed0656da02789e35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb96951335ac0002ed0656da02789e35">&#9670;&nbsp;</a></span>Pi</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a> rc_kalman_t::Pi</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initial P matrix set by user. </p>
-
-</div>
-</div>
-<a id="a8ff218f3f48e9e412ca2bb13c2679e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ff218f3f48e9e412ca2bb13c2679e6c">&#9670;&nbsp;</a></span>Q</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a> rc_kalman_t::Q</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Process noise covariance set by user. </p>
-
-</div>
-</div>
-<a id="a79ff1593b7bf80782eb800e7ef00005b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79ff1593b7bf80782eb800e7ef00005b">&#9670;&nbsp;</a></span>R</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__matrix__t.html">rc_matrix_t</a> rc_kalman_t::R</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Measurement noise covariance set by user. </p>
-
-</div>
-</div>
-<a id="a67b2b2a8273d0206d2807a3a0e7a9377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67b2b2a8273d0206d2807a3a0e7a9377">&#9670;&nbsp;</a></span>step</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t rc_kalman_t::step</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>counts times rc_kalman_measurement_update has been called </p>
-
-</div>
-</div>
-<a id="a1fb698f38b6feff68ef12b67c92c692b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fb698f38b6feff68ef12b67c92c692b">&#9670;&nbsp;</a></span>x_est</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__vector__t.html">rc_vector_t</a> rc_kalman_t::x_est</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Estimated state x[k|k] = x[k|k-1],y[k]) </p>
-
-</div>
-</div>
-<a id="aac9f194d489e629515ea41404c1ca34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac9f194d489e629515ea41404c1ca34e">&#9670;&nbsp;</a></span>x_pre</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrc__vector__t.html">rc_vector_t</a> rc_kalman_t::x_pre</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Predicted state x[k|k-1] = f(x[k-1],u[k]) </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>mbot_firmware/rc/include/rc/math/<a class="el" href="kalman_8h_source.html">kalman.h</a></li>
+<li>/home/xssun/Workspace/botlab_ws/mbot_firmware/rc/include/rc/math/<a class="el" href="kalman_8h_source.html">kalman.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

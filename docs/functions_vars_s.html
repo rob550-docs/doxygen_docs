@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -64,9 +67,6 @@ $(function() {
 &#160;
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>sample_rate
-: <a class="el" href="structmbot__bhy__config__t.html#a50fa04ca26f065c945bcc4c1f0262e3a">mbot_bhy_config_t</a>
-</li>
 <li>sat_en
 : <a class="el" href="structrc__filter__t.html#aabd97947ac56e6b5ae722248de8c9fe9">rc_filter_t</a>
 </li>
@@ -79,54 +79,17 @@ $(function() {
 <li>sat_min
 : <a class="el" href="structrc__filter__t.html#a4ec16fb60b43a49423a34febea4e0d5e">rc_filter_t</a>
 </li>
-<li>sensor_id
-: <a class="el" href="structbhy__data__bsx__t.html#aed376ab902d66b2d55e0e3dedf3625d2">bhy_data_bsx_t</a>
-, <a class="el" href="structbhy__data__custom__t.html#a0b57a7aac697f6f3995c765b6b7fcb5a">bhy_data_custom_t</a>
-, <a class="el" href="structbhy__data__debug__t.html#add3f15f5992ada40dffd77cf3af13800">bhy_data_debug_t</a>
-, <a class="el" href="structbhy__data__padding__t.html#a39eda31f4809c02ad4d0d68c444033e5">bhy_data_padding_t</a>
-, <a class="el" href="structbhy__data__pdr__t.html#aee0979ad09d9dc2f2d60dc58970fe6f9">bhy_data_pdr_t</a>
-, <a class="el" href="structbhy__data__quaternion__t.html#a544733b017d1c969aa184951c320db07">bhy_data_quaternion_t</a>
-, <a class="el" href="structbhy__data__scalar__s16__t.html#a3f837ffe5be861e65af677f51d6890f7">bhy_data_scalar_s16_t</a>
-, <a class="el" href="structbhy__data__scalar__u16__t.html#a8522af1d89b7b7c89934b853048d4f94">bhy_data_scalar_u16_t</a>
-, <a class="el" href="structbhy__data__scalar__u24__t.html#a97334e61e5db7202061713dc2df1f3fc">bhy_data_scalar_u24_t</a>
-, <a class="el" href="structbhy__data__scalar__u8__t.html#aec1b3156af67736c8c7ad849d6165a1e">bhy_data_scalar_u8_t</a>
-, <a class="el" href="structbhy__data__sensor__event__t.html#a861e34cc7824f692ddeb3bdd4f07852d">bhy_data_sensor_event_t</a>
-, <a class="el" href="structbhy__data__uncalib__vector__t.html#a4de13d10b0f65bc1af078aef0bfebcf4">bhy_data_uncalib_vector_t</a>
-, <a class="el" href="structbhy__data__vector__t.html#a276052f599ec4348f41e162c6a6d1702">bhy_data_vector_t</a>
-</li>
 <li>sensor_power_mode
 : <a class="el" href="structsensor__status__bank__t.html#af5fa8af53dbadd9a8991281b1505eed6">sensor_status_bank_t</a>
 </li>
 <li>sensor_type
-: <a class="el" href="structbhy__data__meta__event__t.html#a7ed84dd1c968b18f927ac66961f5f2b5">bhy_data_meta_event_t</a>
-, <a class="el" href="structprocess__meta__event__t.html#aa38e1247d2468967eae5355298063911">process_meta_event_t</a>
-</li>
-<li>serialize_fn
-: <a class="el" href="structtopic__registry__val.html#a0386872053e534ee4a497075971b6a4b">topic_registry_val</a>
+: <a class="el" href="structprocess__meta__event__t.html#aa38e1247d2468967eae5355298063911">process_meta_event_t</a>
 </li>
 <li>show_warnings
 : <a class="el" href="group__IMU__MPU.html#ga93870a1197c05da1aa6060fa4f7df313">rc_mpu_config_t</a>
 </li>
 <li>size
-: <a class="el" href="structbucket.html#ab72b8c433340d71271a66167f02e2280">bucket</a>
-, <a class="el" href="structrc__ringbuf__t.html#addc9ba6148c1499b33626286baa8a4dd">rc_ringbuf_t</a>
-, <a class="el" href="structzarray.html#a9bf65ca7e9bbe574c45d7c36674e7c94">zarray</a>
-, <a class="el" href="structzhash.html#a5093b986c456e1fb03bd6dafba7307bb">zhash</a>
-</li>
-<li>slope_neg
-: <a class="el" href="structmbot__params__t.html#a6f96f83050c1161406fdf7aabee847a2">mbot_params_t</a>
-</li>
-<li>slope_pos
-: <a class="el" href="structmbot__params__t.html#ae332621729fab0fb1f2e06eab1289954">mbot_params_t</a>
-</li>
-<li>sname
-: <a class="el" href="structgetopt__option.html#ac59f2a56956ae57338d574edd3555993">getopt_option</a>
-</li>
-<li>sopts
-: <a class="el" href="structgetopt.html#a9dd00894db3a9ce2aef32e5d2f4cc557">getopt</a>
-</li>
-<li>spacer
-: <a class="el" href="structgetopt__option.html#afc6300922bff16536ac2b5dcff900777">getopt_option</a>
+: <a class="el" href="structrc__ringbuf__t.html#addc9ba6148c1499b33626286baa8a4dd">rc_ringbuf_t</a>
 </li>
 <li>ss_en
 : <a class="el" href="structrc__filter__t.html#a49b4dfd163de3cc02b652c053993e442">rc_filter_t</a>
@@ -138,22 +101,9 @@ $(function() {
 : <a class="el" href="structsoft__pass__through__read__t.html#a413fd77aaa1f09c674c8de9f4a637222">soft_pass_through_read_t</a>
 , <a class="el" href="structsoft__pass__through__write__t.html#adcf63f5842d4dd3b9bfbdc10e059eea8">soft_pass_through_write_t</a>
 </li>
-<li>status
-: <a class="el" href="structbhy__data__uncalib__vector__t.html#a8ea125d7396de79cf8f1097fa508d6cf">bhy_data_uncalib_vector_t</a>
-, <a class="el" href="structbhy__data__vector__t.html#a2fbce5a82ac5da1d4afa8b5ee4626747">bhy_data_vector_t</a>
-</li>
 <li>step
 : <a class="el" href="structrc__filter__t.html#af0510651470505b02c2c8cf874dde82d">rc_filter_t</a>
 , <a class="el" href="structrc__kalman__t.html#a67b2b2a8273d0206d2807a3a0e7a9377">rc_kalman_t</a>
-</li>
-<li>stepCount
-: <a class="el" href="structbhy__data__pdr__t.html#a315c2d9a092c4fe55123ad21bb439077">bhy_data_pdr_t</a>
-</li>
-<li>svalue
-: <a class="el" href="structgetopt__option.html#ab338414d813054a6cb9f127a66bb7399">getopt_option</a>
-</li>
-<li>sync_host_time
-: <a class="el" href="structtimestamp__sync__state.html#ad816d52d51a8aa6e6387ae322610a4ca">timestamp_sync_state</a>
 </li>
 </ul>
 </div><!-- contents -->

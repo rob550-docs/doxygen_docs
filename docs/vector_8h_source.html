@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/rc/include/rc/math/vector.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/rc/include/rc/math/vector.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +72,7 @@ $(function() {
 <div class="title">vector.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="vector_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef RC_VECTOR_H</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define RC_VECTOR_H</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
@@ -77,7 +80,7 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">double</span> <a class="code" href="group__Vector.html#ga408c35375eaaf1ca251b040b1deeed0c">zero_tolerance</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">double</span> zero_tolerance;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structrc__vector__t.html">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structrc__vector__t.html">rc_vector_t</a>{</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structrc__vector__t.html#a76b2217e47c1417b0adaaf487bc8a617">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structrc__vector__t.html#a76b2217e47c1417b0adaaf487bc8a617">len</a>;    </div>
@@ -86,7 +89,7 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group__Vector.html#ga2312cf039ede3986f1cb5116626bb130">   45</a></span>&#160;} <a class="code" href="group__Vector.html#ga2312cf039ede3986f1cb5116626bb130">rc_vector_t</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group__Vector.html#gab72eb22064075a2bc691904c5a6f64a4">   48</a></span>&#160;<span class="preprocessor">#define RC_VECTOR_INITIALIZER {\</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define RC_VECTOR_INITIALIZER {\</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    .len = 0,\</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    .d = NULL,\</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    .initialized = 0}</span></div>
@@ -153,7 +156,6 @@ $(function() {
 <div class="ttc" id="agroup__Vector_html_ga2c8a002edae139b24bde39eff021cf8e"><div class="ttname"><a href="group__Vector.html#ga2c8a002edae139b24bde39eff021cf8e">rc_vector_sum</a></div><div class="ttdeci">int rc_vector_sum(rc_vector_t v1, rc_vector_t v2, rc_vector_t *s)</div><div class="ttdoc">Populates vector s with the sum of vectors v1 and v2.</div><div class="ttdef"><b>Definition:</b> vector.c:386</div></div>
 <div class="ttc" id="agroup__Vector_html_ga30235b23358cd30512cdd0b6af542939"><div class="ttname"><a href="group__Vector.html#ga30235b23358cd30512cdd0b6af542939">rc_vector_mean</a></div><div class="ttdeci">double rc_vector_mean(rc_vector_t v)</div><div class="ttdoc">Returns the mean (average) of all values in vector v or -1.0f on error.</div><div class="ttdef"><b>Definition:</b> vector.c:313</div></div>
 <div class="ttc" id="agroup__Vector_html_ga3e4b086af44400fa2fa56af2618bfe81"><div class="ttname"><a href="group__Vector.html#ga3e4b086af44400fa2fa56af2618bfe81">rc_vector_max</a></div><div class="ttdeci">int rc_vector_max(rc_vector_t v)</div><div class="ttdoc">Returns the index of the maximum value in v.</div><div class="ttdef"><b>Definition:</b> vector.c:251</div></div>
-<div class="ttc" id="agroup__Vector_html_ga408c35375eaaf1ca251b040b1deeed0c"><div class="ttname"><a href="group__Vector.html#ga408c35375eaaf1ca251b040b1deeed0c">zero_tolerance</a></div><div class="ttdeci">double zero_tolerance</div><div class="ttdef"><b>Definition:</b> algebra.c:26</div></div>
 <div class="ttc" id="agroup__Vector_html_ga4af34fe82269a8a963c1a6b7850df8dc"><div class="ttname"><a href="group__Vector.html#ga4af34fe82269a8a963c1a6b7850df8dc">rc_vector_sum_inplace</a></div><div class="ttdeci">int rc_vector_sum_inplace(rc_vector_t *v1, rc_vector_t v2)</div><div class="ttdoc">Adds vector v2 to v1 and leaves the result in v1.</div><div class="ttdef"><b>Definition:</b> vector.c:407</div></div>
 <div class="ttc" id="agroup__Vector_html_ga5aade05352c44f0eed9835a2e555254f"><div class="ttname"><a href="group__Vector.html#ga5aade05352c44f0eed9835a2e555254f">rc_vector_duplicate</a></div><div class="ttdeci">int rc_vector_duplicate(rc_vector_t a, rc_vector_t *b)</div><div class="ttdoc">Duplicates the contents of vector a and into a new vector b.</div><div class="ttdef"><b>Definition:</b> vector.c:157</div></div>
 <div class="ttc" id="agroup__Vector_html_ga61b0bc1f274f79017342393a2cf4c768"><div class="ttname"><a href="group__Vector.html#ga61b0bc1f274f79017342393a2cf4c768">rc_vector_random</a></div><div class="ttdeci">int rc_vector_random(rc_vector_t *v, int length)</div><div class="ttdoc">Resizes vector v and fills with random numbers between -1.0 and 1.0.</div><div class="ttdef"><b>Definition:</b> vector.c:114</div></div>

@@ -1,9 +1,9 @@
-<map id="mbot_firmware/rc/src/math/quaternion.c" name="mbot_firmware/rc/src/math/quaternion.c">
-<area shape="rect" id="node1" title="Collection of quaternion manipulation functions." alt="" coords="119,5,279,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,72,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="97,95,165,121"/>
-<area shape="rect" id="node4" href="$quaternion_8h.html" title=" " alt="" coords="189,95,347,121"/>
-<area shape="rect" id="node7" href="$algebra__common_8h.html" title=" " alt="" coords="372,95,519,121"/>
-<area shape="rect" id="node5" href="$vector_8h.html" title=" " alt="" coords="203,244,331,271"/>
-<area shape="rect" id="node6" href="$matrix_8h.html" title=" " alt="" coords="253,169,384,196"/>
+<map id="/home/xssun/Workspace/botlab_ws/mbot_firmware/rc/src/math/quaternion.c" name="/home/xssun/Workspace/botlab_ws/mbot_firmware/rc/src/math/quaternion.c">
+<area shape="rect" id="node1" title="Collection of quaternion manipulation functions." alt="" coords="101,5,296,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,109,72,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="97,109,165,136"/>
+<area shape="rect" id="node4" href="$quaternion_8h_source.html" title=" " alt="" coords="189,109,347,136"/>
+<area shape="rect" id="node7" href="$algebra__common_8h_source.html" title=" " alt="" coords="372,109,519,136"/>
+<area shape="rect" id="node5" href="$vector_8h_source.html" title=" " alt="" coords="203,259,331,285"/>
+<area shape="rect" id="node6" href="$matrix_8h_source.html" title=" " alt="" coords="253,184,384,211"/>
 </map>

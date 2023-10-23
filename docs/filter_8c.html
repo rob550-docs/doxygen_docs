@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/rc/src/math/filter.c File Reference</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/rc/src/math/filter.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -79,25 +82,25 @@ $(function() {
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="filter_8h_source.html">rc/math/filter.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="polynomial_8h_source.html">rc/math/polynomial.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="algebra__common_8h_source.html">algebra_common.h</a>&quot;</code><br />
+<code>#include &lt;rc/math/filter.h&gt;</code><br />
+<code>#include &lt;rc/math/polynomial.h&gt;</code><br />
+<code>#include &quot;algebra_common.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for filter.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="filter_8c__incl.png" border="0" usemap="#ambot__firmware_2rc_2src_2math_2filter_8c" alt=""/></div>
-<map name="ambot__firmware_2rc_2src_2math_2filter_8c" id="ambot__firmware_2rc_2src_2math_2filter_8c">
-<area shape="rect" title="This is a collection of functions for generating and implementing discrete SISO filters for arbitrary..." alt="" coords="275,5,435,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,72,121"/>
-<area shape="rect" title=" " alt="" coords="97,95,165,121"/>
-<area shape="rect" title=" " alt="" coords="189,95,259,121"/>
-<area shape="rect" title=" " alt="" coords="283,95,354,121"/>
-<area shape="rect" title=" " alt="" coords="314,169,385,196"/>
-<area shape="rect" href="filter_8h.html" title=" " alt="" coords="429,95,547,121"/>
-<area shape="rect" href="polynomial_8h.html" title=" " alt="" coords="570,95,731,121"/>
-<area shape="rect" href="algebra__common_8h.html" title=" " alt="" coords="756,95,903,121"/>
-<area shape="rect" href="vector_8h.html" title=" " alt="" coords="591,169,719,196"/>
-<area shape="rect" href="ring__buffer_8h.html" title=" " alt="" coords="409,169,567,196"/>
+<div class="center"><img src="filter_8c__incl.png" border="0" usemap="#a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2filter_8c" alt=""/></div>
+<map name="a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2filter_8c" id="a_2home_2xssun_2Workspace_2botlab__ws_2mbot__firmware_2rc_2src_2math_2filter_8c">
+<area shape="rect" title="This is a collection of functions for generating and implementing discrete SISO filters for arbitrary..." alt="" coords="257,5,452,61"/>
+<area shape="rect" title=" " alt="" coords="5,109,72,136"/>
+<area shape="rect" title=" " alt="" coords="97,109,165,136"/>
+<area shape="rect" title=" " alt="" coords="189,109,259,136"/>
+<area shape="rect" title=" " alt="" coords="283,109,354,136"/>
+<area shape="rect" title=" " alt="" coords="314,184,385,211"/>
+<area shape="rect" href="filter_8h_source.html" title=" " alt="" coords="429,109,547,136"/>
+<area shape="rect" href="polynomial_8h_source.html" title=" " alt="" coords="570,109,731,136"/>
+<area shape="rect" href="algebra__common_8h_source.html" title=" " alt="" coords="756,109,903,136"/>
+<area shape="rect" href="vector_8h_source.html" title=" " alt="" coords="591,184,719,211"/>
+<area shape="rect" href="ring__buffer_8h_source.html" title=" " alt="" coords="409,184,567,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -127,7 +130,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gac6dff1f36b8e4ef7db264dd2332d3866"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SISO__Filter.html#gac6dff1f36b8e4ef7db264dd2332d3866">rc_filter_print</a> (<a class="el" href="structrc__filter__t.html">rc_filter_t</a> f)</td></tr>
 <tr class="memdesc:gac6dff1f36b8e4ef7db264dd2332d3866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the transfer function and other statistic of a filter to the screen.  <a href="group__SISO__Filter.html#gac6dff1f36b8e4ef7db264dd2332d3866">More...</a><br /></td></tr>
 <tr class="separator:gac6dff1f36b8e4ef7db264dd2332d3866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6ec99be7a22f8d4280daf18b1eacd18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SISO__Filter.html#gae6ec99be7a22f8d4280daf18b1eacd18">rc_filter_enable_saturation</a> (<a class="el" href="structrc__filter__t.html">rc_filter_t</a> *f, double <a class="el" href="group__IMU__MPU.html#gac6afabdc09a49a433ee19d8a9486056d">min</a>, double max)</td></tr>
+<tr class="memitem:gae6ec99be7a22f8d4280daf18b1eacd18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SISO__Filter.html#gae6ec99be7a22f8d4280daf18b1eacd18">rc_filter_enable_saturation</a> (<a class="el" href="structrc__filter__t.html">rc_filter_t</a> *f, double min, double max)</td></tr>
 <tr class="memdesc:gae6ec99be7a22f8d4280daf18b1eacd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables saturation between bounds min and max.  <a href="group__SISO__Filter.html#gae6ec99be7a22f8d4280daf18b1eacd18">More...</a><br /></td></tr>
 <tr class="separator:gae6ec99be7a22f8d4280daf18b1eacd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa670c91acf8c6d633938ea51905a0ab7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SISO__Filter.html#gaa670c91acf8c6d633938ea51905a0ab7">rc_filter_get_saturation_flag</a> (<a class="el" href="structrc__filter__t.html">rc_filter_t</a> *f)</td></tr>

@@ -1,10 +1,10 @@
-<map id="mbot_firmware/mbot/src/imu/bhy_support.c" name="mbot_firmware/mbot/src/imu/bhy_support.c">
-<area shape="rect" id="node1" title="driver on MCU for bhy" alt="" coords="331,5,501,47"/>
-<area shape="rect" id="node2" href="$bhy__support_8h.html" title="driver on MCU for bhy" alt="" coords="39,102,220,129"/>
-<area shape="rect" id="node6" href="$bhy__uc__driver__config_8h.html" title="header file of bhy_uc_driver.c" alt="" coords="245,95,425,136"/>
-<area shape="rect" id="node7" title=" " alt="" coords="449,102,546,129"/>
-<area shape="rect" id="node8" title=" " alt="" coords="571,102,637,129"/>
-<area shape="rect" id="node3" href="$bhy_8h.html" title="BHY Sensor Driver Support Header File." alt="" coords="5,184,61,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="86,184,173,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="197,184,299,211"/>
+<map id="/home/xssun/Workspace/botlab_ws/mbot_firmware/mbot/src/imu/bhy_support.c" name="/home/xssun/Workspace/botlab_ws/mbot_firmware/mbot/src/imu/bhy_support.c">
+<area shape="rect" id="node1" title="driver on MCU for bhy" alt="" coords="313,5,519,61"/>
+<area shape="rect" id="node2" href="$bhy__support_8h.html" title="driver on MCU for bhy" alt="" coords="39,117,220,143"/>
+<area shape="rect" id="node6" href="$bhy__uc__driver__config_8h.html" title="header file of bhy_uc_driver.c" alt="" coords="245,109,425,151"/>
+<area shape="rect" id="node7" title=" " alt="" coords="449,117,546,143"/>
+<area shape="rect" id="node8" title=" " alt="" coords="571,117,637,143"/>
+<area shape="rect" id="node3" href="$bhy_8h.html" title="BHY Sensor Driver Support Header File." alt="" coords="5,199,61,225"/>
+<area shape="rect" id="node4" title=" " alt="" coords="86,199,173,225"/>
+<area shape="rect" id="node5" title=" " alt="" coords="197,199,299,225"/>
 </map>

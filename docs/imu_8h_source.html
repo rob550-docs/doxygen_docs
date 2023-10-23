@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/mbot/include/mbot/imu/imu.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/mbot/include/mbot/imu/imu.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +72,7 @@ $(function() {
 <div class="title">imu.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="imu_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef __MBOT_IMU_H__</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define __MBOT_IMU_H__</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -78,8 +81,8 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;pico/stdlib.h&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;hardware/i2c.h&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mbot__pins_8h.html">mbot/defs/mbot_pins.h</a>&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mbot__params_8h.html">mbot/defs/mbot_params.h</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;mbot/defs/mbot_pins.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;mbot/defs/mbot_params.h&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bhy__uc__driver_8h.html">mbot/imu/bhy_uc_driver.h</a>&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bhy__uc__driver__config_8h.html">mbot/imu/bhy_uc_driver_config.h</a>&gt;</span></div>
@@ -88,15 +91,15 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bhy_8h.html">mbot/imu/bhy.h</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bhy__support_8h.html">mbot/imu/bhy_support.h</a>&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="imu_8h.html#af187aa038ccbb6c186036955dd1f7788">   28</a></span>&#160;<span class="preprocessor">#define ACCEL_2_MS2     -0.000299387 </span><span class="comment">//-(1 / 32767) * 9.81</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="imu_8h.html#ab3d220d42899f254b1517cdc715c83ae">   29</a></span>&#160;<span class="preprocessor">#define GYRO_2_RADS     5.326484731e-07</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="imu_8h.html#a6e069e3afe55566c7ee87b0defbc0e4e">   30</a></span>&#160;<span class="preprocessor">#define MAG_2_UT        0.0625 </span><span class="comment">// 16LSB/uT not certain about this value</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="imu_8h.html#a4a89c8dc28d7bb1d8a9c8cbf2f10b7cd">   31</a></span>&#160;<span class="preprocessor">#define QUAT_2_NORM     6.103515625e-05</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="imu_8h.html#af0798f52606efe08bd75ecbd9a1c06f8">   32</a></span>&#160;<span class="preprocessor">#define RPY_2_RAD       0.00019174759848570515</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define ACCEL_2_MS2     -0.000299387 </span><span class="comment">//-(1 / 32767) * 9.81</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define GYRO_2_RADS     5.326484731e-07</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define MAG_2_UT        0.0625 </span><span class="comment">// 16LSB/uT not certain about this value</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define QUAT_2_NORM     6.103515625e-05</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define RPY_2_RAD       0.00019174759848570515</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="imu_8h.html#a6092455278a1ac67204e0dbe08f9d13f">   34</a></span>&#160;<span class="preprocessor">#define FIFO_SIZE                      70</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="imu_8h.html#a973c680573b37fc359fc68d0707da355">   35</a></span>&#160;<span class="preprocessor">#define MAX_PACKET_LENGTH              18</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="imu_8h.html#a02ef0a0a6d0c0187af0f7ffedb713f1d">   36</a></span>&#160;<span class="preprocessor">#define OUT_BUFFER_SIZE                60</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define FIFO_SIZE                      70</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define MAX_PACKET_LENGTH              18</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define OUT_BUFFER_SIZE                60</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structmbot__bhy__data__t.html">   38</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structmbot__bhy__data__t.html">mbot_bhy_data_t</a>{</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structmbot__bhy__data__t.html#a1a16ce6857c18053fdbd9a2a4d425f07">   41</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structmbot__bhy__data__t.html#a1a16ce6857c18053fdbd9a2a4d425f07">accel</a>[3];     </div>
@@ -116,52 +119,52 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structmbot__bhy__data__t.html#a0f8876f65fb3744653367a4fb33924df">   58</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structmbot__bhy__data__t.html#a0f8876f65fb3744653367a4fb33924df">mag_to_uT</a>;        </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structmbot__bhy__data__t.html#ad7a412fe155626cd053cd46168a2a0e9">   59</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structmbot__bhy__data__t.html#ad7a412fe155626cd053cd46168a2a0e9">quat_to_norm</a>;     </div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structmbot__bhy__data__t.html#a22c065b647633643bb19b8568ff07893">   60</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structmbot__bhy__data__t.html#a22c065b647633643bb19b8568ff07893">rpy_to_rad</a>;       </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="imu_8h.html#a09dca7225cec7c0c19bc484e0d53f803">   62</a></span>&#160;} <a class="code" href="imu_8h.html#a09dca7225cec7c0c19bc484e0d53f803">mbot_bhy_data_t</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <a class="code" href="structmbot__bhy__data__t.html">mbot_bhy_data_t</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structmbot__bhy__config__t.html">   64</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structmbot__bhy__config__t.html">mbot_bhy_config_t</a>{</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structmbot__bhy__config__t.html#a50fa04ca26f065c945bcc4c1f0262e3a">   65</a></span>&#160;    int8_t <a class="code" href="structmbot__bhy__config__t.html#a50fa04ca26f065c945bcc4c1f0262e3a">sample_rate</a>; <span class="comment">//12, 25, 50, 100, 200</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structmbot__bhy__config__t.html#aa6af2c05a73432053875e77a53850760">   66</a></span>&#160;    int8_t <a class="code" href="structmbot__bhy__config__t.html#aa6af2c05a73432053875e77a53850760">accel_range</a>; <span class="comment">// 2, 4, 6, 8 g</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structmbot__bhy__config__t.html#a3d9fef1ad43da5c9df262edf016d3f3a">   67</a></span>&#160;    int16_t <a class="code" href="structmbot__bhy__config__t.html#a3d9fef1ad43da5c9df262edf016d3f3a">gyro_range</a>; <span class="comment">// 125, 250, 500, 1000, 2000</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structmbot__bhy__config__t.html#aa1ae867536f3d2bf95a757bf1e80dd4c">   68</a></span>&#160;    int8_t <a class="code" href="structmbot__bhy__config__t.html#aa1ae867536f3d2bf95a757bf1e80dd4c">enable_mag</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structmbot__bhy__config__t.html#a035f3ba4712703e2e201b1274c7bf052">   69</a></span>&#160;    int8_t <a class="code" href="structmbot__bhy__config__t.html#a035f3ba4712703e2e201b1274c7bf052">enable_rpy</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structmbot__bhy__config__t.html#acb7bd549f491c3742799094c3141bccc">   70</a></span>&#160;    int8_t <a class="code" href="structmbot__bhy__config__t.html#acb7bd549f491c3742799094c3141bccc">enable_quat</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="imu_8h.html#a42260f58e1200d15987efa791c69a3a1">   71</a></span>&#160;} <a class="code" href="imu_8h.html#a42260f58e1200d15987efa791c69a3a1">mbot_bhy_config_t</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    int8_t sample_rate; <span class="comment">//12, 25, 50, 100, 200</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    int8_t accel_range; <span class="comment">// 2, 4, 6, 8 g</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    int16_t gyro_range; <span class="comment">// 125, 250, 500, 1000, 2000</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    int8_t enable_mag;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    int8_t enable_rpy;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    int8_t enable_quat;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <a class="code" href="structmbot__bhy__config__t.html">mbot_bhy_config_t</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structbhy__calib__param__t.html">   73</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbhy__calib__param__t.html">bhy_calib_param_t</a></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structbhy__calib__param__t.html#a66b32de7edc64f279a5869c4f47774f7">   75</a></span>&#160;    int16_t  <a class="code" href="structbhy__calib__param__t.html#a66b32de7edc64f279a5869c4f47774f7">x_offset</a>; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structbhy__calib__param__t.html#a0e0e802eeb50135127e1f94f3423f7a9">   76</a></span>&#160;    int16_t  <a class="code" href="structbhy__calib__param__t.html#a0e0e802eeb50135127e1f94f3423f7a9">y_offset</a>; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structbhy__calib__param__t.html#a139dff14c6f5fdb10596b3cb88187981">   77</a></span>&#160;    int16_t  <a class="code" href="structbhy__calib__param__t.html#a139dff14c6f5fdb10596b3cb88187981">z_offset</a>; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structbhy__calib__param__t.html#afea1a998b55f3633e5f664ab87495d56">   78</a></span>&#160;    int16_t  <a class="code" href="structbhy__calib__param__t.html#afea1a998b55f3633e5f664ab87495d56">radius</a>;   </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structbhy__calib__param__t.html#a420dee07533a5a972361de41ae8e0a28">   79</a></span>&#160;    uint8_t  <a class="code" href="structbhy__calib__param__t.html#a420dee07533a5a972361de41ae8e0a28">accuracy</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="imu_8h.html#a8dc690a7f3facc2e76acd17f98dd37d6">   80</a></span>&#160;} <a class="code" href="imu_8h.html#a8dc690a7f3facc2e76acd17f98dd37d6">bhy_calib_param_t</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    int16_t  x_offset; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    int16_t  y_offset; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    int16_t  z_offset; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    int16_t  radius;   </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    uint8_t  accuracy;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <a class="code" href="structbhy__calib__param__t.html">bhy_calib_param_t</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0d">   82</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0dac9798c5a35caf9c03abcf89175e8700a">   83</a></span>&#160;    <a class="code" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0dac9798c5a35caf9c03abcf89175e8700a">BHI160_SAMPLE_RATE_12_5HZ</a> = 12,</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0daffac5e8bfe3180e68be4ccd84369d277">   84</a></span>&#160;    <a class="code" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0daffac5e8bfe3180e68be4ccd84369d277">BHI160_SAMPLE_RATE_25HZ</a> = 25,</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0da190e057f91a722640ee87f40b69e9189">   85</a></span>&#160;    <a class="code" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0da190e057f91a722640ee87f40b69e9189">BHI160_SAMPLE_RATE_50HZ</a> = 50,</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0daa8da249f9d78c8701230192f8ecb9a8f">   86</a></span>&#160;    <a class="code" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0daa8da249f9d78c8701230192f8ecb9a8f">BHI160_SAMPLE_RATE_100HZ</a> = 100,</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0dac15a232e7cb6f47c31322ad5ddad74a4">   87</a></span>&#160;    <a class="code" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0dac15a232e7cb6f47c31322ad5ddad74a4">BHI160_SAMPLE_RATE_200HZ</a> = 200,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <a class="code" href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0d">BHI160_SampleRate</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    BHI160_SAMPLE_RATE_12_5HZ = 12,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    BHI160_SAMPLE_RATE_25HZ = 25,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    BHI160_SAMPLE_RATE_50HZ = 50,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    BHI160_SAMPLE_RATE_100HZ = 100,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    BHI160_SAMPLE_RATE_200HZ = 200,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} BHI160_SampleRate;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1">   90</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1a4c2fc0e11424a7cb7133d3d3cbe4e70d">   91</a></span>&#160;    <a class="code" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1a4c2fc0e11424a7cb7133d3d3cbe4e70d">BHI160_ACCEL_RANGE_2G</a> = 2,</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1a32f597d7405076c44a19c1cf9de6fc53">   92</a></span>&#160;    <a class="code" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1a32f597d7405076c44a19c1cf9de6fc53">BHI160_ACCEL_RANGE_4G</a> = 4,</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1af7c86d7aaaf3804bc043bd9364ab07ea">   93</a></span>&#160;    <a class="code" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1af7c86d7aaaf3804bc043bd9364ab07ea">BHI160_ACCEL_RANGE_8G</a> = 8,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1ab2a284269a5ce110b2bc8957d4ddb446">BHI160_ACCEL_RANGE_16G</a> = 16</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1ab2a284269a5ce110b2bc8957d4ddb446">   95</a></span>&#160;} <a class="code" href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1">BHI160_AccelRange</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    BHI160_ACCEL_RANGE_2G = 2,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    BHI160_ACCEL_RANGE_4G = 4,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    BHI160_ACCEL_RANGE_8G = 8,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    BHI160_ACCEL_RANGE_16G = 16</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} BHI160_AccelRange;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2">   97</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a12fccfcf5c975695dbd110b327094138">   98</a></span>&#160;    <a class="code" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a12fccfcf5c975695dbd110b327094138">BHI160_GYRO_RANGE_125_DPS</a> = 125,</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a52ba835e63ddcb82473ea65e905cb7b3">   99</a></span>&#160;    <a class="code" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a52ba835e63ddcb82473ea65e905cb7b3">BHI160_GYRO_RANGE_250_DPS</a> = 250,</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a380448064b6ac88e833f67dc6524d6b5">  100</a></span>&#160;    <a class="code" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a380448064b6ac88e833f67dc6524d6b5">BHI160_GYRO_RANGE_500_DPS</a> = 500,</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a1c207b5eba25290b4de89030a210a414">  101</a></span>&#160;    <a class="code" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a1c207b5eba25290b4de89030a210a414">BHI160_GYRO_RANGE_1000_DPS</a> = 1000,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a2da76b772c69f5e7d146ca08ae746ba8">BHI160_GYRO_RANGE_2000_DPS</a> = 2000</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a2da76b772c69f5e7d146ca08ae746ba8">  103</a></span>&#160;} <a class="code" href="imu_8h.html#a26706752a033a4eaef5eca33850484d2">BHI160_GyroRange</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    BHI160_GYRO_RANGE_125_DPS = 125,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    BHI160_GYRO_RANGE_250_DPS = 250,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    BHI160_GYRO_RANGE_500_DPS = 500,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    BHI160_GYRO_RANGE_1000_DPS = 1000,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    BHI160_GYRO_RANGE_2000_DPS = 2000</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;} BHI160_GyroRange;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">int</span> <a class="code" href="imu_8h.html#adc5a650cbcb39fe9e660ca5f21d0deb9">mbot_imu_init</a>(<a class="code" href="structmbot__bhy__data__t.html">mbot_bhy_data_t</a>* data, <a class="code" href="structmbot__bhy__config__t.html">mbot_bhy_config_t</a> config);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> <a class="code" href="imu_8h.html#aabfe705ec9e1117ceb148b3b9e2109ce">mbot_imu_print</a>(<a class="code" href="structmbot__bhy__data__t.html">mbot_bhy_data_t</a> data);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="structmbot__bhy__config__t.html">mbot_bhy_config_t</a> <a class="code" href="imu_8h.html#ad340067a7541930ffa3d27d8cd74c47e">mbot_imu_default_config</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">int</span> mbot_imu_init(<a class="code" href="structmbot__bhy__data__t.html">mbot_bhy_data_t</a>* data, <a class="code" href="structmbot__bhy__config__t.html">mbot_bhy_config_t</a> config);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> mbot_imu_print(<a class="code" href="structmbot__bhy__data__t.html">mbot_bhy_data_t</a> data);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="structmbot__bhy__config__t.html">mbot_bhy_config_t</a> mbot_imu_default_config(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
@@ -172,44 +175,8 @@ $(function() {
 <div class="ttc" id="abhy__uc__driver__config_8h_html"><div class="ttname"><a href="bhy__uc__driver__config_8h.html">bhy_uc_driver_config.h</a></div><div class="ttdoc">header file of bhy_uc_driver.c</div></div>
 <div class="ttc" id="abhy__uc__driver__constants_8h_html"><div class="ttname"><a href="bhy__uc__driver__constants_8h.html">bhy_uc_driver_constants.h</a></div><div class="ttdoc">header file of bhy_uc_driver.c</div></div>
 <div class="ttc" id="abhy__uc__driver__types_8h_html"><div class="ttname"><a href="bhy__uc__driver__types_8h.html">bhy_uc_driver_types.h</a></div><div class="ttdoc">header file of bhy_uc_driver.c</div></div>
-<div class="ttc" id="aimu_8h_html_a09dca7225cec7c0c19bc484e0d53f803"><div class="ttname"><a href="imu_8h.html#a09dca7225cec7c0c19bc484e0d53f803">mbot_bhy_data_t</a></div><div class="ttdeci">struct mbot_bhy_data_t mbot_bhy_data_t</div></div>
-<div class="ttc" id="aimu_8h_html_a26706752a033a4eaef5eca33850484d2"><div class="ttname"><a href="imu_8h.html#a26706752a033a4eaef5eca33850484d2">BHI160_GyroRange</a></div><div class="ttdeci">BHI160_GyroRange</div><div class="ttdef"><b>Definition:</b> imu.h:97</div></div>
-<div class="ttc" id="aimu_8h_html_a26706752a033a4eaef5eca33850484d2a12fccfcf5c975695dbd110b327094138"><div class="ttname"><a href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a12fccfcf5c975695dbd110b327094138">BHI160_GYRO_RANGE_125_DPS</a></div><div class="ttdeci">@ BHI160_GYRO_RANGE_125_DPS</div><div class="ttdef"><b>Definition:</b> imu.h:98</div></div>
-<div class="ttc" id="aimu_8h_html_a26706752a033a4eaef5eca33850484d2a1c207b5eba25290b4de89030a210a414"><div class="ttname"><a href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a1c207b5eba25290b4de89030a210a414">BHI160_GYRO_RANGE_1000_DPS</a></div><div class="ttdeci">@ BHI160_GYRO_RANGE_1000_DPS</div><div class="ttdef"><b>Definition:</b> imu.h:101</div></div>
-<div class="ttc" id="aimu_8h_html_a26706752a033a4eaef5eca33850484d2a2da76b772c69f5e7d146ca08ae746ba8"><div class="ttname"><a href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a2da76b772c69f5e7d146ca08ae746ba8">BHI160_GYRO_RANGE_2000_DPS</a></div><div class="ttdeci">@ BHI160_GYRO_RANGE_2000_DPS</div><div class="ttdef"><b>Definition:</b> imu.h:102</div></div>
-<div class="ttc" id="aimu_8h_html_a26706752a033a4eaef5eca33850484d2a380448064b6ac88e833f67dc6524d6b5"><div class="ttname"><a href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a380448064b6ac88e833f67dc6524d6b5">BHI160_GYRO_RANGE_500_DPS</a></div><div class="ttdeci">@ BHI160_GYRO_RANGE_500_DPS</div><div class="ttdef"><b>Definition:</b> imu.h:100</div></div>
-<div class="ttc" id="aimu_8h_html_a26706752a033a4eaef5eca33850484d2a52ba835e63ddcb82473ea65e905cb7b3"><div class="ttname"><a href="imu_8h.html#a26706752a033a4eaef5eca33850484d2a52ba835e63ddcb82473ea65e905cb7b3">BHI160_GYRO_RANGE_250_DPS</a></div><div class="ttdeci">@ BHI160_GYRO_RANGE_250_DPS</div><div class="ttdef"><b>Definition:</b> imu.h:99</div></div>
-<div class="ttc" id="aimu_8h_html_a42260f58e1200d15987efa791c69a3a1"><div class="ttname"><a href="imu_8h.html#a42260f58e1200d15987efa791c69a3a1">mbot_bhy_config_t</a></div><div class="ttdeci">struct mbot_bhy_config_t mbot_bhy_config_t</div></div>
-<div class="ttc" id="aimu_8h_html_a8dc690a7f3facc2e76acd17f98dd37d6"><div class="ttname"><a href="imu_8h.html#a8dc690a7f3facc2e76acd17f98dd37d6">bhy_calib_param_t</a></div><div class="ttdeci">struct bhy_calib_param_t bhy_calib_param_t</div></div>
-<div class="ttc" id="aimu_8h_html_aabfe705ec9e1117ceb148b3b9e2109ce"><div class="ttname"><a href="imu_8h.html#aabfe705ec9e1117ceb148b3b9e2109ce">mbot_imu_print</a></div><div class="ttdeci">void mbot_imu_print(mbot_bhy_data_t data)</div><div class="ttdef"><b>Definition:</b> imu.c:176</div></div>
-<div class="ttc" id="aimu_8h_html_ad340067a7541930ffa3d27d8cd74c47e"><div class="ttname"><a href="imu_8h.html#ad340067a7541930ffa3d27d8cd74c47e">mbot_imu_default_config</a></div><div class="ttdeci">mbot_bhy_config_t mbot_imu_default_config(void)</div><div class="ttdef"><b>Definition:</b> imu.c:27</div></div>
-<div class="ttc" id="aimu_8h_html_ad710b875adba9b49fd3d1ca58691c2b1"><div class="ttname"><a href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1">BHI160_AccelRange</a></div><div class="ttdeci">BHI160_AccelRange</div><div class="ttdef"><b>Definition:</b> imu.h:90</div></div>
-<div class="ttc" id="aimu_8h_html_ad710b875adba9b49fd3d1ca58691c2b1a32f597d7405076c44a19c1cf9de6fc53"><div class="ttname"><a href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1a32f597d7405076c44a19c1cf9de6fc53">BHI160_ACCEL_RANGE_4G</a></div><div class="ttdeci">@ BHI160_ACCEL_RANGE_4G</div><div class="ttdef"><b>Definition:</b> imu.h:92</div></div>
-<div class="ttc" id="aimu_8h_html_ad710b875adba9b49fd3d1ca58691c2b1a4c2fc0e11424a7cb7133d3d3cbe4e70d"><div class="ttname"><a href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1a4c2fc0e11424a7cb7133d3d3cbe4e70d">BHI160_ACCEL_RANGE_2G</a></div><div class="ttdeci">@ BHI160_ACCEL_RANGE_2G</div><div class="ttdef"><b>Definition:</b> imu.h:91</div></div>
-<div class="ttc" id="aimu_8h_html_ad710b875adba9b49fd3d1ca58691c2b1ab2a284269a5ce110b2bc8957d4ddb446"><div class="ttname"><a href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1ab2a284269a5ce110b2bc8957d4ddb446">BHI160_ACCEL_RANGE_16G</a></div><div class="ttdeci">@ BHI160_ACCEL_RANGE_16G</div><div class="ttdef"><b>Definition:</b> imu.h:94</div></div>
-<div class="ttc" id="aimu_8h_html_ad710b875adba9b49fd3d1ca58691c2b1af7c86d7aaaf3804bc043bd9364ab07ea"><div class="ttname"><a href="imu_8h.html#ad710b875adba9b49fd3d1ca58691c2b1af7c86d7aaaf3804bc043bd9364ab07ea">BHI160_ACCEL_RANGE_8G</a></div><div class="ttdeci">@ BHI160_ACCEL_RANGE_8G</div><div class="ttdef"><b>Definition:</b> imu.h:93</div></div>
-<div class="ttc" id="aimu_8h_html_adc5a650cbcb39fe9e660ca5f21d0deb9"><div class="ttname"><a href="imu_8h.html#adc5a650cbcb39fe9e660ca5f21d0deb9">mbot_imu_init</a></div><div class="ttdeci">int mbot_imu_init(mbot_bhy_data_t *data, mbot_bhy_config_t config)</div><div class="ttdef"><b>Definition:</b> imu.c:95</div></div>
-<div class="ttc" id="aimu_8h_html_ae1160d74692e10bae964bc949f71ff0d"><div class="ttname"><a href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0d">BHI160_SampleRate</a></div><div class="ttdeci">BHI160_SampleRate</div><div class="ttdef"><b>Definition:</b> imu.h:82</div></div>
-<div class="ttc" id="aimu_8h_html_ae1160d74692e10bae964bc949f71ff0da190e057f91a722640ee87f40b69e9189"><div class="ttname"><a href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0da190e057f91a722640ee87f40b69e9189">BHI160_SAMPLE_RATE_50HZ</a></div><div class="ttdeci">@ BHI160_SAMPLE_RATE_50HZ</div><div class="ttdef"><b>Definition:</b> imu.h:85</div></div>
-<div class="ttc" id="aimu_8h_html_ae1160d74692e10bae964bc949f71ff0daa8da249f9d78c8701230192f8ecb9a8f"><div class="ttname"><a href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0daa8da249f9d78c8701230192f8ecb9a8f">BHI160_SAMPLE_RATE_100HZ</a></div><div class="ttdeci">@ BHI160_SAMPLE_RATE_100HZ</div><div class="ttdef"><b>Definition:</b> imu.h:86</div></div>
-<div class="ttc" id="aimu_8h_html_ae1160d74692e10bae964bc949f71ff0dac15a232e7cb6f47c31322ad5ddad74a4"><div class="ttname"><a href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0dac15a232e7cb6f47c31322ad5ddad74a4">BHI160_SAMPLE_RATE_200HZ</a></div><div class="ttdeci">@ BHI160_SAMPLE_RATE_200HZ</div><div class="ttdef"><b>Definition:</b> imu.h:87</div></div>
-<div class="ttc" id="aimu_8h_html_ae1160d74692e10bae964bc949f71ff0dac9798c5a35caf9c03abcf89175e8700a"><div class="ttname"><a href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0dac9798c5a35caf9c03abcf89175e8700a">BHI160_SAMPLE_RATE_12_5HZ</a></div><div class="ttdeci">@ BHI160_SAMPLE_RATE_12_5HZ</div><div class="ttdef"><b>Definition:</b> imu.h:83</div></div>
-<div class="ttc" id="aimu_8h_html_ae1160d74692e10bae964bc949f71ff0daffac5e8bfe3180e68be4ccd84369d277"><div class="ttname"><a href="imu_8h.html#ae1160d74692e10bae964bc949f71ff0daffac5e8bfe3180e68be4ccd84369d277">BHI160_SAMPLE_RATE_25HZ</a></div><div class="ttdeci">@ BHI160_SAMPLE_RATE_25HZ</div><div class="ttdef"><b>Definition:</b> imu.h:84</div></div>
-<div class="ttc" id="ambot__params_8h_html"><div class="ttname"><a href="mbot__params_8h.html">mbot_params.h</a></div></div>
-<div class="ttc" id="ambot__pins_8h_html"><div class="ttname"><a href="mbot__pins_8h.html">mbot_pins.h</a></div></div>
 <div class="ttc" id="astructbhy__calib__param__t_html"><div class="ttname"><a href="structbhy__calib__param__t.html">bhy_calib_param_t</a></div><div class="ttdef"><b>Definition:</b> imu.h:74</div></div>
-<div class="ttc" id="astructbhy__calib__param__t_html_a0e0e802eeb50135127e1f94f3423f7a9"><div class="ttname"><a href="structbhy__calib__param__t.html#a0e0e802eeb50135127e1f94f3423f7a9">bhy_calib_param_t::y_offset</a></div><div class="ttdeci">int16_t y_offset</div><div class="ttdef"><b>Definition:</b> imu.h:76</div></div>
-<div class="ttc" id="astructbhy__calib__param__t_html_a139dff14c6f5fdb10596b3cb88187981"><div class="ttname"><a href="structbhy__calib__param__t.html#a139dff14c6f5fdb10596b3cb88187981">bhy_calib_param_t::z_offset</a></div><div class="ttdeci">int16_t z_offset</div><div class="ttdef"><b>Definition:</b> imu.h:77</div></div>
-<div class="ttc" id="astructbhy__calib__param__t_html_a420dee07533a5a972361de41ae8e0a28"><div class="ttname"><a href="structbhy__calib__param__t.html#a420dee07533a5a972361de41ae8e0a28">bhy_calib_param_t::accuracy</a></div><div class="ttdeci">uint8_t accuracy</div><div class="ttdef"><b>Definition:</b> imu.h:79</div></div>
-<div class="ttc" id="astructbhy__calib__param__t_html_a66b32de7edc64f279a5869c4f47774f7"><div class="ttname"><a href="structbhy__calib__param__t.html#a66b32de7edc64f279a5869c4f47774f7">bhy_calib_param_t::x_offset</a></div><div class="ttdeci">int16_t x_offset</div><div class="ttdef"><b>Definition:</b> imu.h:75</div></div>
-<div class="ttc" id="astructbhy__calib__param__t_html_afea1a998b55f3633e5f664ab87495d56"><div class="ttname"><a href="structbhy__calib__param__t.html#afea1a998b55f3633e5f664ab87495d56">bhy_calib_param_t::radius</a></div><div class="ttdeci">int16_t radius</div><div class="ttdef"><b>Definition:</b> imu.h:78</div></div>
 <div class="ttc" id="astructmbot__bhy__config__t_html"><div class="ttname"><a href="structmbot__bhy__config__t.html">mbot_bhy_config_t</a></div><div class="ttdef"><b>Definition:</b> imu.h:64</div></div>
-<div class="ttc" id="astructmbot__bhy__config__t_html_a035f3ba4712703e2e201b1274c7bf052"><div class="ttname"><a href="structmbot__bhy__config__t.html#a035f3ba4712703e2e201b1274c7bf052">mbot_bhy_config_t::enable_rpy</a></div><div class="ttdeci">int8_t enable_rpy</div><div class="ttdef"><b>Definition:</b> imu.h:69</div></div>
-<div class="ttc" id="astructmbot__bhy__config__t_html_a3d9fef1ad43da5c9df262edf016d3f3a"><div class="ttname"><a href="structmbot__bhy__config__t.html#a3d9fef1ad43da5c9df262edf016d3f3a">mbot_bhy_config_t::gyro_range</a></div><div class="ttdeci">int16_t gyro_range</div><div class="ttdef"><b>Definition:</b> imu.h:67</div></div>
-<div class="ttc" id="astructmbot__bhy__config__t_html_a50fa04ca26f065c945bcc4c1f0262e3a"><div class="ttname"><a href="structmbot__bhy__config__t.html#a50fa04ca26f065c945bcc4c1f0262e3a">mbot_bhy_config_t::sample_rate</a></div><div class="ttdeci">int8_t sample_rate</div><div class="ttdef"><b>Definition:</b> imu.h:65</div></div>
-<div class="ttc" id="astructmbot__bhy__config__t_html_aa1ae867536f3d2bf95a757bf1e80dd4c"><div class="ttname"><a href="structmbot__bhy__config__t.html#aa1ae867536f3d2bf95a757bf1e80dd4c">mbot_bhy_config_t::enable_mag</a></div><div class="ttdeci">int8_t enable_mag</div><div class="ttdef"><b>Definition:</b> imu.h:68</div></div>
-<div class="ttc" id="astructmbot__bhy__config__t_html_aa6af2c05a73432053875e77a53850760"><div class="ttname"><a href="structmbot__bhy__config__t.html#aa6af2c05a73432053875e77a53850760">mbot_bhy_config_t::accel_range</a></div><div class="ttdeci">int8_t accel_range</div><div class="ttdef"><b>Definition:</b> imu.h:66</div></div>
-<div class="ttc" id="astructmbot__bhy__config__t_html_acb7bd549f491c3742799094c3141bccc"><div class="ttname"><a href="structmbot__bhy__config__t.html#acb7bd549f491c3742799094c3141bccc">mbot_bhy_config_t::enable_quat</a></div><div class="ttdeci">int8_t enable_quat</div><div class="ttdef"><b>Definition:</b> imu.h:70</div></div>
 <div class="ttc" id="astructmbot__bhy__data__t_html"><div class="ttname"><a href="structmbot__bhy__data__t.html">mbot_bhy_data_t</a></div><div class="ttdef"><b>Definition:</b> imu.h:38</div></div>
 <div class="ttc" id="astructmbot__bhy__data__t_html_a0f8876f65fb3744653367a4fb33924df"><div class="ttname"><a href="structmbot__bhy__data__t.html#a0f8876f65fb3744653367a4fb33924df">mbot_bhy_data_t::mag_to_uT</a></div><div class="ttdeci">float mag_to_uT</div><div class="ttdoc">conversion rate from raw gyroscope to uT</div><div class="ttdef"><b>Definition:</b> imu.h:58</div></div>
 <div class="ttc" id="astructmbot__bhy__data__t_html_a1a16ce6857c18053fdbd9a2a4d425f07"><div class="ttname"><a href="structmbot__bhy__data__t.html#a1a16ce6857c18053fdbd9a2a4d425f07">mbot_bhy_data_t::accel</a></div><div class="ttdeci">float accel[3]</div><div class="ttdoc">accelerometer (XYZ) in units of m/s^2</div><div class="ttdef"><b>Definition:</b> imu.h:41</div></div>

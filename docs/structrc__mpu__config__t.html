@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -76,65 +79,82 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">physical connection configuration</div></td></tr>
-<tr class="memitem:gada4f53edbf8dbaecf3da46f240005f2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gada4f53edbf8dbaecf3da46f240005f2e">gpio_interrupt_pin</a></td></tr>
-<tr class="memdesc:gada4f53edbf8dbaecf3da46f240005f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpio pin, default 21 on Robotics Cape and BB Blue  <a href="group__IMU__MPU.html#gada4f53edbf8dbaecf3da46f240005f2e">More...</a><br /></td></tr>
+<tr class="memitem:gada4f53edbf8dbaecf3da46f240005f2e"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gada4f53edbf8dbaecf3da46f240005f2e">gpio_interrupt_pin</a></td></tr>
+<tr class="memdesc:gada4f53edbf8dbaecf3da46f240005f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpio pin, default 21 on Robotics Cape and BB Blue <br /></td></tr>
 <tr class="separator:gada4f53edbf8dbaecf3da46f240005f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7316ef0dd4db302feb2faf672d65c51d"><td class="memItemLeft" align="right" valign="top">i2c_inst_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga7316ef0dd4db302feb2faf672d65c51d">i2c_bus</a></td></tr>
-<tr class="memdesc:ga7316ef0dd4db302feb2faf672d65c51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c instance  <a href="group__IMU__MPU.html#ga7316ef0dd4db302feb2faf672d65c51d">More...</a><br /></td></tr>
+<tr class="memitem:ga7316ef0dd4db302feb2faf672d65c51d"><td class="memItemLeft" align="right" valign="top">
+i2c_inst_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga7316ef0dd4db302feb2faf672d65c51d">i2c_bus</a></td></tr>
+<tr class="memdesc:ga7316ef0dd4db302feb2faf672d65c51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c instance <br /></td></tr>
 <tr class="separator:ga7316ef0dd4db302feb2faf672d65c51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a4464e6c4c1ee16140fb9118f8abdb8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga0a4464e6c4c1ee16140fb9118f8abdb8">i2c_addr</a></td></tr>
-<tr class="memdesc:ga0a4464e6c4c1ee16140fb9118f8abdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">default is 0x68, pull pin ad0 high to make it 0x69  <a href="group__IMU__MPU.html#ga0a4464e6c4c1ee16140fb9118f8abdb8">More...</a><br /></td></tr>
+<tr class="memitem:ga0a4464e6c4c1ee16140fb9118f8abdb8"><td class="memItemLeft" align="right" valign="top">
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga0a4464e6c4c1ee16140fb9118f8abdb8">i2c_addr</a></td></tr>
+<tr class="memdesc:ga0a4464e6c4c1ee16140fb9118f8abdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">default is 0x68, pull pin ad0 high to make it 0x69 <br /></td></tr>
 <tr class="separator:ga0a4464e6c4c1ee16140fb9118f8abdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93870a1197c05da1aa6060fa4f7df313"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga93870a1197c05da1aa6060fa4f7df313">show_warnings</a></td></tr>
-<tr class="memdesc:ga93870a1197c05da1aa6060fa4f7df313"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to 1 to print i2c_bus warnings for debug  <a href="group__IMU__MPU.html#ga93870a1197c05da1aa6060fa4f7df313">More...</a><br /></td></tr>
+<tr class="memitem:ga93870a1197c05da1aa6060fa4f7df313"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga93870a1197c05da1aa6060fa4f7df313">show_warnings</a></td></tr>
+<tr class="memdesc:ga93870a1197c05da1aa6060fa4f7df313"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to 1 to print i2c_bus warnings for debug <br /></td></tr>
 <tr class="separator:ga93870a1197c05da1aa6060fa4f7df313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">accelerometer, gyroscope, and magnetometer configuration</div></td></tr>
-<tr class="memitem:ga395a48e0eaff2302eaf4268d65c15070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMU__MPU.html#ga6a40bfb1b31c95c07c440ee1a7c464b8">rc_mpu_accel_fsr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga395a48e0eaff2302eaf4268d65c15070">accel_fsr</a></td></tr>
-<tr class="memdesc:ga395a48e0eaff2302eaf4268d65c15070"><td class="mdescLeft">&#160;</td><td class="mdescRight">accelerometer full scale range, default ACCEL_FSR_8G  <a href="group__IMU__MPU.html#ga395a48e0eaff2302eaf4268d65c15070">More...</a><br /></td></tr>
+<tr class="memitem:ga395a48e0eaff2302eaf4268d65c15070"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__IMU__MPU.html#ga6a40bfb1b31c95c07c440ee1a7c464b8">rc_mpu_accel_fsr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga395a48e0eaff2302eaf4268d65c15070">accel_fsr</a></td></tr>
+<tr class="memdesc:ga395a48e0eaff2302eaf4268d65c15070"><td class="mdescLeft">&#160;</td><td class="mdescRight">accelerometer full scale range, default ACCEL_FSR_8G <br /></td></tr>
 <tr class="separator:ga395a48e0eaff2302eaf4268d65c15070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3dee5ded5841533bfc61e1370fd2656a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMU__MPU.html#ga41a163936d06090d69a234035ff0b734">rc_mpu_gyro_fsr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga3dee5ded5841533bfc61e1370fd2656a">gyro_fsr</a></td></tr>
-<tr class="memdesc:ga3dee5ded5841533bfc61e1370fd2656a"><td class="mdescLeft">&#160;</td><td class="mdescRight">gyroscope full scale range, default GYRO_FSR_2000DPS  <a href="group__IMU__MPU.html#ga3dee5ded5841533bfc61e1370fd2656a">More...</a><br /></td></tr>
+<tr class="memitem:ga3dee5ded5841533bfc61e1370fd2656a"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__IMU__MPU.html#ga41a163936d06090d69a234035ff0b734">rc_mpu_gyro_fsr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga3dee5ded5841533bfc61e1370fd2656a">gyro_fsr</a></td></tr>
+<tr class="memdesc:ga3dee5ded5841533bfc61e1370fd2656a"><td class="mdescLeft">&#160;</td><td class="mdescRight">gyroscope full scale range, default GYRO_FSR_2000DPS <br /></td></tr>
 <tr class="separator:ga3dee5ded5841533bfc61e1370fd2656a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef2a39b8fd7956b44b7b0e909f8b7ff6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMU__MPU.html#gae212fc0e408486c37f3297a01f75d8e2">rc_mpu_accel_dlpf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gaef2a39b8fd7956b44b7b0e909f8b7ff6">accel_dlpf</a></td></tr>
-<tr class="memdesc:gaef2a39b8fd7956b44b7b0e909f8b7ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal low pass filter cutoff, default ACCEL_DLPF_184  <a href="group__IMU__MPU.html#gaef2a39b8fd7956b44b7b0e909f8b7ff6">More...</a><br /></td></tr>
+<tr class="memitem:gaef2a39b8fd7956b44b7b0e909f8b7ff6"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__IMU__MPU.html#gae212fc0e408486c37f3297a01f75d8e2">rc_mpu_accel_dlpf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gaef2a39b8fd7956b44b7b0e909f8b7ff6">accel_dlpf</a></td></tr>
+<tr class="memdesc:gaef2a39b8fd7956b44b7b0e909f8b7ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal low pass filter cutoff, default ACCEL_DLPF_184 <br /></td></tr>
 <tr class="separator:gaef2a39b8fd7956b44b7b0e909f8b7ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5049431c21b029d0b1a151e5d849e90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMU__MPU.html#ga615c10012ca9942ee0a06e59720aac85">rc_mpu_gyro_dlpf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gad5049431c21b029d0b1a151e5d849e90">gyro_dlpf</a></td></tr>
-<tr class="memdesc:gad5049431c21b029d0b1a151e5d849e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal low pass filter cutoff, default GYRO_DLPF_184  <a href="group__IMU__MPU.html#gad5049431c21b029d0b1a151e5d849e90">More...</a><br /></td></tr>
+<tr class="memitem:gad5049431c21b029d0b1a151e5d849e90"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__IMU__MPU.html#ga615c10012ca9942ee0a06e59720aac85">rc_mpu_gyro_dlpf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gad5049431c21b029d0b1a151e5d849e90">gyro_dlpf</a></td></tr>
+<tr class="memdesc:gad5049431c21b029d0b1a151e5d849e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal low pass filter cutoff, default GYRO_DLPF_184 <br /></td></tr>
 <tr class="separator:gad5049431c21b029d0b1a151e5d849e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff35e405a9ff2acce1314a9d0a3354f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gaff35e405a9ff2acce1314a9d0a3354f4">enable_magnetometer</a></td></tr>
-<tr class="memdesc:gaff35e405a9ff2acce1314a9d0a3354f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">magnetometer use is optional, set to 1 to enable, default 0 (off)  <a href="group__IMU__MPU.html#gaff35e405a9ff2acce1314a9d0a3354f4">More...</a><br /></td></tr>
+<tr class="memitem:gaff35e405a9ff2acce1314a9d0a3354f4"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gaff35e405a9ff2acce1314a9d0a3354f4">enable_magnetometer</a></td></tr>
+<tr class="memdesc:gaff35e405a9ff2acce1314a9d0a3354f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">magnetometer use is optional, set to 1 to enable, default 0 (off) <br /></td></tr>
 <tr class="separator:gaff35e405a9ff2acce1314a9d0a3354f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">DMP settings, only used with DMP mode</div></td></tr>
-<tr class="memitem:ga7aebde028c477956d2be77fce7aace8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga7aebde028c477956d2be77fce7aace8d">dmp_sample_rate</a></td></tr>
-<tr class="memdesc:ga7aebde028c477956d2be77fce7aace8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">sample rate in hertz, 200,100,50,40,25,20,10,8,5,4  <a href="group__IMU__MPU.html#ga7aebde028c477956d2be77fce7aace8d">More...</a><br /></td></tr>
+<tr class="memitem:ga7aebde028c477956d2be77fce7aace8d"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga7aebde028c477956d2be77fce7aace8d">dmp_sample_rate</a></td></tr>
+<tr class="memdesc:ga7aebde028c477956d2be77fce7aace8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">sample rate in hertz, 200,100,50,40,25,20,10,8,5,4 <br /></td></tr>
 <tr class="separator:ga7aebde028c477956d2be77fce7aace8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f8d3fea225bd21140fc67b63ebf9823"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga5f8d3fea225bd21140fc67b63ebf9823">dmp_fetch_accel_gyro</a></td></tr>
-<tr class="memdesc:ga5f8d3fea225bd21140fc67b63ebf9823"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to 1 to optionally raw accel/gyro when reading DMP quaternion, default: 0 (off)  <a href="group__IMU__MPU.html#ga5f8d3fea225bd21140fc67b63ebf9823">More...</a><br /></td></tr>
+<tr class="memitem:ga5f8d3fea225bd21140fc67b63ebf9823"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga5f8d3fea225bd21140fc67b63ebf9823">dmp_fetch_accel_gyro</a></td></tr>
+<tr class="memdesc:ga5f8d3fea225bd21140fc67b63ebf9823"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to 1 to optionally raw accel/gyro when reading DMP quaternion, default: 0 (off) <br /></td></tr>
 <tr class="separator:ga5f8d3fea225bd21140fc67b63ebf9823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga83339dc49cac33419a91898317755c70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga83339dc49cac33419a91898317755c70">dmp_auto_calibrate_gyro</a></td></tr>
-<tr class="memdesc:ga83339dc49cac33419a91898317755c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to 1 to let DMP auto calibrate the gyro while in use, default: 0 (off)  <a href="group__IMU__MPU.html#ga83339dc49cac33419a91898317755c70">More...</a><br /></td></tr>
+<tr class="memitem:ga83339dc49cac33419a91898317755c70"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga83339dc49cac33419a91898317755c70">dmp_auto_calibrate_gyro</a></td></tr>
+<tr class="memdesc:ga83339dc49cac33419a91898317755c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to 1 to let DMP auto calibrate the gyro while in use, default: 0 (off) <br /></td></tr>
 <tr class="separator:ga83339dc49cac33419a91898317755c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd7a9c481fe3e9102ce30323b0c874a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__IMU__MPU.html#ga0ae4e14519b15e255477a9b51217f571">rc_mpu_orientation_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gafd7a9c481fe3e9102ce30323b0c874a3">orient</a></td></tr>
-<tr class="memdesc:gafd7a9c481fe3e9102ce30323b0c874a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMP orientation matrix, see rc_mpu_orientation_t.  <a href="group__IMU__MPU.html#gafd7a9c481fe3e9102ce30323b0c874a3">More...</a><br /></td></tr>
+<tr class="memitem:gafd7a9c481fe3e9102ce30323b0c874a3"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__IMU__MPU.html#ga0ae4e14519b15e255477a9b51217f571">rc_mpu_orientation_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gafd7a9c481fe3e9102ce30323b0c874a3">orient</a></td></tr>
+<tr class="memdesc:gafd7a9c481fe3e9102ce30323b0c874a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMP orientation matrix, see rc_mpu_orientation_t. <br /></td></tr>
 <tr class="separator:gafd7a9c481fe3e9102ce30323b0c874a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3605578ed3f00138324fd4a08e0aaef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gae3605578ed3f00138324fd4a08e0aaef">compass_time_constant</a></td></tr>
-<tr class="memdesc:gae3605578ed3f00138324fd4a08e0aaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">time constant (seconds) for filtering compass with gyroscope yaw value, default 25  <a href="group__IMU__MPU.html#gae3605578ed3f00138324fd4a08e0aaef">More...</a><br /></td></tr>
+<tr class="memitem:gae3605578ed3f00138324fd4a08e0aaef"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gae3605578ed3f00138324fd4a08e0aaef">compass_time_constant</a></td></tr>
+<tr class="memdesc:gae3605578ed3f00138324fd4a08e0aaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">time constant (seconds) for filtering compass with gyroscope yaw value, default 25 <br /></td></tr>
 <tr class="separator:gae3605578ed3f00138324fd4a08e0aaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa23f653e12b0f38dafd3f2af4e88b7d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gaa23f653e12b0f38dafd3f2af4e88b7d3">read_mag_after_callback</a></td></tr>
-<tr class="memdesc:gaa23f653e12b0f38dafd3f2af4e88b7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads magnetometer after DMP callback function to improve latency, default 1 (true)  <a href="group__IMU__MPU.html#gaa23f653e12b0f38dafd3f2af4e88b7d3">More...</a><br /></td></tr>
+<tr class="memitem:gaa23f653e12b0f38dafd3f2af4e88b7d3"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#gaa23f653e12b0f38dafd3f2af4e88b7d3">read_mag_after_callback</a></td></tr>
+<tr class="memdesc:gaa23f653e12b0f38dafd3f2af4e88b7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads magnetometer after DMP callback function to improve latency, default 1 (true) <br /></td></tr>
 <tr class="separator:gaa23f653e12b0f38dafd3f2af4e88b7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47a6fa8082fdf772169ad96d0c87231b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga47a6fa8082fdf772169ad96d0c87231b">mag_sample_rate_div</a></td></tr>
-<tr class="memdesc:ga47a6fa8082fdf772169ad96d0c87231b"><td class="mdescLeft">&#160;</td><td class="mdescRight">magnetometer_sample_rate = dmp_sample_rate/mag_sample_rate_div, default: 4  <a href="group__IMU__MPU.html#ga47a6fa8082fdf772169ad96d0c87231b">More...</a><br /></td></tr>
+<tr class="memitem:ga47a6fa8082fdf772169ad96d0c87231b"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga47a6fa8082fdf772169ad96d0c87231b">mag_sample_rate_div</a></td></tr>
+<tr class="memdesc:ga47a6fa8082fdf772169ad96d0c87231b"><td class="mdescLeft">&#160;</td><td class="mdescRight">magnetometer_sample_rate = dmp_sample_rate/mag_sample_rate_div, default: 4 <br /></td></tr>
 <tr class="separator:ga47a6fa8082fdf772169ad96d0c87231b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b7b2580f3459e08908e0ab68f06716f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga3b7b2580f3459e08908e0ab68f06716f">tap_threshold</a></td></tr>
-<tr class="memdesc:ga3b7b2580f3459e08908e0ab68f06716f"><td class="mdescLeft">&#160;</td><td class="mdescRight">threshold impulse for triggering a tap in units of mg/ms  <a href="group__IMU__MPU.html#ga3b7b2580f3459e08908e0ab68f06716f">More...</a><br /></td></tr>
+<tr class="memitem:ga3b7b2580f3459e08908e0ab68f06716f"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IMU__MPU.html#ga3b7b2580f3459e08908e0ab68f06716f">tap_threshold</a></td></tr>
+<tr class="memdesc:ga3b7b2580f3459e08908e0ab68f06716f"><td class="mdescLeft">&#160;</td><td class="mdescRight">threshold impulse for triggering a tap in units of mg/ms <br /></td></tr>
 <tr class="separator:ga3b7b2580f3459e08908e0ab68f06716f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>configuration of the mpu sensor </p>
 <p>Configuration struct passed to rc_mpu_initialize and rc_mpu_initialize_dmp. It is best to get the default config with <a class="el" href="group__IMU__MPU.html#gae9407993b646234f68afebb87cd28a19" title="Returns an rc_mpu_config_t struct with default settings.">rc_mpu_default_config()</a> function first and modify from there. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>mbot_firmware/rc/include/rc/mpu/<a class="el" href="mpu_8h_source.html">mpu.h</a></li>
+<li>/home/xssun/Workspace/botlab_ws/mbot_firmware/rc/include/rc/mpu/<a class="el" href="mpu_8h_source.html">mpu.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

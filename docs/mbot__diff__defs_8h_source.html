@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MBot Software Library: mbot_firmware/mbot/include/mbot/defs/mbot_diff_defs.h Source File</title>
+<title>MBot Software Library: /home/xssun/Workspace/botlab_ws/mbot_firmware/mbot/include/mbot/defs/mbot_diff_defs.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mbot-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MBot Software Library
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">An API documentation to mbot_firmware repository</div>
   </td>
  </tr>
  </tbody>
@@ -69,34 +72,27 @@ $(function() {
 <div class="title">mbot_diff_defs.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mbot__diff__defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;rc/defs/common_defs.h&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;rc/defs/common_defs.h&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef RC_DIFF_DEFS_H</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define RC_DIFF_DEFS_H</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#a01555412e6fb0a75c37ba6782917533f">    6</a></span>&#160;<span class="preprocessor">#define LEFT_MOTOR_CHANNEL      1</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#ad670e2a1487413bf9f0dc6d7aea0bbfa">    7</a></span>&#160;<span class="preprocessor">#define RIGHT_MOTOR_CHANNEL     3</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LEFT_MOTOR_CHANNEL      1</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define RIGHT_MOTOR_CHANNEL     3</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// #define DIFF_WHEEL_RADIUS            0.08</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// #define DIFF_BASE_RADIUS              0.075</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6">   11</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6">mbot_fram_cfg_length_t</a>{</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6a03a11678027d0173c8e9513da5d8bc64">   12</a></span>&#160;    <a class="code" href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6a03a11678027d0173c8e9513da5d8bc64">WHEEL_CALIBRATION_LEN</a> = 8 * <span class="keyword">sizeof</span>(float), <span class="comment">// 8 floats</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6a0e29df2c96d829aa8d2a3bd9bfe5b25d">   13</a></span>&#160;    <a class="code" href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6a0e29df2c96d829aa8d2a3bd9bfe5b25d">PID_VALUES_LEN</a> = 20 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), <span class="comment">// 20 floats</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#a8aaf2885c99928689a853829d1a304ea">   14</a></span>&#160;} <a class="code" href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6">mbot_fram_cfg_length_t</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> mbot_fram_cfg_length_t{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    WHEEL_CALIBRATION_LEN = 8 * <span class="keyword">sizeof</span>(float), <span class="comment">// 8 floats</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    PID_VALUES_LEN = 20 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), <span class="comment">// 20 floats</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} mbot_fram_cfg_length_t;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898">mbot_fram_cfg_offset_t</a>{</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898a82977f2ac3ab19a830fb55fc183a645f">   17</a></span>&#160;    <a class="code" href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898a82977f2ac3ab19a830fb55fc183a645f">WHEEL_CALIBRATION_ADDR</a> = <a class="code" href="mbot__fram__map_8h.html#a15bff95f685b28e5ebe73a3d0701d892">MPU_FINAL_FRAM_ADDR</a>, <span class="comment">// have to start at 102 since thats where the MPU stops</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898abc232f471213c1507d6fca9f5486192e">   18</a></span>&#160;    <a class="code" href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898abc232f471213c1507d6fca9f5486192e">PID_VALUES_ADDR</a> = <a class="code" href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898a82977f2ac3ab19a830fb55fc183a645f">WHEEL_CALIBRATION_ADDR</a> + <a class="code" href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6a03a11678027d0173c8e9513da5d8bc64">WHEEL_CALIBRATION_LEN</a>,</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="mbot__diff__defs_8h.html#a5dbef1d40144eb69d2621a7ad8ebe5c1">   19</a></span>&#160;} <a class="code" href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898">mbot_fram_cfg_offset_t</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> mbot_fram_cfg_offset_t{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    WHEEL_CALIBRATION_ADDR = MPU_FINAL_FRAM_ADDR, <span class="comment">// have to start at 102 since thats where the MPU stops</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    PID_VALUES_ADDR = WHEEL_CALIBRATION_ADDR + WHEEL_CALIBRATION_LEN,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} mbot_fram_cfg_offset_t;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="ambot__diff__defs_8h_html_aa572221398a7b1fc5ee683b90a9c68f6"><div class="ttname"><a href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6">mbot_fram_cfg_length_t</a></div><div class="ttdeci">mbot_fram_cfg_length_t</div><div class="ttdef"><b>Definition:</b> mbot_diff_defs.h:11</div></div>
-<div class="ttc" id="ambot__diff__defs_8h_html_aa572221398a7b1fc5ee683b90a9c68f6a03a11678027d0173c8e9513da5d8bc64"><div class="ttname"><a href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6a03a11678027d0173c8e9513da5d8bc64">WHEEL_CALIBRATION_LEN</a></div><div class="ttdeci">@ WHEEL_CALIBRATION_LEN</div><div class="ttdef"><b>Definition:</b> mbot_diff_defs.h:12</div></div>
-<div class="ttc" id="ambot__diff__defs_8h_html_aa572221398a7b1fc5ee683b90a9c68f6a0e29df2c96d829aa8d2a3bd9bfe5b25d"><div class="ttname"><a href="mbot__diff__defs_8h.html#aa572221398a7b1fc5ee683b90a9c68f6a0e29df2c96d829aa8d2a3bd9bfe5b25d">PID_VALUES_LEN</a></div><div class="ttdeci">@ PID_VALUES_LEN</div><div class="ttdef"><b>Definition:</b> mbot_diff_defs.h:13</div></div>
-<div class="ttc" id="ambot__diff__defs_8h_html_ab9b8c5c1368df1df8adcdffa1f69a898"><div class="ttname"><a href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898">mbot_fram_cfg_offset_t</a></div><div class="ttdeci">mbot_fram_cfg_offset_t</div><div class="ttdef"><b>Definition:</b> mbot_diff_defs.h:16</div></div>
-<div class="ttc" id="ambot__diff__defs_8h_html_ab9b8c5c1368df1df8adcdffa1f69a898a82977f2ac3ab19a830fb55fc183a645f"><div class="ttname"><a href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898a82977f2ac3ab19a830fb55fc183a645f">WHEEL_CALIBRATION_ADDR</a></div><div class="ttdeci">@ WHEEL_CALIBRATION_ADDR</div><div class="ttdef"><b>Definition:</b> mbot_diff_defs.h:17</div></div>
-<div class="ttc" id="ambot__diff__defs_8h_html_ab9b8c5c1368df1df8adcdffa1f69a898abc232f471213c1507d6fca9f5486192e"><div class="ttname"><a href="mbot__diff__defs_8h.html#ab9b8c5c1368df1df8adcdffa1f69a898abc232f471213c1507d6fca9f5486192e">PID_VALUES_ADDR</a></div><div class="ttdeci">@ PID_VALUES_ADDR</div><div class="ttdef"><b>Definition:</b> mbot_diff_defs.h:18</div></div>
-<div class="ttc" id="ambot__fram__map_8h_html_a15bff95f685b28e5ebe73a3d0701d892"><div class="ttname"><a href="mbot__fram__map_8h.html#a15bff95f685b28e5ebe73a3d0701d892">MPU_FINAL_FRAM_ADDR</a></div><div class="ttdeci">#define MPU_FINAL_FRAM_ADDR</div><div class="ttdef"><b>Definition:</b> mbot_fram_map.h:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
