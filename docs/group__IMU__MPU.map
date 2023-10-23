@@ -1,0 +1,4 @@
+<map id="IMU_MPU" name="IMU_MPU">
+<area shape="rect" id="node1" href="$group__RC.html" title="Robot Control Library." alt="" coords="5,5,45,31"/>
+<area shape="rect" id="node2" title="A userspace C interface for the invensense MPU6050, MPU6500, MPU9150, and MPU9250." alt="" coords="93,5,179,31"/>
+</map>

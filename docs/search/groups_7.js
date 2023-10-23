@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['ring_5fbuffer_1208',['Ring_Buffer',['../group__Ring__Buffer.html',1,'']]]
+  ['math_1252',['Math',['../group__Math.html',1,'']]],
+  ['matrix_1253',['Matrix',['../group__Matrix.html',1,'']]],
+  ['mbot_1254',['MBot',['../group__MBot.html',1,'']]],
+  ['motor_1255',['Motor',['../group__Motor.html',1,'']]]
 ];

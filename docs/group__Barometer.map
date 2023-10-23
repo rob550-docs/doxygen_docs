@@ -1,0 +1,4 @@
+<map id="Barometer" name="Barometer">
+<area shape="rect" id="node1" href="$group__MBot.html" title=" " alt="" coords="5,5,61,31"/>
+<area shape="rect" id="node2" title="Provides interface to the BMP280 barometer sensor on the MBot robot system using I2C." alt="" coords="109,5,200,31"/>
+</map>

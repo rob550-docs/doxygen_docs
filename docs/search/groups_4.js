@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['other_5fmath_1205',['Other_Math',['../group__Other__Math.html',1,'']]]
+  ['imu_5fmpu_1249',['IMU_MPU',['../group__IMU__MPU.html',1,'']]]
 ];

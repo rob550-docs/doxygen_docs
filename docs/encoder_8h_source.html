@@ -73,24 +73,29 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;pico/stdlib.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef MBOT_ENCODER_H</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define MBOT_ENCODER_H</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> mbot_encoder_init();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span> mbot_encoder_cleanup();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">int</span> mbot_encoder_read_delta(uint8_t ch);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> mbot_encoder_read_count(uint8_t ch);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">int</span> mbot_encoder_write(uint8_t ch, <span class="keywordtype">int</span> pos);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RC_ENCODER_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;pico/stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef MBOT_ENCODER_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define MBOT_ENCODER_H</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__Encoder.html#gad6d8bb5a5c9c84386076b404354c1c78">mbot_encoder_init</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__Encoder.html#ga201153a0abb88f83a2816ca3bcfc4934">mbot_encoder_cleanup</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__Encoder.html#gad7f3571e4a7880a8a981a6b4bca4784f">mbot_encoder_read_delta</a>(uint8_t ch);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__Encoder.html#ga714501a63cf6690f13cffd71c7b89997">mbot_encoder_read_count</a>(uint8_t ch);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__Encoder.html#gabb205dd80b48b345ab92c24dbdea7192">mbot_encoder_write</a>(uint8_t ch, <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RC_ENCODER_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup__Encoder_html_ga201153a0abb88f83a2816ca3bcfc4934"><div class="ttname"><a href="group__Encoder.html#ga201153a0abb88f83a2816ca3bcfc4934">mbot_encoder_cleanup</a></div><div class="ttdeci">int mbot_encoder_cleanup()</div><div class="ttdoc">Stops the encoder counters. Recommended to be called at the end of the program.</div><div class="ttdef"><b>Definition:</b> encoder.c:51</div></div>
+<div class="ttc" id="agroup__Encoder_html_ga714501a63cf6690f13cffd71c7b89997"><div class="ttname"><a href="group__Encoder.html#ga714501a63cf6690f13cffd71c7b89997">mbot_encoder_read_count</a></div><div class="ttdeci">int mbot_encoder_read_count(uint8_t ch)</div><div class="ttdoc">Reads the current count of an encoder channel. The count is a signed 32-bit integer that wraps around...</div><div class="ttdef"><b>Definition:</b> encoder.c:75</div></div>
+<div class="ttc" id="agroup__Encoder_html_gabb205dd80b48b345ab92c24dbdea7192"><div class="ttname"><a href="group__Encoder.html#gabb205dd80b48b345ab92c24dbdea7192">mbot_encoder_write</a></div><div class="ttdeci">int mbot_encoder_write(uint8_t ch, int pos)</div><div class="ttdoc">Sets the current position of an encoder channel. Typically used to reset a counter to 0,...</div><div class="ttdef"><b>Definition:</b> encoder.c:91</div></div>
+<div class="ttc" id="agroup__Encoder_html_gad6d8bb5a5c9c84386076b404354c1c78"><div class="ttname"><a href="group__Encoder.html#gad6d8bb5a5c9c84386076b404354c1c78">mbot_encoder_init</a></div><div class="ttdeci">int mbot_encoder_init()</div><div class="ttdoc">Initializes the encoder counters for channels 1-3. This also resets the encoder position to 0.</div><div class="ttdef"><b>Definition:</b> encoder.c:23</div></div>
+<div class="ttc" id="agroup__Encoder_html_gad7f3571e4a7880a8a981a6b4bca4784f"><div class="ttname"><a href="group__Encoder.html#gad7f3571e4a7880a8a981a6b4bca4784f">mbot_encoder_read_delta</a></div><div class="ttdeci">int mbot_encoder_read_delta(uint8_t ch)</div><div class="ttdoc">Reads the current delta of an encoder channel.</div><div class="ttdef"><b>Definition:</b> encoder.c:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['siso_5ffilter_1209',['SISO_Filter',['../group__SISO__Filter.html',1,'']]]
+  ['other_5fmath_1256',['Other_Math',['../group__Other__Math.html',1,'']]]
 ];

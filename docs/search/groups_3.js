@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matrix_1204',['Matrix',['../group__Matrix.html',1,'']]]
+  ['encoder_1248',['Encoder',['../group__Encoder.html',1,'']]]
 ];

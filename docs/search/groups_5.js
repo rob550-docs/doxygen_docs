@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['polynomial_1206',['Polynomial',['../group__Polynomial.html',1,'']]]
+  ['kalman_1250',['Kalman',['../group__Kalman.html',1,'']]]
 ];

@@ -1,0 +1,6 @@
+<map id="MBot" name="MBot">
+<area shape="rect" id="node1" href="$group__Motor.html" title="functions to control motor operations" alt="" coords="125,5,185,31"/>
+<area shape="rect" id="node2" href="$group__Encoder.html" title="Functions to use the encoders." alt="" coords="117,55,192,80"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,55,61,80"/>
+<area shape="rect" id="node4" href="$group__Barometer.html" title="Provides interface to the BMP280 barometer sensor on the MBot robot system using I2C." alt="" coords="109,104,200,129"/>
+</map>
